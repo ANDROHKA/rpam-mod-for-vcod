@@ -249,29 +249,27 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 **Relevant Version:** `v2.2`
 
 #### Changes on `mp_germantown` made by Steiner [03-2004]
-- [german_town] [german_town.pk3]
-- HUD map layout edited and overhauled to match the game scheme	\levelshots\layouts
-
-# two barrels at the blocking hidden object at b-spot could be placed with blockbox script
+- known as `german_town` `german_town.pk3`
+- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
 
 #### Changes on `mp_aim` made by Yannic [05-2004]
-- [mp_aim with basharena] [mp_aim.pk3]
-- HUD map layout default/unknown added (\levelshots\layouts)
+- known as `mp_aim with basharena` `mp_aim.pk3`
+- HUD map layout default/unknown added `\levelshots\layouts`
 
 #### Changes on `mp_blaoaim` by RL.GENERAL Z [08-2004]
-- [rl_blaoaim] [original filename missing]
-- HUD map layout default/unknown added (\levelshots\layouts)
-- changed a texture for COD BASE
+- known as `rl_blaoaim` `original filename missing`
+- HUD map layout default/unknown added `\levelshots\layouts`
+- changed a texture to promote CODBASE
 
 #### Changes on `mp_pgaim` by an unknown author [05-2004]
-- [pg_aim] [pg_aim.pk3]
-- HUD map layout default/unknown added (\levelshots\layouts)
+- known as `pg_aim` `pg_aim.pk3`
+- HUD map layout default/unknown added `\levelshots\layouts`
 - mp_pgaim_b british is crashing the game
 
 #### Changes on `mp_wawa` by wawa [07-2004]
-- [wawa_3Daim] [original filename missing]
-- HUD map layout default/unknown added (\levelshots\layouts)
-- changed a texture for COD BASE
+- known as `wawa_3Daim` `original filename missing`
+- HUD map layout default/unknown added `\levelshots\layouts`
+- changed a texture to promote CODBASE
 
 
 
