@@ -37,7 +37,7 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 - Promote teamwork and enhance the player experience with useful features
 - Ensure long-term sustainability and active development
 
-> [go to Document Stucture (Table Of Contents)](#document-navigation)
+> [go to Document Navigation](#document-navigation)
 ---------------------------------------------------------------------------------------------
 
 
@@ -462,12 +462,12 @@ You can use /rcon within these commands, tab also.
 - `railyard_fix_woodstation_spawn`: Spawn collision Axis `0`/`1`
 - `railyard_fix_woodstation_roof`: Southern roof blocked `0`/`1`
 - `railyard_fix_ruins_roof`: Controls ruins roof access:
-  - 0 = disabled
-  - 1 = medium access
-  - 2 = half blocked
-  - 3 = limited access
-  - 4 = full access
-  - 5 = fully blocked
+  - `0` = disabled
+  - `1` = medium access
+  - `2` = half blocked
+  - `3` = limited access
+  - `4` = full access
+  - `5` = fully blocked
 - `railyard_fix_ruins_stairs`: Improved stairs at A `0`/`1`
 - `railyard_fix_ruins_stone`: Adds collision to small stone (Axis) `0`/`1`
 - `railyard_block_southstation_roof`: Block ledge at Axis spawn `0`/`1`
@@ -508,6 +508,11 @@ WinMerge, VSCode, txt-Editor, WinRar, 7-Zip, Radiant, Photoshop, Gimp, Audacity
 
 ---------------------------------------------------------------------------------------------
 
-## Notes
+# Notes
+
+If anything is incorrect or unclear, please let me know. Thank you.
+
+Discord: #androhka
+Nick: reissue_
 
 ## END
