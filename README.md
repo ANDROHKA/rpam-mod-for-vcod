@@ -517,7 +517,6 @@ WinMerge, VSCode, txt-Editor, WinRar, 7-Zip, Radiant, Photoshop, Gimp, Audacity
 
 If anything is incorrect or unclear, please let me know. Thank you.
 
-Discord: #androhka
-Nick: reissue_
+Discord: REISSUE (discord: REISSUE, androhka#6116)
 
 ## END
