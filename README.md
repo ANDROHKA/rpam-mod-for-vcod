@@ -138,7 +138,7 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
   - Used ingame now as `mp_railyard_x` with ``/rcon map mp_railyard_x``
     - Added loading screen and information in `rpam_msg`
       - Axis spawn wooden panels are now solid
-      - ~~Raised the sky to prevent grenade disappearance~~
+      - ~~Raised the sky to prevent grenade disappearance~~ Nades do still disappear like before
       - S&D Tiger tanks remodeled to fix gaps (fix should apply to all tanks in the game)
       - Ruins faulty rock patched
       - Ruins stairs now use `+moveup` function when prone
