@@ -82,7 +82,12 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 # About rPAM Server Mod
 
 - TBA
-
+- TBA
+- TBA
+- TBA
+- TBA
+- TBA
+- TBA
 
 > [go up again](#about-rpam-server-mod) <|> [go next](#about-rpam-maps-overhaul-mod)
 ---------------------------------------------------------------------------------------------
@@ -98,7 +103,7 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 - Improve gameplay across all gametypes, minimize bugs and exploits
 - Compatibility with other mods, even without the rPAM Server Mod
 
-**Game Version:** `Call of Duty Multiplayer v1.5` / `Call of Duty Multiplayer v1.1 (Not testet)`
+> **Supported Game Versions:** `Call of Duty Multiplayer v1.5` & `Call of Duty Multiplayer v1.1 (Not testet yet)`
 
 [DL SPECIFIC LINK TBA]
 
