@@ -10,7 +10,7 @@ In 2024 I joined the Discord of CoDBASE, a dedicated community with players and 
 The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was created by Garetjax and concluded with version 1.08. It was widely used in competitive leagues such as ESL and ClanBase between the mid-2000s and early 2010s. PAM enabled Call of Duty 1 teams to compete in structured, competitive matches without the need for manual intervention or the use of in-game commands or RCON. Its automation and reliability made it the standard for high-level competitive play during that era.
 
 
-## Specific features or improvements of 
+## Specific features or improvements
 
 - Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) released on [ModDB (2015)](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111)
 - Retain and potentially expand the new features introduced in CoDBASE-PAM (2024)
@@ -350,7 +350,7 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 ---------------------------------------------------------------------------------------------
 
 ## Available Maps Overview Custom
-
+rTODO
 ``Version v2.3 onwards``
 
 | Map /rcon            | Creator                                              | Gametypes                 | Side |
@@ -363,7 +363,7 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 | mp_bellicourt_night  | Magnus Sandström & Roger Abrahamsson [04-2004]       | dm, tdm, sd, re, bel, hq  | A    |
 | mp_bonneville        | [CF] WillyWonka [07-2004] {out of bounds}            | dm, tdm, sd, bel          | A    |
 | mp_breakdown         | Unknown [01-2004]                                    | dm, tdm                   | A    |
-| mp_brecourt_winter   | -|OCG|-=gLiTcH= [08-2004]                            | dm, tdm, sd, re, bel, hq  | A    |
+| mp_brecourt_winter   | OCG=gLiTcH= [08-2004]                                | dm, tdm, sd, re, bel, hq  | A    |
 | mp_container         | openf1re [06-2004]                                   | tdm, sd                   | R    |
 | mp_dday7             | [AYM] Lt Jules [06-2004]                             | dm, tdm, sd, bel, hq      | A    |
 | mp_dufresne          | -HG- Baby Seal Clubber [08-2004]                     | dm, tdm, sd, re, bel, hq  | A    |
@@ -393,15 +393,16 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 | mp_westwall          | sm0k3r [12-2003]                                     | dm, tdm, sd, re, bel, hq  | B    |
 
 ``EXTRA``
-
-| mp_project_uboat       | adwamslayer [03-2005]                                  | dm, tdm, sd, re, bel, hq   | B    |
-| mp_radar               | Fangio [12-2003]                                       | dm, tdm, sd, re, bel       | A    |
-| mp_v2                  | -=\|TFO\|=- Kilroy [02-2004]                           | dm, tdm, sd, re, bel, hq   | A    |
-| mp_venicedock          | Unknown [05-2004]                                      | tdm                        | B    |
-| mp_windmills           | VegaObscura [05-2004]                                  | dm, tdm, sd, re, bel       | A    |
-| mp_hauptbahnhof        | Unknown [05-2004]                                      | dm, tdm                    | A    |
-| mp_hauptbahnhof_b      | Unknown [05-2004]                                      |                            | B    |
-| mp_hauptbahnhof_r      | Unknown [05-2004]                                      |                            | R    |
+| Map /rcon            | Creator                                              | Gametypes                 | Side |
+|----------------------|------------------------------------------------------|---------------------------|------|
+| mp_project_uboat     | adwamslayer [03-2005]                                | dm, tdm, sd, re, bel, hq   | B    |
+| mp_radar             | Fangio [12-2003]                                     | dm, tdm, sd, re, bel       | A    |
+| mp_v2                | -=\|TFO\|=- Kilroy [02-2004]                         | dm, tdm, sd, re, bel, hq   | A    |
+| mp_venicedock        | Unknown [05-2004]                                    | tdm                        | B    |
+| mp_windmills         | VegaObscura [05-2004]                                | dm, tdm, sd, re, bel       | A    |
+| mp_hauptbahnhof      | Unknown [05-2004]                                    | dm, tdm                    | A    |
+| mp_hauptbahnhof_b    | Unknown [05-2004]                                    |                            | B    |
+| mp_hauptbahnhof_r    | Unknown [05-2004]                                    |                            | R    |
 
 
 ## Server Cvar Overview
