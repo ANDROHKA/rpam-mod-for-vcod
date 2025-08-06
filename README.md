@@ -7,12 +7,13 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 > **rPAM Maps Version:** `v2.1`
 
 > **Adapted to latest CoDBASE PAM:** `actually no`
-> **Join CoDBASE Call of Duty 1 Community (vCoD / Europe):** `[Link](https://discord.gg/Zh8DP7c)`
 
-Its goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
+> **Join CoDBASE Call of Duty 1 Community (vCoD / Europe):** [Link](https://discord.gg/Zh8DP7c)
+
+This projects goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
 
 rPAM was initiated by me in 2015, after CyberGamer's edited PAM failed to fix bugs and instead introduced new ones. This led to the idea of creating a version that preserves the original while correcting its flaws.
-In 2024 I joined the Discord of CoDBASE, a dedicated community with players and teams playing still competitive 5v5 Search and Destroy, like back in the days.
+In 2024 I joined the Discord of CoDBASE, a dedicated community with players and teams playing still competitive 5v5 Search and Destroy, like back in the days. There the game is still buggy. I hope I can fix that now.
 
 The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was created by Garetjax and concluded with version 1.08. It was widely used in competitive leagues such as ESL and ClanBase between the mid-2000s and early 2010s. PAM enabled Call of Duty 1 teams to compete in structured, competitive matches without the need for manual intervention or the use of in-game commands or RCON. Its automation and reliability made it the standard for high-level competitive play during that era.
 
