@@ -2,11 +2,11 @@
 
 rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 
-**Actual Supported Game Versions:** ``Call of Duty Multiplayer v1.5``
+> **Supported Game Version:** `Call of Duty Multiplayer v1.5`  
+> **rPAM Server Mod Version:** `TBA`  
+> **rPAM Maps Version:** `v2.1`
 
-**Actual rPAM Server Mod Version:** ``TBA``
-
-**Actual rPAM Maps Version:** ``v2.1``
+> **Adapted to latest CoDBASE PAM:** `actually no`
 
 Its goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
 
@@ -20,12 +20,14 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
 
 - Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) released on [ModDB (2015)](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111)
 - Retain and potentially expand the new features introduced in CoDBASE-PAM (2024)
-- Integrate elements from [kikiii's eyza_pam_port_to_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)  
+- Adapt and integrate elements from [kikiii's eyza_pam_port_to_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)
+- Adapt and integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3)
+- Adapt and integrate elements from Anghlz PAM Mod
 - Fully integrate custom maps into the mod
 - Adapt custom maps to better reflect the game's authenticity and align with the PAM mod
-- Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
-
 > [go to Available Maps Overview](#available-maps-overview)
+- Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
+> [go to Texture Changes Overview](#texture-changes-overview)
 
 ## Goals
 
@@ -69,9 +71,10 @@ The original Call of Duty Project Ares Mod (PAM) for Call of Duty v1.5 was creat
    4.1 [Changes](#changelog-rpam-maps)  
    4.2 [Installation](#mod-installation)  
    4.3 [Cvars](#server-cvar-overview)
-5. TBA
+   4.4 [Texture Changes](#texture-changes-overview)
+5. [TBA](#tba-tba1)
 6. [Credits](#credits)
-
+7. [Programs Used](##programs-used)
 > [go up again](#document-navigation) <|> [go next](#about-rpam-server-mod)
 ---------------------------------------------------------------------------------------------
 
