@@ -7,6 +7,7 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 > **rPAM Maps Version:** `v2.1`
 
 > **Adapted to latest CoDBASE PAM:** `actually no`
+> **Join CoDBASE Call of Duty 1 Community (vCoD / Europe):** `[Link](https://discord.gg/Zh8DP7c)`
 
 Its goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
 
