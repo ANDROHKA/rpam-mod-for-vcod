@@ -2,6 +2,8 @@
 
 rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 
+**Actual Supported Game Versions:** ``Call of Duty Multiplayer v1.5`` **Actual rPAM Server Mod Version:** ``TBA`` **Actual rPAM Maps Version:** ``v2.1``
+
 Its goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
 
 rPAM was initiated by me in 2015, after CyberGamer's edited PAM failed to fix bugs and instead introduced new ones. This led to the idea of creating a version that preserves the original while correcting its flaws.
