@@ -3,16 +3,16 @@
 rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 
 > **Supported Game Version:** `Call of Duty Multiplayer v1.5`  
-> **rPAM Server Mod Version:** `TBA`  
-> **rPAM Maps Version:** `v2.1`
+> **Actual rPAM Server Mod Version:** `TBA`  
+> **Actual rPAM Maps Version:** `v2.2`
 
-> **Support this Project via PayPal:** `Optional Donation` `(€)` `Billing Address Required`    
+> **Support this Project via PayPal:**    
+> `Optional Donation` `(€)` `Billing Address Required`    
 [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
-> **Join the CoDBASE Call of Duty 1 Community**: `vCoD` `Call of Duty Multiplayer v1.5` `European playerbase`    
-> [Discord Invite](https://discord.gg/Zh8DP7c)
-
-> **Adapted to the latest CoDBASE PAM version:** `coming soon`
+> **Join the CoDBASE Call of Duty 1 Community**: `vCoD` `European playerbase`  
+> **Adapted to the latest CoDBASE PAM version:** `Coming soon` `Call of Duty Multiplayer v1.5`   
+> [Discord Invite](https://discord.gg/Zh8DP7c) 
 
 The goal of this project is to develop features requested by the playerbase while preserving core gameplay at the highest competitive standard established in recent years.
 
@@ -27,32 +27,32 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 <a href="github_images/ppa_png.png">
   <img src="github_images/ppa_png.png" width="1000"/>
 </a>  
-
+<br><br>
 
 > **Goals:**
-
-- Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) (2015)
-- Retain and expand features introduced in CoDBASE-PAM (2024)
-- Integrate elements from [kikiii's eyza_pam_port_to_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)
-- Integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3), including Punkbuster settings
-- Integrate content from Anghlz PAM Mod
-- Fully support and integrate custom maps
-
-- Improve authenticity of custom maps and align them with PAM gameplay
-> [Go to Available Maps Overview](#available-maps-overview)
-- Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
-> [Go to Texture Changelog (TBA)](#changelog-all-textures)
 
 - Provide server operators and players with a stable, easy-to-manage mod
 - Automate competitive play and reduce the need for manual intervention
 - Ensure authentic, fair, and balanced gameplay, inspired by the ClanBase era
 - Encourage teamwork and enhance the player experience
 - Ensure long-term support and sustainable development
+- Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) (2015)
+- Retain and expand features introduced in CoDBASE-PAM (2024)
+- Integrate elements from [kikiii's eyza_pam_port_to_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)
+- Integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3), including Punkbuster settings
+- Integrate elements from Anghlz PAM Mod
+- Fully support and integrate custom maps
+- Improve authenticity of custom maps and align them with PAM gameplay
+> [Go to Available Maps Overview](#available-maps-overview)
+- Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
+> [Go to Texture Changelog (TBA)](#changelog-all-textures)
+
+
 
 
 
 <br><br>
-> [go to Document Navigation](#document-navigation)
+> [go up again](#introduction) <|> [go next](#document-navigation)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -121,10 +121,15 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 # Support
    
-**You can support this project via PayPal - Thank you** 
+**You can support this project via PayPal - Thank you!** 
+> **Support this Project via PayPal:**    
+> `Optional Donation` `(€)` `Billing Address Required`    
+[PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
-> **Support this Project via PayPal:** `Optional Donation` `(€)` `Billing Address Required`    
-[PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)    
+**You can join Discord play and help our community to grow - Thank you!** 
+> **Join the CoDBASE Call of Duty 1 Community**: `vCoD` `European playerbase`  
+> **Adapted to the latest CoDBASE PAM version:** `Coming soon` `Call of Duty Multiplayer v1.5`   
+> [Discord Invite](https://discord.gg/Zh8DP7c)   
 
 
 
@@ -144,7 +149,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Revise and enhance ambient sounds, fog, and smoke effects on both classic and custom maps
 - Ensure optimal multiplayer performance and server stability
 - Improve gameplay across all gametypes, minimize bugs and exploits
-- Compatibility with other mods, even without the rPAM Server Mod
+- Ensure compatibility with other mods, even without the rPAM Server Mod
 
 > **Supported Game Versions:**   
 `Call of Duty Multiplayer v1.5`   
@@ -165,12 +170,17 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 > **Relevant to:** ``v2.2``
 
+#### Ambient
 - Normalized ambient sound effects for a more balanced audio volume `\soundaliases`
 - Added rPAM Overhaul Script to change ambient sounds, fog and smoke plumes for competitive play `\maps\mp`
+
+#### Textures
 - Refreshed all levelshots `\levelshots`
 - Updated HUD map layouts `\levelshots\layouts` of `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
 - Improved window glass transparency and frame details in `mp_neuville`
 - Adjusted metal rail fences in `mp_carentan` for better visibility
+
+#### Maps Added
 - Added `mp_germantown` from Steiner (former german_town), used ingame now as `mp_germantown` with ``/rcon map mp_germantown``
 
 - Added `Cod1 maps patch` from curiousfox 2025
@@ -193,10 +203,11 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 - Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
 
-- Added rPAM Overhaul Script for `mp_railyard` 2024/2025 by reissue
-  - **`| AUTO OFF |`** The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision
-    - The game does quickly overload by a huge amount of placed objects loaded by the script
-Added commands to tinker around with different settings of the ["rPAM Overhaul Script for mp_railyard"](#rpam-overhaul-for-mp_railyard)
+#### Added rPAM Overhaul Script For `mp_railyard`
+`2024/25 by reissue` `**| AUTO OFF |**`     
+The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision.
+- The game does quickly overload by a huge amount of placed objects loaded by the script.
+- I added commands to tinker around with different settings of the ["rPAM Overhaul Script For mp_railyard"](#rpam-overhaul-for-mp_railyard)
 <a href="github_images/railyard_overhaul_script.png">
   <img src="github_images/railyard_overhaul_script.png" width="500"/>
 </a>  
@@ -395,10 +406,10 @@ Adjusted tank positions – patch by *curiousfox*
 | mp_railyard    |                                  | dm, tdm, sd, re, bel, hq  | R    |
 | mp_rocket      |                                  | dm, tdm, sd, re, bel, hq  | B    |
 |                |                                  |                           |      |
-| mp_bocage      | patch                            | dm, tdm, sd, re, bel, hq  | A    |
-| mp_neuville    | patch                            | dm, tdm, sd, re, bel, hq  | A    |
-| mp_stalingrad  | patch                            | dm, tdm, sd, re, bel, hq  | R    |
-| mp_tigertown   | patch                            | dm, tdm, sd, re, bel, hq  | A    |
+| mp_bocage      | added by offical patch           | dm, tdm, sd, re, bel, hq  | A    |
+| mp_neuville    | added by offical patch           | dm, tdm, sd, re, bel, hq  | A    |
+| mp_stalingrad  | added by offical patch           | dm, tdm, sd, re, bel, hq  | R    |
+| mp_tigertown   | added by offical patch           | dm, tdm, sd, re, bel, hq  | A    |
 |                |                                  |                           |      |
 | mp_germantown  | Steiner [03-2004]                | dm, tdm, sd,     bel      | A    |
 | mp_dawnville_x | IW + curiousfox [03-2025]        | dm, tdm, sd, re, bel, hq  | A    |
@@ -515,8 +526,12 @@ Adjusted tank positions – patch by *curiousfox*
 
 # Maps Not Listed In Game Menu
 
-**Relevant to:** ``v2.4 onwards``
-- TBA
+**Relevant to:** ``v2.2 onwards``
+
+| Map /rcon      | Creator                          | Gametypes                 | Side |
+|----------------|----------------------------------|---------------------------|------|
+| mp_chateau     | Infinity Ward                    | dm, tdm,     re, bel, hq  | B    |
+| mp_ship        | Infinity Ward                    | dm, tdm,     re, bel, hq  | B    |
 
 
 <br><br>
