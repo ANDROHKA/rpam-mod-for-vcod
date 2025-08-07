@@ -57,8 +57,6 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 # Document Navigation
 
-# Document Navigation
-
 **1.** [**About this Project**](#introduction)  
 **2.** [**Download**](#download)  
 **3.** [**Mod Installation**](#mod-installation)  
@@ -489,9 +487,9 @@ Adjusted tank positions – patch by *curiousfox*
 | mp_nuenen            | [AYM] Lt Jules                                       | dm, tdm, sd,     bel, hq  | A    |
 | mp_logging_mill *b?  | Dex [06-2007]                                        | dm, tdm, sd, re, bel      | R    |
 | mp_offensive *b?     | Old-Crow & Caskou [02-2004]                          | dm, tdm, sd, re, bel, hq  | A    |
-~~| mp_project_uboat     | adwamslayer [03-2005]                                | dm, tdm, sd, re, bel, hq  | B    |~~
-~~| mp_radar             | Fangio [12-2003]                                     | dm, tdm, sd, re, bel      | A    |~~
-~~| mp_v2                | -=\|TFO\|=- Kilroy [02-2004]                         | dm, tdm, sd, re, bel, hq  | A    |~~
+| ~~mp_project_uboat~~     | adwamslayer [03-2005]                                | dm, tdm, sd, re, bel, hq  | B    |
+| ~~mp_radar~~             | Fangio [12-2003]                                     | dm, tdm, sd, re, bel      | A    |
+| ~~mp_v2~~                | -=\|TFO\|=- Kilroy [02-2004]                         | dm, tdm, sd, re, bel, hq  | A    |
 | mp_redoktober        | Drecks, Lex & Innocent Bystander [09-2004]           | dm, tdm, sd,     bel, hq  | R    |
 | mp_valley_day        | VegaObscura [03-2004]                                | dm, tdm, sd,     bel      | A    |
 | mp_valley_night      | VegaObscura [03-2004]                                | dm, tdm, sd,     bel      | A    |
@@ -509,28 +507,72 @@ Adjusted tank positions – patch by *curiousfox*
 **Relevant to:** ``v2.4 onwards``
 ``TBA``
 
-> [go up again (Nav.)](#document-navigation) <|> [go up again](#maps-not-listed-in-game-menu) <|> [go next](#about-rpam-server-mo)
----------------------------------------------------------------------------------------------
 
+<br><br>
+> [go up again (Nav.)](#document-navigation) <|> [go up again](#maps-not-listed-in-game-menu) <|> [go next](#about-rpam-server-mod)
+---------------------------------------------------------------------------------------------
+<br><br>
 
 
 # About rPAM Server Mod
 
 - TBA
-- TBA
-- TBA
-- TBA
-- TBA
-- TBA
-- TBA
 
-> [go up again](#about-rpam-server-mod) <|> [go next](#about-rpam-maps-overhaul-mod)
+
+
+
+<br><br>
+> [go up again](#about-rpam-server-mod) <|> [go next](#svr-rpam-changes)
 ---------------------------------------------------------------------------------------------
+<br><br>
+
+
+# SVR rPAM Changes
+
+- TBA
+
+
+<br><br>
+> [go up again](#svr-rpam-changes) <|> [go next](#svr-rpam-changelog)
+---------------------------------------------------------------------------------------------
+<br><br>
+
+
+# SVR rPAM Changelog
+
+- TBA
+
+
+<br><br>
+> [go up again](#svr-rpam-changelog) <|> [go next](#svr-rpam-cvars)
+---------------------------------------------------------------------------------------------
+<br><br>
+
+
+# SVR rPAM Cvars
+
+- TBA
+
+
+<br><br>
+> [go up again](#svr-rpam-cvars) <|> [go next](#host-svr-rpam)
+---------------------------------------------------------------------------------------------
+<br><br>
+
+
+# Host SVR rPAM
+
+- TBA
+
+
+<br><br>
+> [go up again](#host-svr-rpam) <|> [go next](#server-cvar-overview-rpam-maps-overhaul)
+---------------------------------------------------------------------------------------------
+<br><br>
 
 
 
-
-## Server Cvar Overview rPAM Maps OVerhaul
+# Server Cvar Overview rPAM Maps Overhaul
 
 You can use `/rcon` within these commands, tab also.
 
@@ -603,31 +645,33 @@ You can use `/rcon` within these commands, tab also.
 
 
 
-
-> [go up again (Nav.)](#document-navigation) <|> [go next (Credits)](#credits)
+<br><br>
+> [go up again (Nav.)](#document-navigation) <|> [go to Credits](#credits) <|> ( go to Installation)](#maps-not-listed-in-game-menu)
 ---------------------------------------------------------------------------------------------
-
+<br><br>
 
 
 
 # Mod Installation
+
+**Relevant to:** ``v2.2 b1``
 
 ***Server mod folder:*** `\Call of Duty\_rPAMv115*`
 
 ***Client mod folder:*** `\Call of Duty\_rPAMv115*`
 
 ***Mod files inside `\_rPAMv115*`:***
-_run_rPAM.cmd                             // Start the mod localy on your pc, try it out
-_run_rPAM_debug.cmd                       // Start the mod localy on your pc, try it out, get debug informations
-_server_rpam.cfg                          // For server hosts
-description.txt                           // Contains description for the ingame mod menu
-z_svr_rPAMv115x_escamaps_v22_b1.pk3       // For server hosts
-zzzzz_rPAMv115maps_classics_base.pk3
-zzzzz_rPAMv115maps_classics_v17.pk3
-zzzzz_rPAMv115maps_curiousfox.pk3
-zzzzz_rPAMv115maps_curiousfox_v3.pk3
-zzzzz_rPAMv115x_aim_v4
-zzzzz_rPAMv115x_escamaps_v22_b1.pk3
+`_run_rPAM.cmd`                            // Start the mod localy on your pc, try it out
+`_run_rPAM_debug.cmd`                      // Start the mod localy on your pc, try it out, get debug informations
+`_server_rpam.cfg`                         // For server hosts
+`description.txt`                          // Contains description for the ingame mod menu
+`z_svr_rPAMv115x_escamaps_v22_b1.pk3`      // For server hosts
+`zzzzz_rPAMv115maps_classics_base.pk3`
+`zzzzz_rPAMv115maps_classics_v17.pk3`
+`zzzzz_rPAMv115maps_curiousfox.pk3`
+`zzzzz_rPAMv115maps_curiousfox_v3.pk3`
+`zzzzz_rPAMv115x_aim_v4`
+`zzzzz_rPAMv115x_escamaps_v22_b1.pk3`
 
 ### Install Client:
 - Go to `\Call of Duty\_rPAMv115``*` and run `_run_rPAM.cmd` to launch the game directly.
@@ -643,17 +687,18 @@ zzzzz_rPAMv115x_escamaps_v22_b1.pk3
 - Players: It is recommended you do clear you `main` folder
    - <a href="github_images/cleared_main.png"><img src="github_images/cleared_main.png"/> </a>
 - Server Hosts: New players can download most of the required files directly by connecting to the game server by adding the following commands to the server config
-seta sv_allowDownload "1"
-seta sv_wwwBaseURL "http://167.235.243.217/fastdl/cod1"` // Credits: bandiii92
-seta sv_wwwDlDisconnected "1"
-seta sv_wwwDownload "1"
+`seta sv_allowDownload "1"`
+`seta sv_wwwBaseURL "http://167.235.243.217/fastdl/cod1"` // Credits: bandiii92`
+`seta sv_wwwDlDisconnected "1"`
+`seta sv_wwwDownload "1"`
 
 
 
 
-> [go up again](#document-navigation) <|> [go next](#mod-intallation)
+<br><br>
+> [go up again](#document-navigation) <|> [go next](#mod-installation)
 ---------------------------------------------------------------------------------------------
-
+<br><br>
 
 
 
@@ -675,16 +720,25 @@ seta sv_wwwDownload "1"
 - **reissue** - rPAM & Origin of Honor Project
 
 
+
+<br><br>
 > [go up again](#document-navigation)
 ---------------------------------------------------------------------------------------------
+<br><br>
+
+
 
 # Programs Used
 - WinMerge, VSCode, txt-Editor, WinRar, 7-Zip, CoD1 Radiant, Photoshop, Gimp, .dds-plugins, Audacity, Github, XNView
 - CoD BSP Editor by kartjom: https://github.com/kartjom/CoD-BSP-Editor
 
 
+
+
+<br><br>
 > [go up again](#document-navigation)
 ---------------------------------------------------------------------------------------------
+<br><br>
 
 
 
@@ -695,8 +749,12 @@ If anything is incorrect or unclear, please let me know. Thank you.
 Discord: REISSUE (discord: REISSUE, androhka#6116)
 
 
+
+
+<br><br>
 > [go up again](#document-navigation)
 ---------------------------------------------------------------------------------------------
+<br><br>
 
 
 
@@ -704,7 +762,11 @@ Discord: REISSUE (discord: REISSUE, androhka#6116)
 - TBA
 
 
+
+
+<br><br>
 > [go up again](#document-navigation)
 ---------------------------------------------------------------------------------------------
+<br><br>
 
 ## END
