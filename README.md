@@ -24,9 +24,7 @@ In 2024, I joined the CoDBASE Discord — a dedicated community still playing co
 
 The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax and finalized with version 1.08, laid the groundwork for competitive play in the game's early days. Widely adopted in leagues such as ESL and ClanBase from the mid-2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability, it quickly became the standard for high-level competitive play.
 
-
-<br><br>
-## Goals
+> **Goals:**
 
 - Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) (2015)
 - Retain and expand features introduced in CoDBASE-PAM (2024)
@@ -34,6 +32,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3), including Punkbuster settings
 - Integrate content from Anghlz PAM Mod
 - Fully support and integrate custom maps
+
 - Improve authenticity of custom maps and align them with PAM gameplay
 > [Go to Available Maps Overview](#available-maps-overview)
 - Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
@@ -47,7 +46,6 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 
 
-
 <br><br>
 > [go to Document Navigation](#document-navigation)
 ---------------------------------------------------------------------------------------------
@@ -58,6 +56,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 # Document Navigation
 
 **1.** [**About this Project**](#introduction)  
+**2.** [**Support this Project**](#support)  
 **2.** [**Download**](#download)  
 **3.** [**Mod Installation**](#mod-installation)  
 
@@ -68,7 +67,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 &nbsp;&nbsp;&nbsp;&nbsp;**4.4** [**Available Maps**](#available-maps-overview)  
 &nbsp;&nbsp;&nbsp;&nbsp;**4.5** [**Available Competitive Custom Maps**](#available-competitive-custom-maps)  
 &nbsp;&nbsp;&nbsp;&nbsp;**4.6** [**Maps Not Listed in Game Menu**](#maps-not-listed-in-game-menu)  
-&nbsp;&nbsp;&nbsp;&nbsp;**4.7** [**Cvars**](#server-cvar-overview)  
+&nbsp;&nbsp;&nbsp;&nbsp;**4.7** [**Cvar Overview**](#server-cvar-overview-rpam-maps-overhaul)  
 
 **5.** [**About rPAM Server Mod**](#about-rpam-server-mod)  
 &nbsp;&nbsp;&nbsp;&nbsp;**5.1** [**Changes**](#svr-rpam-changes)  
@@ -78,34 +77,49 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 **6.** [**TBA Gameplay Changes**](#tba-tba1)  
 &nbsp;&nbsp;&nbsp;&nbsp;**6.1** [**TBA Changes for Players**](#tba-tba2)  
-&nbsp;&nbsp;&nbsp;&nbsp;**6.2** [**TBA Texture Changes Overview**](#texture-changes-overview)
+&nbsp;&nbsp;&nbsp;&nbsp;**6.2** [**TBA Texture Changes Overview**](#changelog-all-textures)
 
 **7.** [**Credits**](#credits)  
 **8.** [**Programs Used**](#programs-used)  
 **9.** [**Notes**](#notes)  
 
 
-
+#introduction
+#document-navigation
+#support
+#download
+#mod-installation
+#about-rpam-maps-overhaul-mod
+#main-changes-rpam-maps-overhaul-mod
+#changelog-rpam-maps-overhaul
+#changelog-rpam-maps-custom-detailed
+#available-maps-overview
+#available-competitive-custom-maps
+#maps-not-listed-in-game-menu
+#about-rpam-server-mod
+#svr-rpam-changes
+#svr-rpam-changelog
+#svr-rpam-cvars
+#host-svr-rpam
+#server-cvar-overview-rpam-maps-overhaul
+#credits
+#programs-used
+#notes
+#changelog-all-textures
 
 <br><br>
-> [go up again (Document Navigation)](#document-navigation) <|> > [go next](#download)
+> [go up again](#document-navigation) <|> > [go next](#support)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
 
 
-# Download    
+# Support
+   
+**You can support this project via PayPal - Thank you** 
 
-> **Supported Game Version:** `Call of Duty Multiplayer v1.5`  
-> **rPAM Server Mod Version:** `TBA`  
-> **rPAM Maps Version:** `v2.1`
-
-- #### Actual version
-	- 202t/0t/tt - <b><a href="about:blank">LINK-TBA1.zip</a></b>
-
-- #### Version Tree
-	- 202t/0t/tt - <b><a href="about:blank">LINK-TBA1.zip</a></b> (actual)
-  - 202t/0t/tt - <b><a href="about:blank">LINK-TBA0.zip</a></b> (previous version)
+> **Support this Project via PayPal:** `Optional Donation` `(€)` `Billing Address Required`    
+[PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)    
 
 
 
@@ -116,9 +130,10 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 
 
+
 # About rPAM Maps Overhaul Mod
 
-## Goal:
+> Goals:
 
 - Adaptations of all maps to rPAM and competitive play
 - Revise and enhance ambient sounds, fog, and smoke effects on both classic and custom maps
@@ -126,11 +141,11 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Improve gameplay across all gametypes, minimize bugs and exploits
 - Compatibility with other mods, even without the rPAM Server Mod
 
-> **Supported Game Versions:**
-`Call of Duty Multiplayer v1.5`
+> **Supported Game Versions:**   
+`Call of Duty Multiplayer v1.5`   
 `Call of Duty Multiplayer v1.1 (Not testet yet)`
 
-> [go up to Download](#download) 
+> [Download Acutal Version](#download) 
 
 
 
@@ -143,8 +158,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 ## Main Changes rPAM Maps Overhaul Mod
 
-**Relevant to:** ``v2.2``
-
+> **Relevant to:** ``v2.2``
 
 - Normalized ambient sound effects for a more balanced audio volume `\soundaliases`
 - Added rPAM Overhaul Script to change ambient sounds, fog and smoke plumes for competitive play `\maps\mp`
@@ -193,8 +207,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 ## Changelog rPAM Maps Overhaul
 
-### v2.2 (Actual Development Process)
-
+### `v2.2` (Latest)
 - Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
 
 `ruins roof`: filled a missing texture and a pixel-spot with bricks  
@@ -211,8 +224,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Overhauled `.pk3` file name structure  
 - Created this `README.md` in hopes it helps structuring the project  
 
-### v2.1 (Latest)
-
+### `v2.1`
 Moved object `bigwoodgib` on map `mp_railyard_x` at position `ruins roof` to blend into the surrounding structure  
 <a href="github_images/railyard_axis_roof3.png">
   <img src="github_images/railyard_axis_roof2.png" width="500"/>
@@ -228,8 +240,7 @@ Adjusted tank positions – patch by *curiousfox*
   <img src="github_images/railyard_tanks.png" width="500"/>
 </a>  
 
-### v2.0
-
+### `v2.0`
 - Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3  
 - Edited `\textures\austria\transparents\XXXXXXXXXXXXXXXXXXXX` – DXT3  
   > ⚠️ Second fence texture still needs a fix!  
@@ -249,59 +260,48 @@ Adjusted tank positions – patch by *curiousfox*
     <img src="github_images/neuville_windows.png" width="500"/>
   </a>  
 
-### v1.9
-
+### `v1.9`
 - Completely overhauled ambient script (`soundaliases.csv`)  
 - Reworked message center  
 - Fixed compatibility issues with `.arena` files  
 - Added aim maps to the mod  
 
-### v1.8
-
+### `v1.8`
 - Modified `.arena` files to prevent original map duplication  
 - Normalized ambient audio (`\soundaliases\*.csv`)  
 - Updated levelshots and layout images  
 - Edited HUD map layouts:
-
   - `mp_harbor`
     - Switched A and B to match actual layout  
     - Adjusted midboxes  
-
   - `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
     - Slightly enlarged & applied minor corrections  
-
   - `mp_germantown`
     - Added callouts and highlighted doorways  
 
-### v1.7
-
+### `v1.7`
 - Integrated all elements into working condition  
 - Started adding and adapting more custom maps using the evolving script layout  
 
-### v1.6
-
+### `v1.6`
 - Added `Cod1 maps patch` by *curiousfox* (2025)  
 
-### v1.5
-
+### `v1.5`
 - Added maps and files for version 1.1 of the game  
 - Included old aim maps with refreshed loading screens  
   - HUD map layout: default/unknown added (`\levelshots\layouts`)  
   - Changed texture for COD BASE on `wawa3Daim`  
 - Added `german_town` from *Steiner* to the classic maps overhaul package  
 
-### v1.4
-
+### `v1.4`
 - Updated several levelshots  
 - Created a mod package without the server mod included  
 
-### v1.3
-
+### `v1.3`
 - Experimented with fog effects and created related scripts  
 - Updated ambient sound mod  
 
-### v1.2
-
+### `v1.2`
 - Collected all previously modded files  
 - Established ambient sound mod based on rPAM v1.11  
 
@@ -317,22 +317,7 @@ Adjusted tank positions – patch by *curiousfox*
 
 ## Changelog rPAM Maps Custom Detailed
 
-
-**Relevant to Version:** ``v2.3`` onwards
-
-#### Changes on `x` made by x [x]
-- known as `x` `x`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-
-#### Changes on `x` made by x [x]
-- known as `x` `x`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-
-#### Changes on `x` made by x [x]
-- known as `x` `x`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-
-**Relevant Version:** `v2.2`
+> **Relevant Version:** `v2.2`
 
 #### Changes on `mp_germantown` made by Steiner [03-2004]
 - known as `german_town` `german_town.pk3`
@@ -357,6 +342,21 @@ Adjusted tank positions – patch by *curiousfox*
 - HUD map layout default/unknown added `\levelshots\layouts`
 - changed a texture to promote CODBASE
 
+> **Relevant to Version:** ``v2.3`` onwards
+
+#### Changes on `x` made by x [x]
+- known as `x` `x`
+- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
+
+#### Changes on `x` made by x [x]
+- known as `x` `x`
+- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
+
+#### Changes on `x` made by x [x]
+- known as `x` `x`
+- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
+
+
 
 
 <br><br>
@@ -366,9 +366,10 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 
+
 ## Available Maps Overview
 
-**Relevant to:** ``v2.2``
+> **Relevant to:** ``v2.2``
 
 | Map /rcon      | Creator                          | Gametypes                 | Side |
 |----------------|----------------------------------|---------------------------|------|
@@ -410,7 +411,7 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 <br><br>
-> [go up again (Nav.)](#document-navigation) <|> [go next](#available-competitive-custom-maps)
+> [go up again (Document Navigation)](#document-navigation) <|> [go next](#available-competitive-custom-maps)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -418,7 +419,7 @@ Adjusted tank positions – patch by *curiousfox*
 
 ## Available Competitive Custom Maps
 
-**Relevant to:** ``v2.3 onwards``
+> **Relevant to:** ``v2.3 onwards``
 
 | Map /rcon            | Creator                                              | Gametypes                 | Side |
 |----------------------|------------------------------------------------------|---------------------------|------|
@@ -430,7 +431,7 @@ Adjusted tank positions – patch by *curiousfox*
 
 ## All Custom Maps Overview Categorized
 
-**Relevant to:** ``v2.3 onwards``
+> **Relevant to:** ``v2.3 onwards``
 
 > **Fast Deathmatch/Team-Deathmatch**
 
@@ -495,7 +496,8 @@ Adjusted tank positions – patch by *curiousfox*
 | mp_windmills         | VegaObscura [05-2004]                                | dm, tdm, sd, re, bel      | A    |
 
 
-> [go up again (Nav.)](#document-navigation) <|> [go next (Credits)](#maps-not-listed-in-game-menu)
+> [go up again (Document Navigation)](#document-navigation) <|>
+> [go up again](#available-competitive-custom-maps) <|> [go next (Credits)](#maps-not-listed-in-game-menu)
 ---------------------------------------------------------------------------------------------
 
 
@@ -503,17 +505,17 @@ Adjusted tank positions – patch by *curiousfox*
 # Maps Not Listed In Game Menu
 
 **Relevant to:** ``v2.4 onwards``
-``TBA``
+- TBA
 
 
 <br><br>
-> [go up again (Nav.)](#document-navigation) <|> [go up again](#maps-not-listed-in-game-menu) <|> [go next](#about-rpam-server-mod)
+> [go up again (Document Navigation)](#document-navigation) <|>
+> [go up again](#maps-not-listed-in-game-menu) <|> [go next](#about-rpam-server-mod)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
 
 # About rPAM Server Mod
-
 - TBA
 
 
@@ -526,7 +528,6 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 # SVR rPAM Changes
-
 - TBA
 
 
@@ -537,7 +538,6 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 # SVR rPAM Changelog
-
 - TBA
 
 
@@ -548,7 +548,6 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 # SVR rPAM Cvars
-
 - TBA
 
 
@@ -559,12 +558,11 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 # Host SVR rPAM
-
 - TBA
 
 
 <br><br>
-> [go up again](#host-svr-rpam) <|> [go next](#server-cvar-overview-rpam-maps-overhaul)
+> [go up again](#host-svr-rpam) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#server-cvar-overview-rpam-maps-overhaul)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -572,7 +570,8 @@ Adjusted tank positions – patch by *curiousfox*
 
 # Server Cvar Overview rPAM Maps Overhaul
 
-You can use `/rcon` within these commands, tab also.
+- You can use `/rcon` within these commands
+- You can use tab button to make complete commands
 
 #### Ingame Mod Info Messages
 - `rpam_msg` Displays actual settings when a maps starts
@@ -616,7 +615,7 @@ You can use `/rcon` within these commands, tab also.
 - `railyard_fix_bombspots`: Fix bomb A/B gaps for S&D `0`/`1`
 - `railyard_fix_woodstation_ruins`: Collision at Axis ruins `0`/`1`
 - `railyard_fix_woodstation_spawn`: Spawn collision Axis `0`/`1`
-- `railyard_fix_woodstation_roof`: Southern roof blocked `0`/`1`
+- `railyard_fix_woodstation_roof`: Southern roof blocked `0`/`1`   
 - `railyard_fix_ruins_roof`: Controls ruins roof access:
   - `0` = disabled
   - `1` = medium access
@@ -644,7 +643,30 @@ You can use `/rcon` within these commands, tab also.
 
 
 <br><br>
-> [go up again (Nav.)](#document-navigation) <|> [go to Credits](#credits) <|> ( go to Installation)](#maps-not-listed-in-game-menu)
+> [go up again](#server-cvar-overview-rpam-maps-overhaul) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#download)
+---------------------------------------------------------------------------------------------
+<br><br>
+
+
+
+
+# Download    
+
+> **Supported Game Version:** `Call of Duty Multiplayer v1.5`  
+> **rPAM Server Mod Version:** `TBA`  
+> **rPAM Maps Version:** `v2.1`
+
+- #### Actual version
+	- 202t/0t/tt - <b><a href="about:blank">LINK-TBA1.zip</a></b>
+
+- #### Version Tree
+	- 202t/0t/tt - <b><a href="about:blank">LINK-TBA1.zip</a></b> (actual)
+  - 202t/0t/tt - <b><a href="about:blank">LINK-TBA0.zip</a></b> (previous version)
+
+
+
+<br><br>
+> [go up again](#download) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#mod-installation)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -659,17 +681,19 @@ You can use `/rcon` within these commands, tab also.
 ***Client mod folder:*** `\Call of Duty\_rPAMv115*`
 
 ***Mod files inside `\_rPAMv115*`:***
-`_run_rPAM.cmd`                            // Start the mod localy on your pc, try it out
-`_run_rPAM_debug.cmd`                      // Start the mod localy on your pc, try it out, get debug informations
-`_server_rpam.cfg`                         // For server hosts
-`description.txt`                          // Contains description for the ingame mod menu
-`z_svr_rPAMv115x_escamaps_v22_b1.pk3`      // For server hosts
-`zzzzz_rPAMv115maps_classics_base.pk3`
-`zzzzz_rPAMv115maps_classics_v17.pk3`
-`zzzzz_rPAMv115maps_curiousfox.pk3`
-`zzzzz_rPAMv115maps_curiousfox_v3.pk3`
-`zzzzz_rPAMv115x_aim_v4`
-`zzzzz_rPAMv115x_escamaps_v22_b1.pk3`
+- `_run_rPAM.cmd`                            // Start the mod localy on your pc, try it out
+- `_run_rPAM_debug.cmd`                      // Start the mod localy on your pc, try it out, get debug informations
+- `_server_rpam.cfg`                         // For server hosts
+- `description.txt`                          // Contains description for the ingame mod menu
+- `z_svr_rPAMv115x_escamaps_v22_b1.pk3`      // For server hosts
+- `zzzzz_rPAMv115maps_classics_base.pk3`
+- `zzzzz_rPAMv115maps_classics_v17.pk3`
+- `zzzzz_rPAMv115maps_curiousfox.pk3`
+- `zzzzz_rPAMv115maps_curiousfox_v3.pk3`
+- `zzzzz_rPAMv115x_aim_v4`
+- `zzzzz_rPAMv115x_escamaps_v22_b1.pk3`
+
+
 
 ### Install Client:
 - Go to `\Call of Duty\_rPAMv115``*` and run `_run_rPAM.cmd` to launch the game directly.
@@ -694,9 +718,10 @@ You can use `/rcon` within these commands, tab also.
 
 
 <br><br>
-> [go up again](#document-navigation) <|> [go next](#mod-installation)
+>  [go up again](#mod-installation) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#credits)
 ---------------------------------------------------------------------------------------------
 <br><br>
+
 
 
 
@@ -720,7 +745,7 @@ You can use `/rcon` within these commands, tab also.
 
 
 <br><br>
-> [go up again](#document-navigation)
+> [go up again](#credits) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#programs-usedd)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -734,7 +759,7 @@ You can use `/rcon` within these commands, tab also.
 
 
 <br><br>
-> [go up again](#document-navigation)
+> [go up again](#programs-used) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#notes)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -750,7 +775,7 @@ Discord: REISSUE (discord: REISSUE, androhka#6116)
 
 
 <br><br>
-> [go up again](#document-navigation)
+> [go up again](#notes) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#changelog-all-textures)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -763,7 +788,7 @@ Discord: REISSUE (discord: REISSUE, androhka#6116)
 
 
 <br><br>
-> [go up again](#document-navigation)
+> [go up again](#changelog-all-texture) <|> [go up again (Document Navigation)](#document-navigation)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
