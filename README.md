@@ -6,7 +6,7 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 > **rPAM Server Mod Version:** `TBA`  
 > **rPAM Maps Version:** `v2.1`
 
-> **Adapted to latest CoDBASE PAM:** `actually not yet`
+> **Adapted to latest used CoDBASE PAM:** `actually not yet`
 
 > **Support this Project `PayPal` `€` `Billing Addr.` :** [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
