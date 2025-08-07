@@ -163,23 +163,18 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Normalized ambient sound effects for a more balanced audio volume `\soundaliases`
 - Added rPAM Overhaul Script to change ambient sounds, fog and smoke plumes for competitive play `\maps\mp`
 - Refreshed all levelshots `\levelshots`
-- Updated HUD map layouts `\levelshots\layouts`
-  - `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
-
+- Updated HUD map layouts `\levelshots\layouts` of `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
 - Improved window glass transparency and frame details in `mp_neuville`
-- Adjusted metal rail fences in `mp_carentan` for better visibility and clearer lines of sight
-
-- Added `mp_germantown` from Steiner (former german_town)
-    - Used ingame as `mp_germantown` with ``/rcon map mp_germantown``
+- Adjusted metal rail fences in `mp_carentan` for better visibility
+- Added `mp_germantown` from Steiner (former german_town), used ingame now as `mp_germantown` with ``/rcon map mp_germantown``
 
 - Added `Cod1 maps patch` from curiousfox 2025
-  - Used ingame now as `mp_dawnville_x` with ``/rcon map mp_dawnville_x``
-    - Added loading screen and informations in `rpam_msg`
+  - Adds a updated ``mp_dawnville``, used ingame as `mp_dawnville_x` now with ``/rcon map mp_dawnville_x``
       - Axis spawn wall no longer affects player movement
       - Certain windows blocked to prevent prone-bug abuse
       - Graveyard bush wall is no longer see-through
       - Bombsite tanks remodeled for accurate hitboxes (fix should apply to all tanks in the game)
-  - Used ingame now as `mp_railyard_x` with ``/rcon map mp_railyard_x``
+  - Adds a updated ``mp_railyard``, used ingame as  `mp_railyard_x` now with ``/rcon map mp_railyard_x``
     - Added loading screen and information in `rpam_msg`
       - Axis spawn wooden panels are now solid
       - ~~Raised the sky to prevent grenade disappearance~~ Nades still do disappear like before
@@ -188,15 +183,18 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
       - Ruins stairs now use `+moveup` function when prone
       - Upper Axis ruins roof no longer see-through
         - Credits to Expertiz's earlier fix with the big woodgib
-        - `v2` blend in of the added object from curiousfox
-        - `v3` added more objects for broken roof and wall textures
+        - `v2` now does blend in the added object from curiousfox
+        - `v3` now adds more objects for broken roof and broken wall textures
 
 - Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
 
 - Added rPAM Overhaul Script for `mp_railyard` 2024/2025 by reissue
   - **`| AUTO OFF |`** The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision
     - The game does quickly overload by a huge amount of placed objects loaded by the script
-    - Added commands to tinker around with different settings of the ["rPAM Overhaul Script for mp_railyard"](#rpam-overhaul-for-mp_railyard)
+Added commands to tinker around with different settings of the ["rPAM Overhaul Script for mp_railyard"](#rpam-overhaul-for-mp_railyard)
+<a href="github_images/railyard_overhaul_script.png">
+  <img src="github_images/railyard_overhaul_script.png" width="500"/>
+</a>  
 
 
 <br><br>
@@ -760,8 +758,12 @@ Adjusted tank positions – patch by *curiousfox*
 
 
 # Programs Used
-- WinMerge, VSCode, txt-Editor, WinRar, 7-Zip, CoD1 Radiant, Photoshop, Gimp, .dds-plugins, Audacity, Github, XNView
+- WinMerge, VSCode, txt-Editor, WinRar, 7-Zip, Github, XNView
+- CoD1 Radiant
+- DXT Viewer, Photoshop, Gimp, .dds-plugins
+- Audacity
 - CoD BSP Editor by kartjom: https://github.com/kartjom/CoD-BSP-Editor
+
 
 
 
