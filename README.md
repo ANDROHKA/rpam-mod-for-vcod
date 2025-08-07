@@ -6,11 +6,11 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 > **rPAM Server Mod Version:** `TBA`  
 > **rPAM Maps Version:** `v2.1`
 
-> **Adapted to latest used CoDBASE PAM:** `actually not yet`
-
 > **Support this Project `PayPal` `€` `Billing Addr.` :** [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
 > **Join CoDBASE Call of Duty 1 Community `vCoD` `Call of Duty Multiplayer v1.5` `Europe` :** [Discord Invite Link](https://discord.gg/Zh8DP7c)
+
+> **Adapted to latest used CoDBASE PAM:** `actually not yet`
 
 This projects goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
 
@@ -26,13 +26,13 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) released on [ModDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111) (2015)
 - Retain and potentially expand the new features introduced in CoDBASE-PAM (2024)
 - Adapt and integrate elements from [kikiii's eyza_pam_port_to_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)
-- Adapt and integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3)
+- Adapt and integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3) and adapt Punkbuster-Settings
 - Adapt and integrate elements from Anghlz PAM Mod
 - Fully integrate custom maps into the mod
 - Adapt custom maps to better reflect the game's authenticity and align with the PAM mod
 > [go to Available Maps Overview](#available-maps-overview)
 - Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
-> [go to Texture Changes Overview](#texture-changes-overview)
+> [go to Changelog](#changelog-rpam-maps)
 
 ## Goals
 
@@ -68,20 +68,23 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 # Document Navigation
 
-1. [About this Project](#introduction)  
-2. [Download](#download)  
-3. [About rPAM Server Mod](#about-rpam-server-mod)  
-   3.1 [Changes](#about-rpam-server-mod)  
-4. [About rPAM Maps Overhaul Mod](#about-rpam-maps-overhaul-mod)  
-   4.1 [Changes](#changelog-rpam-maps)  
-   4.2 [Installation](#mod-installation)  
-   4.3 [Cvars](#server-cvar-overview)
-   4.4 [Texture Changes](#texture-changes-overview)
-5. [TBA](#tba-tba1)
-6. [Credits](#credits)
-7. [Programs Used](##programs-used)
+1. [**About this Project**](#introduction)  
+2. [**Download**](#download)  
+3. [**About rPAM Server Mod**](#about-rpam-server-mod)  
+   3.1 [**Changes**](#about-rpam-server-mod)
+4. [**About rPAM Maps Overhaul Mod**](#about-rpam-maps-overhaul-mod)  
+   4.1 [**Changes**](#changelog-rpam-maps)  
+   4.2 [**nstallation**](#mod-installation)  
+   4.3 [**Cvars**](#server-cvar-overview)
+   4.4 [**Texture Changes**](#texture-changes-overview)
+5. [**About rPAM Client Changes**] (#tba-tba1)
+   5.1 [**Changes**](#changelog-rpam-maps)  
+7. [**Credits**](#credits)
+8. [**Programs Used**](##programs-used)
+
 > [go up again](#document-navigation) <|> [go next](#about-rpam-server-mod)
 ---------------------------------------------------------------------------------------------
+
 
 
 # About rPAM Server Mod
@@ -168,20 +171,23 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 ### v2.2 (Actual Development Process)
 - Add more objects from rPAM mp_railyard Overhauls script `mp_railyard_x` `v3`
-   - `ruins roof`, filling a missing texture and a pixel-spot with bricks 
-   - `ruins roof`, added `woodgib_medium` to the lower roow section, and one to the top
-   - added some tree's, sandbags and trucks
+   - `ruins roof`, filling a missing texture and a pixel-spot with bricks
    - <a href="github_images/railyard_axis_roof1.png"><img src="github_images/railyard_axis_roof1.png"/> </a>
+   - `ruins roof`, added `woodgib_medium` to the lower roow section, and one to the top
    - <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_axis_roof3.png"/> </a>
+   - added some tree's, sandbags and trucks
+
 
 - Create a servermod files to adapt for compativility to other mods
 - Overhaul .pk3 file name structure
 - Creat this readme.md with hope it helps structuring
 
 ### v2.1 (Latest)
-- Moved object `bigwoodgib` on map `mp_railyard_x` at position `ruins roof` to blend inside the given structure
+- Moved object `bigwoodgib` on map `mp_railyard_x` at position `ruins roof` to blend in the given structure
 - <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_axis_roof2.png"/> </a>
+- show rock and ruins stairs patched by curiousfox
 - <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_ruins.png"/> </a>
+- show tanks patched by curiousfox
 - <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_tanks.png"/> </a>
 
 ### v2.0
