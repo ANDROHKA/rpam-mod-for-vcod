@@ -183,7 +183,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 - Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3  
   - Used in `mp_carentan`, for example
   - Applies to all maps in the game
-- <a href="github_images/neuville_windows.png.png"><img src="github_images/neuville_windows.png.png" /> </a>
+- <a href="github_images/neuville_windows.png"><img src="github_images/neuville_windows.png" /> </a>
 - Edited `\textures\normandy\windows\neuvilleglass.dds` – DXT3
 - Edited `\textures\normandy\windows\neuvilleframe.dds` – DXT5, same as the DXT3 image  
   - Used in `mp_neuville` and `mp_bonneville`, for example
