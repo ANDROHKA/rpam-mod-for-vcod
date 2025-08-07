@@ -267,9 +267,7 @@ Adjusted tank positions – patch by *curiousfox*
     - Switched A and B to match actual layout  
     - Adjusted midboxes  
 
-  - `mp_neuville`  
-  - `mp_stalingrad`  
-  - `mp_tigertown`
+  - `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
     - Slightly enlarged & applied minor corrections  
 
   - `mp_germantown`
