@@ -208,9 +208,9 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision.
 - The game does quickly overload by a huge amount of placed objects loaded by the script.
 - I added commands to tinker around with different settings of the ["rPAM Overhaul Script For mp_railyard"](#rpam-overhaul-for-mp_railyard)
-<a href="github_images/railyard_overhaul_script.png">
-  <img src="github_images/railyard_overhaul_script.png" width="500"/>
-</a>  
+  <a href="github_images/railyard_overhaul_script.png">
+    <img src="github_images/railyard_overhaul_script.png" width="500"/>
+  </a>  
 
 
 <br><br>
@@ -219,42 +219,39 @@ The same locations like used in mp_railyard_x are edited by a script which does 
 <br><br>
 
 
-## Changelog rPAM Maps Overhaul
+# Changelog rPAM Maps Overhaul
 
-### `v2.2` (Latest)
-- Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
-
-`ruins roof`: filled a missing texture and a pixel-spot with bricks  
-<a href="github_images/railyard_axis_roof1.png">
-  <img src="github_images/railyard_axis_roof1.png" width="500"/>
-</a>  
-
-`ruins roof`: added `woodgib_medium` to the lower roof section, and one to the top  
-<a href="github_images/railyard_axis_roof3.png">
-  <img src="github_images/railyard_axis_roof3.png" width="500"/>
-</a>  
-
+#### `v2.2` (Latest)
 - Created server mod files for compatibility with other mods  
 - Overhauled `.pk3` file name structure  
 - Created this `README.md` in hopes it helps structuring the project  
+- Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
+  - `mp_railyard_x` `ruins roof`: Filled a missing texture and a pixel-spot with bricks  
+  <a href="github_images/railyard_axis_roof1.png">
+    <img src="github_images/railyard_axis_roof1.png" width="500"/>
+  </a>  
 
-### `v2.1`
-Moved object `bigwoodgib` on map `mp_railyard_x` at position `ruins roof` to blend into the surrounding structure  
-<a href="github_images/railyard_axis_roof3.png">
-  <img src="github_images/railyard_axis_roof2.png" width="500"/>
-</a>  
+  - `mp_railyard_x` `ruins roof`: Added `woodgib_medium` to the lower roof section, and one to the top  
+  <a href="github_images/railyard_axis_roof3.png">
+    <img src="github_images/railyard_axis_roof3.png" width="500"/>
+  </a>  
 
-Adjusted rock and ruins stairs – patch by *curiousfox*  
-<a href="github_images/railyard_axis_roof3.png">
-  <img src="github_images/railyard_ruins.png" width="500"/>
-</a>  
+#### `v2.1`
+- `mp_railyard_x` `ruins roof`: Moved object `bigwoodgib` at position `ruins roof` to blend into the surrounding structure  
+  <a href="github_images/railyard_axis_roof3.png">
+    <img src="github_images/railyard_axis_roof2.png" width="500"/>
+  </a>  
+- Adjusted rock and ruins stairs – patch by *curiousfox*  
+  <a href="github_images/railyard_axis_roof3.png">
+    <img src="github_images/railyard_ruins.png" width="500"/>
+  </a>  
 
-Adjusted tank positions – patch by *curiousfox*  
-<a href="github_images/railyard_axis_roof3.png">
-  <img src="github_images/railyard_tanks.png" width="500"/>
-</a>  
+- Adjusted tank positions – patch by *curiousfox*  
+  <a href="github_images/railyard_axis_roof3.png">
+    <img src="github_images/railyard_tanks.png" width="500"/>
+  </a>  
 
-### `v2.0`
+#### `v2.0`
 - Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3
 - Edited `\textures\austria\transparents\metal_masked@ironfence1a.dds` – DXT3
   - Now DXT5
@@ -274,13 +271,13 @@ Adjusted tank positions – patch by *curiousfox*
     <img src="github_images/neuville_windows.png" width="500"/>
   </a>  
 
-### `v1.9`
+#### `v1.9`
 - Completely overhauled ambient script (`soundaliases.csv`)  
 - Reworked message center  
 - Fixed compatibility issues with `.arena` files  
 - Added aim maps to the mod  
 
-### `v1.8`
+#### `v1.8`
 - Modified `.arena` files to prevent original map duplication  
 - Normalized ambient audio (`\soundaliases\*.csv`)  
 - Updated levelshots and layout images  
@@ -293,29 +290,29 @@ Adjusted tank positions – patch by *curiousfox*
   - `mp_germantown`
     - Added callouts and highlighted doorways  
 
-### `v1.7`
+#### `v1.7`
 - Integrated all elements into working condition  
 - Started adding and adapting more custom maps using the evolving script layout  
 
-### `v1.6`
+#### `v1.6`
 - Added `Cod1 maps patch` by *curiousfox* (2025)  
 
-### `v1.5`
+#### `v1.5`
 - Added maps and files for version 1.1 of the game  
 - Included old aim maps with refreshed loading screens  
   - HUD map layout: default/unknown added (`\levelshots\layouts`)  
   - Changed texture for COD BASE on `wawa3Daim`  
 - Added `german_town` from *Steiner* to the classic maps overhaul package  
 
-### `v1.4`
+#### `v1.4`
 - Updated several levelshots  
 - Created a mod package without the server mod included  
 
-### `v1.3`
+#### `v1.3`
 - Experimented with fog effects and created related scripts  
 - Updated ambient sound mod  
 
-### `v1.2`
+#### `v1.2`
 - Collected all previously modded files  
 - Established ambient sound mod based on rPAM v1.11  
 
