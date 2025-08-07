@@ -17,7 +17,7 @@ This projects goal is to further develop features requested by the playerbase wh
 rPAM was initiated by me in 2015, after CyberGamer's edited PAM failed to fix bugs and instead introduced new ones. This led to the idea of creating a version that preserves the original while correcting its flaws.
 In 2024 I joined the Discord of CoDBASE, a dedicated community with players and teams playing still competitive 5v5 Search and Destroy, like back in the days. There the game is still buggy. I hope I can fix that now.
 
-#### Background of PAM
+> **Background of PAM:**
 
 The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax and finalized with version 1.08, laid the groundwork for competitive play in the game's early days. Widely adopted in leagues such as ESL and ClanBase from the mid-2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability, it quickly became the standard for high-level competitive play.
 
