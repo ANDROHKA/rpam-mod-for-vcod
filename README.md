@@ -322,40 +322,48 @@ Adjusted tank positions – patch by *curiousfox*
 #### Changes on `mp_germantown` made by Steiner [03-2004]
 - known as `german_town` `german_town.pk3`
 - HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
+- Updated levelshot `\levelshots`
 
 #### Changes on `mp_aim` made by Yannic [05-2004]
 - known as `mp_aim with basharena` `mp_aim.pk3`
 - HUD map layout default/unknown added `\levelshots\layouts`
-
+- Updated levelshot `\levelshots`
+- 
 #### Changes on `mp_blaoaim` by RL.GENERAL Z [08-2004]
 - known as `rl_blaoaim` `original filename missing`
 - HUD map layout default/unknown added `\levelshots\layouts`
 - changed a texture to promote CODBASE
-
+- Updated levelshot `\levelshots`
+  
 #### Changes on `mp_pgaim` by an unknown author [05-2004]
 - known as `pg_aim` `pg_aim.pk3`
 - HUD map layout default/unknown added `\levelshots\layouts`
 - mp_pgaim_b british is crashing the game
-
+- Updated levelshot `\levelshots`
+  
 #### Changes on `mp_wawa` by wawa [07-2004]
 - known as `wawa_3Daim` `original filename missing`
 - HUD map layout default/unknown added `\levelshots\layouts`
 - changed a texture to promote CODBASE
-
+- Updated levelshot `\levelshots`
+  
 > **Relevant to Version:** ``v2.3`` onwards
 
 #### Changes on `x` made by x [x]
 - known as `x` `x`
 - HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-
+- Updated levelshot `\levelshots`
+  
 #### Changes on `x` made by x [x]
 - known as `x` `x`
 - HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-
+- Updated levelshot `\levelshots`
+  
 #### Changes on `x` made by x [x]
 - known as `x` `x`
 - HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-
+- Updated levelshot `\levelshots`
+  
 
 
 
