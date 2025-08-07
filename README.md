@@ -25,7 +25,7 @@ In 2024, I joined the CoDBASE Discord — a dedicated community still playing co
 The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax and finalized with version 1.08, laid the groundwork for competitive play in the game's early days. Widely adopted in leagues such as ESL and ClanBase from the mid-2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability, it quickly became the standard for high-level competitive play.
 
 <a href="github_images/ppa_png.png">
-  <img src="github_images/ppa_png" width="900"/>
+  <img src="github_images/ppa_png" width="500"/>
 </a>  
 
 
