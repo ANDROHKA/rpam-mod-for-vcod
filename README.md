@@ -171,6 +171,8 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
    - `ruins roof`, filling a missing texture and a pixel-spot with bricks 
    - `ruins roof`, added `woodgib_medium` to the lower roow section, and one to the top
    - added some tree's, sandbags and trucks
+   - <a href="github_images/railyard_axis_roof1.png"><img src="github_images/railyard_axis_roof1.png"/> </a>
+   - <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_axis_roof3.png"/> </a>
 
 - Create a servermod files to adapt for compativility to other mods
 - Overhaul .pk3 file name structure
@@ -178,18 +180,23 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 ### v2.1 (Latest)
 - Moved object `bigwoodgib` on map `mp_railyard_x` at position `ruins roof` to blend inside the given structure
+- <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_axis_roof2.png"/> </a>
+- <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_ruins.png"/> </a>
+- <a href="github_images/railyard_axis_roof3.png"><img src="github_images/railyard_tanks.png"/> </a>
 
 ### v2.0
-- Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3  
+- Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3
+- Edited `\textures\austria\transparents\XXXXXXXXXXXXXXXXXXXX` – DXT3 **second fence texture needs a fix!**
   - Used in `mp_carentan`, for example
   - Applies to all maps in the game
-- <a href="github_images/neuville_windows.png"><img src="github_images/neuville_windows.png" /> </a>
+  - <a href="github_images/carentan_fence.png"><img src="github_images/carentan_fence.png"/> </a>
 - Edited `\textures\normandy\windows\neuvilleglass.dds` – DXT3
 - Edited `\textures\normandy\windows\neuvilleframe.dds` – DXT5, same as the DXT3 image  
   - Used in `mp_neuville` and `mp_bonneville`, for example
   - Adjusted glass transparency (alpha channel)
   - Minor color corrections to the window frame
   - Applies to all maps in the game
+  - <a href="github_images/neuville_windows.png"><img src="github_images/neuville_windows.png"/> </a>
 
 ### v1.9
 - Ambient script completely overhauled `soundaliases.csv`
