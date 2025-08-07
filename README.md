@@ -23,7 +23,7 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 ## Specific features or improvements
 
-- Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) released on [ModDB (2015)](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111)
+- Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) released on [ModDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111) (2015)
 - Retain and potentially expand the new features introduced in CoDBASE-PAM (2024)
 - Adapt and integrate elements from [kikiii's eyza_pam_port_to_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)
 - Adapt and integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3)
