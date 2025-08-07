@@ -243,9 +243,8 @@ Adjusted tank positions – patch by *curiousfox*
 ### `v2.0`
 - Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3
 - Edited `\textures\austria\transparents\metal_masked@ironfence1a.dds` – DXT3
+  - Now DXT5
   - Used in `mp_carentan`, for example  
-  > ⚠️ Update `2.3`
-  - now dxt5 used, I can't get it darker  
   - Applies to all maps in the game  
   <a href="github_images/carentan_fence_23.png">
     <img src="github_images/carentan_fence_23.png" width="500"/>
