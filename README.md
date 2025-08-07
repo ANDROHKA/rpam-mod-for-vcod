@@ -10,7 +10,7 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 
 > **Support this Project `PayPal` `€` `Billing Addr.`:** [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
-> **Join CoDBASE Call of Duty 1 Community `vCoD` `Call of Duty Multiplayer v1.5` `Europe`):** [Discord](https://discord.gg/Zh8DP7c)
+> **Join CoDBASE Call of Duty 1 Community `vCoD` `Call of Duty Multiplayer v1.5` `Europe`):** [Discord Invite Link](https://discord.gg/Zh8DP7c)
 
 This projects goal is to further develop features requested by the playerbase while preserving the core gameplay at the highest competitive standard established in recent years.
 
