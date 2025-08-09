@@ -6,8 +6,8 @@
 
 rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 
-> **Supported Game Version:** `Call of Duty Multiplayer v1.5`  
-> **Actual rPAM Server Mod Version:** `TBA`  
+> **Supported Game Version:** `Call of Duty (2003) Multiplayer` `v1.5`  
+> **Actual rPAM Version:** `TBA`  
 > **Actual rPAM Maps Version:** `v2.2`
 
 > **Support this Project via PayPal:**    
