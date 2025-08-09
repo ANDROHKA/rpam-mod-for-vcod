@@ -1,5 +1,5 @@
-<a href="github_images/banner1.png">
-  <img src="github_images/banner1.png" width="1000"/>
+<a href="github_images/banner.png">
+  <img src="github_images/banner.png" width="1000"/>
 </a>   
 
 # Introduction
