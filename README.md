@@ -136,7 +136,8 @@ A little throwback: back in 2007, I managed to add a fifth button to my menu –
 [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
 **You can join Discord, play matches and help our community to grow - Thank you!** 
-> **Join the CoDBASE Call of Duty 1 Community**: `Call of Duty (2003) Multiplayer` `v1.5` `European playerbase`  
+> **Join the CoDBASE Call of Duty 1 Community**:
+> `Call of Duty (2003) Multiplayer` `v1.5` `European playerbase`  
 > [Discord Invite](https://discord.gg/Zh8DP7c)   
 
 
@@ -219,12 +220,20 @@ The same locations like used in mp_railyard_x are edited by a script which does 
   <a href="github_images/railyard_overhaul_script.png">
     <img src="github_images/railyard_overhaul_script.png" width="500"/>
   </a>  
+<br><br>
+
+
+> **Relevant to:** ``v2.2``
+
+
 
 
 <br><br>
 > [go up again](#main-changes-rpam-maps-overhaul-mod) <|> [go next](#changelog-rpam-maps-overhaul)
 ---------------------------------------------------------------------------------------------
 <br><br>
+
+
 
 
 # Changelog rPAM Maps Overhaul
