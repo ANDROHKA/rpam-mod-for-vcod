@@ -4,7 +4,7 @@
 
 # Introduction
 
-rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
+rPAM is the updated competition mod for Call of Duty 1.5, building on previous PAM releases.
 
 > **Supported Game Version:** `Call of Duty (2003) Multiplayer` `v1.5`  
 > **Actual rPAM Version:** `TBA`  
