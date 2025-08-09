@@ -15,7 +15,7 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 > [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
 > **Join the CoDBASE Call of Duty 1 Community**: `Call of Duty (2003) Multiplayer` `v1.5` `European playerbase`  
-> **Adapted to the latest CoDBASE PAM version:** `Coming soon` `v1.5` `rPAM` `kikiii's pam port`
+> **Adapted to the latest CoDBASE PAM version:** `Coming soon` `v1.5` `rPAM` `kikiii's pam port`  
 > [Discord Invite](https://discord.gg/Zh8DP7c) 
 
 The goal of this project is to develop features requested by the playerbase while preserving core gameplay at the highest competitive standard established in recent years.
@@ -136,7 +136,7 @@ A little throwback: back in 2007, I managed to add a fifth button to my menu –
 [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
 **You can join Discord, play matches and help our community to grow - Thank you!** 
-> **Join the CoDBASE Call of Duty 1 Community**:
+> **Join the CoDBASE Call of Duty 1 Community**:  
 > `Call of Duty (2003) Multiplayer` `v1.5` `European playerbase`  
 > [Discord Invite](https://discord.gg/Zh8DP7c)   
 
