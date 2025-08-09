@@ -12,7 +12,7 @@ rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
 
 > **Support this Project via PayPal:**    
 > `Optional Donation` `(€)` `Billing Address Required`    
-[PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
+> [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
 > **Join the CoDBASE Call of Duty 1 Community**: `Call of Duty (2003) Multiplayer` `v1.5` `European playerbase`  
 > **Adapted to the latest CoDBASE PAM version:** `Coming soon` `v1.5` `rPAM` `kikiii's pam port`
