@@ -1,3 +1,7 @@
+<a href="github_images/banner1.png">
+  <img src="github_images/banner1.png" width="1000"/>
+</a>   
+
 # Introduction
 
 rPAM1.15 is an updated version of previous PAM releases for Call of Duty 1.5.
