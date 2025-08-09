@@ -28,12 +28,7 @@ In 2024, I joined the CoDBASE Discord — a dedicated community still playing co
 
 The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax and finalized with version 1.08, laid the groundwork for competitive play in the game's early days. Widely adopted in leagues such as ESL and ClanBase from the mid-2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability, it quickly became the standard for high-level competitive play.
 
-<a href="github_images/ppa_png.png">
-  <img src="github_images/ppa_png.png" width="1000"/>
-</a>  
-<br><br>
-
-> **Goals:**
+> **rPAM Goals:**
 
 - Provide server operators and players with a stable, easy-to-manage mod
 - Automate competitive play and reduce the need for manual intervention
@@ -50,7 +45,6 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 > [Go to Available Maps Overview](#available-maps-overview)
 - Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
 > [Go to Texture Changelog (TBA)](#changelog-all-textures)
-
 
 
 
@@ -124,13 +118,16 @@ The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax a
 
 
 # Support
-   
+<a href="github_images/ppa_png.png">
+  <img src="github_images/ppa_png.png" width="1000"/>
+</a>  
+
 **You can support this project via PayPal - Thank you!** 
 > **Support this Project via PayPal:**    
 > `Optional Donation` `(€)` `Billing Address Required`    
 [PayPal.com/donate](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
 
-**You can join Discord play and help our community to grow - Thank you!** 
+**You can join Discord, play and help our community to grow - Thank you!** 
 > **Join the CoDBASE Call of Duty 1 Community**: `vCoD` `European playerbase`  
 > **Adapted to the latest CoDBASE PAM version:** `Coming soon` `Call of Duty Multiplayer v1.5`   
 > [Discord Invite](https://discord.gg/Zh8DP7c)   
