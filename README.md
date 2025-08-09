@@ -508,13 +508,16 @@ The same locations like used in mp_railyard_x are edited by a script which does 
 > [go up again](#available-competitive-custom-maps) <|> [go next (Credits)](#maps-not-listed-in-game-menu)
 ---------------------------------------------------------------------------------------------
 
+
+
 # Maps Not Listed In Game Menu
+
+
+### All Maps In Game Menu
 
 **Relevant to:** `Final`
 
-### All Maps In Menu
-
-- Crossed-out maps will be not included.
+- Crossed-out maps may not be not included.
 
 | Map `/rcon`              | Creator                                          | Gametypes                 | Side | S&D | No. | Notes                |
 |--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
@@ -539,8 +542,7 @@ The same locations like used in mp_railyard_x are edited by a script which does 
 | mp_stalingrad            | Added by official patch                       | dm, tdm, sd, re, bel, hq  | R    | y   | 16  |                      |
 | mp_tigertown             | Added by official patch                       | dm, tdm, sd, re, bel, hq  | A    | y   | 17  |                      |
 |                          |                                               |                           |      |     |     |                      |
-| *rPAM CUSTOM*            |                                               |                           |      |     | 18  |                      |
-|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
+| ***rPAM CUSTOM***        |                                               |                           |      |     | 18  |                      |
 | mp_abbey                 | FORCE316 [10-2004]                            | dm, tdm, sd, re, bel, hq  | A    | y   | 19  |                      |
 | mp_amfreville            | Steppenwolf & THE DUKE [04-2005]              | dm, tdm, sd, re, hq       | A    | y   | 20  | Large sized map      |
 | mp_aquitaine             | rasta [06-2005]                               | dm, tdm, sd               | B    | y   | 21  |                      |
@@ -570,14 +572,13 @@ The same locations like used in mp_railyard_x are edited by a script which does 
 | mp_westwall              | sm0k3r [12-2003]                              | dm, tdm, sd, re, bel, hq  | B    | y   | 43  | Really dark          |
 | mp_windmills             | VegaObscura [05-2004]                         | dm, tdm, sd, re, bel      | A    | y   | 44  | Large sized map      |
 |                          |                                               |                           |      |     |     |                      |
-| ***Winter***             |                                               |                           |      |     |     |                      |
-|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
+| ***rPAM CUSTOM Winter*** |                                               |                           |      |     |     |                      |
 | mp_brecourt_winter       | -OCG-=gLiTcH= [08-2004]                       | dm, tdm, sd, re, bel, hq  | A    | y   | 45  |                      |
 | ~~mp_bonneville~~        | ~~[CF] WillyWonka [07-2004]~~                 | dm, tdm, sd, bel          | A    | y   |     | *Out of bounds*      |
 | mp_container             | openf1re [06-2004]                            | tdm, sd                   | R    | y   | 46  |                      |
-| mp_dufresne_winter       | -HG- Baby Seal Clubber [08-2004]              | dm, tdm, sd, re, bel, hq  | A    | y   | 47  | Summer present       |
+| mp_dufresne_winter       | [HG] Baby Seal Clubber [08-2004]              | dm, tdm, sd, re, bel, hq  | A    | y   | 47  | Summer present       |
 | mp_eisberg               | Fangio [12-2003]                              | dm, tdm, sd, bel          | B    | y   | 48  | Small sized map      |
-| mp_frozen                |                                               |                           |      | y   | 49  | Small sized map      |
+| mp_frozen                | SIFFER [02-2004]                              | dm, tdm, re, bel          | B    | y   | 49  | Small sized map      |
 | mp_harbor_v4             |                                               |                           |      | y   | 50  |                      |
 | mp_logging_mill          | Dex [06-2007]                                 | dm, tdm, sd, re, bel      | R    | y   | 51  | Small sized map      |
 | mp_maaloy                |                                               |                           |      | y   | 52  |                      |
@@ -589,41 +590,48 @@ The same locations like used in mp_railyard_x are edited by a script which does 
 | mp_winterambush          |                                               |                           |      | y   | 57  | Small sized map      |
 |                          |                                               |                           |      |     |     |                      |
 | ***Blurred Remembrance***|                                               |                           |      |     | 58  |                      |
-|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
 | mp_brest                 |                                               |                           |      |     | 59  | Small sized map      |
 | mp_bridge                |                                               |                           |      | y   | 60  |                      |
 | mp_destroyed_village     |                                               |                           |      | y   | 61  |                      |
 | mp_hunt                  |                                               |                           |      | y   | 62  |                      |
 | mp_remagen               |                                               |                           |      |     | 63  | Small sized map      |
-| mp_rocket_facility       | -=|TFO|=- Kilroy [02-2004]                    | dm, tdm, sd, re, bel, hq  | A    | y   | 64  | Openable doors       |
-|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
+| mp_rocket_facility       | -TFO- Kilroy [02-2004]                        | dm, tdm, sd, re, bel, hq  | A    | y   | 64  | Openable doors       |
 
-### Maps Not Listed In Game Menu
+
+
+### List Of Maps Not Present In Game Menu
+
+**Relevant to:** `TBA`
 
 - Playable with ``/rcon`` or map rotation.
 
-| Map /rcon           | Creator                                   | Gametypes                 | Side | *Notes                    |
-|---------------------|-------------------------------------------|---------------------------|------|---------------------------|
-| mp_chateau          | ~~Infinity Ward~~                         | dm, tdm, re, bel, hq      | B    |                           |
-| mp_dawnville        | Infinity Ward                             | dm, tdm, sd, re, bel, hq  | A    |                           |
-| mp_railyard         | Infinity Ward                             | dm, tdm, sd, re, bel, hq  | R    |                           |
-| mp_ship             | ~~Infinity Ward~~                         | dm, tdm, re, bel, hq      | B    |                           |
-|                     |                                           |                           |      |                           |
-| mp_aim_a            | Yannic [05-2004]                          | dm, tdm                   | A    |                           |
-| mp_aim_b            |                                           | dm, tdm                   | B    |                           |
-| mp_aim_r            |                                           | dm, tdm                   | R    |                           |
-| mp_blaoaim_a        | RL.GENERAL Z [08-2004]                    | dm, tdm                   | A    |                           |
-| mp_blaoaim_b        |                                           | dm, tdm                   | B    |                           |
-| mp_blaoaim_r        |                                           | dm, tdm                   | R    |                           |
-| mp_pgaim_a          | Unknown [04-2005]                         | dm, tdm                   | A    |                           |
-| mp_pgaim_r          |                                           | dm, tdm                   | R    |                           |
-| mp_wawa_a           | wawa [07-2004]                            | dm                        | A    |                           |
-| mp_wawa_b           |                                           | dm                        | B    |                           |
-| mp_wawa_r           |                                           | dm                        | R    |                           |
-|                     |                                           |                           |      |                           |
-| mp_frozen_a         |                                           | dm                        | A    |                           |
-| mp_frozen_r         |                                           | dm                        | R    |                           |
-|---------------------|-------------------------------------------|---------------------------|------|---------------------------|
+| Map `/rcon`              | Creator                                          | Gametypes                 | Side | S&D | No. | Notes                |
+|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
+| ***rPAM Aim Maps***      |                                               |                           |      |     | 65  |                      |
+| mp_aim_a                 | Yannic [05-2004]                              | dm, tdm                   | A    |     |     |                      |
+| mp_aim_b                 | Yannic [05-2004]                              | dm, tdm                   | B    |     |     |                      |
+| mp_aim_r                 | Yannic [05-2004]                              | dm, tdm                   | R    |     |     |                      |
+| mp_blaoaim_a             | RL.GENERAL Z [08-2004]                        | dm, tdm                   | A    |     |     |                      |
+| mp_blaoaim_b             | RL.GENERAL Z [08-2004]                        | dm, tdm                   | B    |     |     |                      |
+| mp_blaoaim_r             | RL.GENERAL Z [08-2004]                        | dm, tdm                   | R    |     |     |                      |
+| mp_pgaim_a               | Unknown [04-2005]                             | dm, tdm                   | A    |     |     |                      |
+| mp_pgaim_r               | Unknown [04-2005]                             | dm, tdm                   | R    |     |     |                      |
+| mp_wawa_a                | wawa [07-2004]                                | dm                        | A    |     |     |                      |
+| mp_wawa_b                | wawa [07-2004]                                | dm                        | B    |     |     |                      |
+| mp_wawa_r                | wawa [07-2004]                                | dm                        | R    |     |     |                      |
+|                          |                                               |                           |      |     |     |                      |
+| mp_frozen_a              | SIFFER [02-2004] 	                           | dm, tdm, re, bel          | A    |     |     |                      |
+| mp_frozen_r              | SIFFER [02-2004] 	                           | dm, tdm, re, bel          | R    |     |     |                      |
+|                          |                                               |                           |      |     |     |                      |
+| mp_nuenen                | [AYM] Lt Jules                                | dm, tdm, sd, bel, hq      | A    | y   |     | Broken windows       |
+| mp_subharbor_night       | VegaObscura [03-2004]                         | dm, tdm, sd, bel, hq      | B    | y   |     | Day present          |
+| mp_bonneville            | [CF] WillyWonka [07-2004]                     | dm, tdm, sd, bel          | A    | y   |     | *Out of bounds*      |
+| mp_valley_night          | VegaObscura [03-2004]                         | dm, tdm, sd, bel          | A    | y   |     | Day present          |
+|                          |                                               |                           |      |     |     |                      |
+| mp_chateau               | Infinity Ward                                 | dm, tdm, re, bel, hq      | B    |     |     |                      |
+| mp_dawnville             | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | A    | y   |     |                      |
+| mp_railyard              | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | R    | y   |     |                      |
+| mp_ship                  | Infinity Ward                                 | dm, tdm, re, bel, hq      | B    |     |     |                      |
 
 
 
