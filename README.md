@@ -14,10 +14,6 @@ rPAM is the updated competition mod for Call of Duty 1.5, building on previous P
 > **Actual rPAM Version:** `TBA`  
 > **Actual rPAM Maps Version:** `v2.2`
 
-> **You can support this project via PayPal:**    
-> `Optional Donation` `(€)` `Billing Address Required`    
-> [***rPAM PayPal Donation Page***](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
-
 > **Join the CoDBASE Call of Duty 1 Community**:       
 `Call of Duty (2003) Multiplayer` `v1.5`     
 `European playerbase` [***Discord Invite Link***](https://discord.gg/Zh8DP7c)      
