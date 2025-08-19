@@ -446,17 +446,6 @@ This is the in game map list for version 2.2 of rPAM Maps Overhaul:
 > **Supported Game Versions:**   
 `Call of Duty Multiplayer v1.5`   
 
-The following maps are able to play competitive in my eyes. Map `mp_germantown` and `mp_hanoi` where often played in recent cups and lan events.
-
-| Map /rcon            | Creator                                              | Gametypes                 | Side | Slot |
-|----------------------|------------------------------------------------------|---------------------------|------|------|
-| mp_beauville         | IxQue [03-2004], *edited by reissue_*                | dm, tdm, sd,     bel, hq  | A    | 23   |
-| mp_germantown        | Steiner [03-2004]                                    | dm, tdm, sd,     bel      | A    | 30   |
-| mp_hanoi             | Expertiz & with DigitalDials [12-2016]               | dm, tdm, sd, re, bel      | A    | 31   |
-| mp_steny             | Spik3d [07-2007]                                     | dm, tdm, sd,     bel, hq  | A    | 39   |
-
-
-
 <br><br>
 > [go up again](#featured-maps-for-competitive-play) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#all-available-rpam-maps)
 ---------------------------------------------------------------------------------------------
@@ -468,99 +457,8 @@ The following maps are able to play competitive in my eyes. Map `mp_germantown` 
 
 > **Relevant to:** ~~``Final``~~ [**Download**](#download) <|> [**rPAM-Cvars**](#rpam-maps-cvar-overview)
 
-> **Supported Game Versions:**   
->`Call of Duty Multiplayer v1.5`  
->~~`Call of Duty Multiplayer v1.1`~~   
-
-
-
-The following shows all multiplayer maps displayed in the in-game "Create Server" menu.
-- Crossed-out maps may not be included.
-<br><br>
-
-> [Go to **Maps Not Shown In The Game Menu** (go next)](#maps-not-shown-in-the-game-menu) 
-
-| Map `/rcon`              | Creator                                          | Gametypes                 | Side | S&D | Slot | Notes                |
-|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
-| ***Classic Maps***       |                                               |                           |      |     |     |                      |
-| mp_brecourt              | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | A    | y   | 1   |                      |
-| mp_carentan              | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | A    | y   | 2   |                      |
-| ~~mp_chateau~~           | Infinity Ward                                 | dm, tdm,     re, bel, hq  | B    |     |     |                      |
-| ~~mp_dawnville~~         | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | A    | y   |     |                      |
-| mp_dawnville_x           | Infinity Ward + curiousfox [03-2025]          | dm, tdm, sd, re, bel, hq  | A    | y   | 3   |                      |
-| mp_depot                 | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | B    | y   | 4   |                      |
-| mp_harbor                | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | R    | y   | 5   |                      |
-| mp_hurtgen               | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | A    | y   | 6   |                      |
-| mp_pavlov                | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | R    | y   | 7   |                      |
-| mp_pegasusnight          | Infinity Ward                                 | dm, tdm                   | B    | *   | 8   | **S&D may be added** |
-| mp_pegasusday            | Infinity Ward                                 | dm, tdm                   | B    | *   | 9   | **S&D may be added** |
-| mp_powcamp               | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | R    | y   | 10  |                      |
-| ~~mp_railyard~~          | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | R    | y   |     |                      |
-| mp_railyard_x            | Infinity Ward + curiousfox [03-2025]          | dm, tdm, sd, re, bel, hq  | R    | y   | 11  |                      |
-| mp_rocket                | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | B    | y   | 12  |                      |
-| ~~mp_ship~~              | Infinity Ward                                 | dm, tdm, sd, re,      hq  | B    |     |     |                      |
-| mp_bocage                | Infinity Ward, added by patch 1.3             | dm, tdm, sd, re, bel, hq  | A    | y   | 13  |                      |
-| mp_neuville              | Infinity Ward, added by patch 1.3             | dm, tdm, sd, re, bel, hq  | A    | y   | 14  |                      |
-| mp_stalingrad            | Infinity Ward, added by patch 1.4             | dm, tdm, sd, re, bel, hq  | R    | y   | 15  |                      |
-| mp_tigertown             | Infinity Ward, added by patch 1.5             | dm, tdm, sd, re, bel, hq  | A    | y   | 16  |                      |
-|                          |                                               |                           |      |     |     |                      |
-| ***rPAM CUSTOM***        |                                               |                           |      |     | 17  |                      |
-| mp_abbey                 | FORCE316 [10-2004]                            | dm, tdm, sd, re, bel, hq  | A    | y   | 18  |                      |
-| mp_amfreville            | Steppenwolf & THE DUKE [04-2005]              | dm, tdm, sd, re, hq       | A    | y   | 19  | Large sized map      |
-| mp_aquitaine             | rasta [06-2005]                               | dm, tdm, sd               | B    | y   | 20  | *Beta*               |
-| mp_bazolles              | Magnus Sandström & Roger Abrahamsson [07-2004]| dm, tdm, sd, re, bel, hq  | A    | y   | 21  |                      |
-| mp_beauville             | IxQue [03-2004], *edited by reissue_*         | dm, tdm, sd,     bel, hq  | A    | y   | 22  | *S&D added*          |
-| mp_bellicourt            | Magnus Sandström & Roger Abrahamsson [03-2004]| dm, tdm, sd, re, bel, hq  | A    | y   | 23  | Different to night v.|
-| mp_bellicourt_night      | Magnus Sandström & Roger Abrahamsson [04-2004]| dm, tdm, sd, re, bel, hq  | A    | y   | 24  | Fixed version        |
-| mp_daybreak              | Mj [10-2005]                                  | dm, tdm, sd, re, bel      | A    | y   | 25  | Large sized map      |
-| mp_dday7                 | [AYM] Lt Jules [06-2004]                      | dm, tdm, sd,     bel, hq  | A    | y   | 26  | *Moerser!*           |
-| mp_dufresne              | -HG- Baby Seal Clubber [08-2004]              | dm, tdm, sd, re, bel, hq  | A    | y   | 27  |                      |
-| mp_falaise_villa         | colpe [01-2004] & shitman [10-2009]           | dm, tdm, sd, re, bel, hq  | A    | y   | 28  |                      |
-| mp_germantown            | Steiner [03-2004]                             | dm, tdm, sd,     bel      | A    | y   | 29  |                      |
-| mp_hanoi                 | Expertiz & DigitalDials [12-2016]             | dm, tdm, sd, re, bel      | A    | y   | 30  | Edited Texures       |
-| mp_hurtgen_autumn        | IW + 3FJTACTICAL [12-2004]                    | dm, tdm, sd, re, bel, hq  | A    | y   | 31  |                      |
-| mp_merville_battery      | [HOLY] Moses [07-2004]                        |     tdm, sd,          hq  | B    | y   | 32  | *DM may be added*    |
-| ~~mp_nuenen~~            | [AYM] Lt Jules                                | dm, tdm, sd,     bel, hq  | A    | y   |     | *Broken windows*     |
-| mp_junobeach             | [126th] Televinken [12-2004]                  | dm, tdm, sd, re, bel, hq  | B    | y   | 33  |                      |
-| mp_priory                | Philip A. Mecozzi (Filbert) [08-2006]         | dm, tdm, sd,     bel, hq  | B    | y   | 34  | CTF                  |
-| mp_redoktober            | Drecks, Lex & Innocent Bystander [09-2004]    | dm, tdm, sd,     bel, hq  | R    | y   | 35  | Extra Large map      |
-| mp_stanjel               | Roger Abrahamsson [04-2006]                   | dm, tdm, sd, re, bel, hq  | R    | y   | 36  |                      |
-| mp_stcomedumont          | maverick & Lt.J.Snellius [02-2005]            | dm, tdm, sd, re, bel, hq  | A    | y   | 37  | Large sized map      |
-| mp_steny                 | Spik3d [07-2007]                              | dm, tdm, sd,     bel, hq  | A    | y   | 38  |                      |
-| mp_subharbor_day         | VegaObscura [03-2004]                         | dm, tdm, sd,     bel, hq  | B    | y   | 39  | Large sized map      |
-| ~~mp_subharbor_night~~   | VegaObscura [03-2004]                         | dm, tdm, sd,     bel, hq  | B    | y   |     | *Day allr. present*  |
-| mp_trenchville           | S.C. [07-2005]                                | dm, tdm, sd,     bel      | A    | y   | 40  |                      |
-| mp_varaville             | IW + Slyk & Innocent Bystander [04-2004]      | dm, tdm,         bel      | A    | *   | 41  | Extra Large map      |
-| mp_westwall              | sm0k3r [12-2003]                              | dm, tdm, sd, re, bel, hq  | B    | y   | 42  | *A really dark night*|
-| mp_windmills             | VegaObscura [05-2004]                         | dm, tdm, sd, re, bel      | A    | y   | 43  | Large sized map      |
-|                          |                                               |                           |      |     |     |                      |
-|                          |                                               |                           |      |     |     |                      |
-| ***rPAM CUSTOM Winter*** |                                               |                           |      |     | *   |                      |
-| mp_brecourt_winter       | -OCG-=gLiTcH= [08-2004]                       | dm, tdm, sd, re, bel, hq  | A    | y   | 44  |                      |
-| mp_bonneville            | [CF] WillyWonka [07-2004]                     | dm, tdm, sd,     bel      | A    | y   | 45  | *Out of bounds*      |
-| mp_container             | openf1re [06-2004]                            |     tdm, sd               | R    | y   | 46  | *DM may be added*    |
-| mp_dufresne_winter       | [HG] Baby Seal Clubber [08-2004]              | dm, tdm, sd, re, bel, hq  | A    | y   | 47  | *Summer a. present*  |
-| mp_eisberg               | Fangio [12-2003]                              | dm, tdm, sd,     bel      | B    | y   | 48  | Small sized map      |
-| mp_frozen                | SIFFER [02-2004]                              | dm, tdm,     re, bel      | B    | y   | 49  | Small sized map      |
-| mp_harbor_v4             | IW + TheGoog [06-2021]                        | dm, tdm, sd, re, bel, hq  | R    | y   | 50  |                      |
-| mp_logging_mill          | Dex [06-2007]                                 | dm, tdm, sd, re, bel      | R    | y   | 51  | Small sized map      |
-| mp_maaloy                | [126th] Televinken [12-2004]                  | dm, tdm, sd, re, bel, hq  | B    | y   | 52  |                      |
-| mp_miniharbor            | IW + TheGoog & JtGz [05-2025]                 | dm, tdm, sd               | R    | y   | 53  | Small sized map      |
-| mp_offensive             | Old-Crow & Caskou [02-2004]                   | dm, tdm, sd, re, bel, hq  | A    | y   | 54  |                      |
-| mp_univermag             | Drecks & Innocent Bystander [02-2004]         | dm, tdm, sd,     bel, hq  | R    | y   | 55  | Large sized map      |
-| mp_valley_day            | VegaObscura [03-2004]                         | dm, tdm, sd,     bel      | A    | y   | 56  | Large sized map      |
-| ~~mp_valley_night~~      | VegaObscura [03-2004]                         | dm, tdm, sd,     bel      | A    | y   |     | *Day allr. present*  |
-| mp_winterambush          | Unknown [03-2006]                             | dm, tdm, sd               | A    | y   | 57  | Small sized map      |
-|                          |                                               |                           |      |     |     |                      |
-|                          |                                               |                           |      |     |     |                      |
-| ***Blurred Remembrance***|                                               |                           |      |     | 58  |                      |
-| mp_brest                 | VikingWiedel [09-2004]                        | dm, tdm,        bel       | A    |     | 59  | Small sized map      |
-| mp_bridge                | [tFp] CFH666 [09-2004]                        | dm, tdm, sd,          hq  | B    | y   | 60  |                      |
-| mp_destroyed_village     | -OCG-=gLiTcH= [05-2005]                       | dm, tdm, sd, re, bel, hq  | A    | y   | 61  | Edited Textures      |
-| mp_hunt                  | [tFp] Daryl Strawberry [08-2004]              | dm, tdm, sd,              | A    | y   | 62  |                      |
-| mp_remagen               | nash [08-2004]                                | dm, tdm,     re, bel      | A    |     | 63  | *Breakable Windows*  |
-| mp_rocket_facility       | -TFO- Kilroy [02-2004]                        | dm, tdm, sd, re, bel, hq  | A    | y   | 64  | *Openable doors*     |
-
+> **All Available rPAM Maplist**     
+> [GITHUB LINK1](https://github.com/ANDROHKA/rpam-mod-for-vcod/blob/master/README_rpam_maplist_maps.md)
 
 
 <br><br>
@@ -568,108 +466,20 @@ The following shows all multiplayer maps displayed in the in-game "Create Server
 ---------------------------------------------------------------------------------------------
 <br><br>
 
-
-
 # Maps Not Shown In The Game Menu
 
-> **Relevant to:** ~~``Maps v2.3 onwards``~~
-
-The following multiplayer maps are not shown in the in-game "Create Server" menu. However you can use `/rcon` or the server map rotation in your `server.cfg` to play these.
-- Crossed-out maps may be included here!
-<br><br>      
-
-> [Go to **All Available Maps In The Game Menu** (go up again)](#all-available-rpam-maps) 
-
-| Map `/rcon`              | Creator                                          | Gametypes                 | Side | S&D | Slot | Notes                |
-|--------------------------|-----------------------------------------------|---------------------------|------|-----|-----|----------------------|
-| ***rPAM Aim Maps***      |                                               |                           |      |     | 65  |                      |
-| mp_aim_a                 | Yannic [05-2004]                              | dm, tdm                   | A    |     | 66  |                      |
-| mp_aim_b                 | Yannic [05-2004]                              | dm, tdm                   | B    |     | 67  |                      |
-| mp_aim_r                 | Yannic [05-2004]                              | dm, tdm                   | R    |     | 68  |                      |
-| mp_blaoaim_a             | RL.GENERAL Z [08-2004]                        | dm, tdm                   | A    |     | 69  |                      |
-| mp_blaoaim_b             | RL.GENERAL Z [08-2004]                        | dm, tdm                   | B    |     | 70  |                      |
-| mp_blaoaim_r             | RL.GENERAL Z [08-2004]                        | dm, tdm                   | R    |     | 71  |                      |
-| mp_pgaim_a               | Unknown [04-2005]                             | dm, tdm                   | A    |     | 72  |                      |
-| mp_pgaim_r               | Unknown [04-2005]                             | dm, tdm                   | R    |     | 73  |                      |
-| mp_wawa_a                | wawa [07-2004]                                | dm                        | A    |     | 74  |                      |
-| mp_wawa_b                | wawa [07-2004]                                | dm                        | B    |     | 75  |                      |
-| mp_wawa_r                | wawa [07-2004]                                | dm                        | R    |     | 76  |                      |
-|                          |                                               |                           |      |     |     |                      |
-| mp_frozen_a              | SIFFER [02-2004] 	                           | dm, tdm,     re, bel      | A    |     | 77  |                      |
-| mp_frozen_r              | SIFFER [02-2004] 	                           | dm, tdm,     re, bel      | R    |     | 78  |                      |
-|                          |                                               |                           |      |     |     |                      |
-| mp_bellicourt_night_beta | Magnus Sandström & Roger Abrahamsson [04-2004]| dm, tdm, sd, re, bel, hq, | A    | y   | 79    | *Version before fix* |
-| mp_nuenen                | [AYM] Lt Jules                                | dm, tdm, sd,     bel, hq  | A    | y   | 80  | *Broken windows*     |
-| mp_subharbor_night       | VegaObscura [03-2004]                         | dm, tdm, sd,     bel, hq  | B    | y   | 81  | *Day allr. present*  |
-| mp_valley_night          | VegaObscura [03-2004]                         | dm, tdm, sd,     bel      | A    | y   | 82  | *Day allr. present*  |
-|                          |                                               |                           |      |     |     |                      |
-| *Classics*               |                                               |                           |      |     |     |                      |
-| mp_chateau               | Infinity Ward                                 | dm, tdm,     re, bel, hq  | B    |     | 83  |                      |
-| mp_dawnville             | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | A    | y   | 84  |                      |
-| mp_railyard              | Infinity Ward                                 | dm, tdm, sd, re, bel, hq  | R    | y   | 85  |                      |
-| mp_ship                  | Infinity Ward                                 | dm, tdm,     re, bel, hq  | B    |     | 86  |                      |
-
-
-
+> **All Available rPAM Maplist**     
+> [GITHUB LINK1](https://github.com/ANDROHKA/rpam-mod-for-vcod/blob/master/README_rpam_maplist_maps.md)
 
 <br><br>
 > [go up again](#maps-not-shown-in-the-game-menu) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#changelog-rpam-maps-custom-detailed)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
-
-
 # Changelog rPAM Maps Custom Detailed
 
-> **Relevant To Version:** `v2.2`
-
-#### Changes on `mp_germantown` made by Steiner [03-2004]
-- known as `german_town` `german_town.pk3`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-- Updated levelshot `\levelshots`
-
-#### Changes on `mp_aim` made by Yannic [05-2004]
-- known as `mp_aim with basharena` `mp_aim.pk3`
-- HUD map layout default/unknown added `\levelshots\layouts`
-- Updated levelshot `\levelshots`
-- 
-#### Changes on `mp_blaoaim` by RL.GENERAL Z [08-2004]
-- known as `rl_blaoaim` `original filename missing`
-- HUD map layout default/unknown added `\levelshots\layouts`
-- changed a texture to promote CODBASE
-- Updated levelshot `\levelshots`
-  
-#### Changes on `mp_pgaim` by an unknown author [05-2004]
-- known as `pg_aim` `pg_aim.pk3`
-- HUD map layout default/unknown added `\levelshots\layouts`
-- mp_pgaim_b british is crashing the game
-- Updated levelshot `\levelshots`
-  
-#### Changes on `mp_wawa` by wawa [07-2004]
-- known as `wawa_3Daim` `original filename missing`
-- HUD map layout default/unknown added `\levelshots\layouts`
-- changed a texture to promote CODBASE
-- Updated levelshot `\levelshots`
-  
-> **Relevant To Version:** `v2.3`
-
-#### Changes on `x` made by x [x]
-- known as `x` `x`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-- Updated levelshot `\levelshots`
-  
-#### Changes on `x` made by x [x]
-- known as `x` `x`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-- Updated levelshot `\levelshots`
-  
-#### Changes on `x` made by x [x]
-- known as `x` `x`
-- HUD map layout edited and overhauled to match the game scheme	`\levelshots\layouts`
-- Updated levelshot `\levelshots`
-  
-
-
+> **README rPAM Maps Detailed Changes**     
+> [GITHUB LINK2](https://github.com/ANDROHKA/rpam-mod-for-vcod/blob/master/README_rpam_maps_detailed_changes.md
 
 <br><br>
 > [go up again](#changelog-rpam-maps-custom-detailed) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#about-rpam-development)
