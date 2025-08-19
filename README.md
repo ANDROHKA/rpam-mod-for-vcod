@@ -99,14 +99,6 @@ The images next to it are from 2010 to 2024.
 - From 06/01/2015 [CALL OF DUTY PAM V1.11 Release](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111), [CALL OF DUTY PAM V1.11 Article](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)
    - Release of v1.11 final
 
-
-### Medal of Honor: Blurred Remembrance
-- From 27/12/2016 [Medal of Honor: Blurred Remembrance](https://www.moddb.com/mods/medal-of-honor-blurred-remembrance)
-    - Realease of this Singleplayer & Coop (LAN) Total Conversion
-    
-<a href="images_readme/mohbr.jpg">
-  <img src="images_readme/mohbr.jpg" width="1000"/>
-</a>  
     
 ### rPAM Development & CoD Multiplayer    
 
