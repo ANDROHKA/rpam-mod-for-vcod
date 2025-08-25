@@ -3,28 +3,30 @@
  
 > **Relevant to:** ``v2.2``
 
-> **Supported Game Versions:**   
-`Call of Duty Multiplayer v1.5`   
-`Call of Duty Multiplayer v1.1 (Not testet yet)`
 
 ## ***Detailed Changes On Custom Maps***  
 
 > &nbsp; **Entry:**  29   
 > &nbsp; **Changes on `mp_germantown` made by Steiner [03-2004]**  
 - Known as `german_town` `german_town.pk3`  
-- Redesigned `\levelshots\layouts` & `\levelshots` to align with the games scheme and highlight the creator
-<img src="images_maps_overhaul/1classics/mp_germantown.png" height="210"> 
-<img src="images_maps_overhaul/layouts/29hud@layout_mp_germantown.png" height="210"> 
+- Redesigned `\levelshots\layouts` & `\levelshots` to align with the games scheme and highlight the creator     
+   <p align="left">
+     <img src="images_maps_overhaul/1classics/mp_germantown.png" alt="Bild 1" width="215"/>
+     <img src="images_maps_overhaul/layouts/29hud@layout_mp_germantown.png" alt="Bild 2" width="199"/>
+   </p>
+
 
 > &nbsp; **Final Entry:**  66, 67, 68     
 > &nbsp; **Changes on `mp_aim` made by Yannic [05-2004]**
 - Known as `mp_aim with basharena` `mp_aim.pk3`
 - Added more team variants
 - Redesigned `\levelshots` to align with the games scheme and highlight the creator
-<img src="images_maps_overhaul/2aim/mp_aim.png" height="150"> 
-<img src="images_maps_overhaul/2aim/mp_aim_a.png" height="150"> 
-<img src="images_maps_overhaul/2aim/mp_aim_b.png" height="150"> 
-<img src="images_maps_overhaul/2aim/mp_aim_r.png" height="150"> 
+   <p align="left">
+     <img src="images_maps_overhaul/2aim/mp_aim.png" alt="Bild 1" width="175"/>
+     <img src="images_maps_overhaul/2aim/mp_aim_a.png" alt="Bild 1" width="175"/>
+     <img src="images_maps_overhaul/2aim/mp_aim_b.png" alt="Bild 1" width="175"/>
+     <img src="images_maps_overhaul/2aim/mp_aim_r.png" alt="Bild 1" width="175"/>
+   </p>
 
 > &nbsp; **Final Slot::**  69, 70, 71    
 > &nbsp; **Changes on `mp_blaoaim` by RL.GENERAL Z [08-2004]**
