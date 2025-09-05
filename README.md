@@ -6,7 +6,7 @@
 <!-- [1.] -->
 <!-- [1.] -->
 
-# Introduction
+# Introduction [STILL WORK IN PROGRESS!]
 
 rPAM is the updated competition mod for Call of Duty 1.5, building on previous PAM releases.
 
