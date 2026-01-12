@@ -104,7 +104,7 @@ For my time already invested, you are welcome to leave a donation.
 # REISSUE LEANFIX v4 2024/25
 
 Full comparision between reissue-leanfix (2024), expert-leanfix (2023) & default game (2003).  
-_(C) It's remarkable how some people complain without really knowing what they're talking about. They take sides without knowing what's really going on._
+Here Reissue fixed the diagonal lean issue. The screeners explain it. Further changes applied after.
 
 <a href="images_readme/reissue-rPAM-leanfix_full_p1.png">
   <img src="images_readme/reissue-rPAM-leanfix_full_p1.png" width="1000"/>
