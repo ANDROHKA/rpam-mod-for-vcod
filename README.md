@@ -118,10 +118,11 @@ For my time already invested, you are welcome to leave a donation.
 **3.** [**Actual News And Updates**](#actual-news-and-updates)                    
 **2.** [**How To Support This Project And Previous Work**](#previous-work-and-how-to-support-this-project)  
 
-[rPAM Document Navigation]
+[rPAM Document Navigation]                            
+
 **4.** [**About rPAM Maps Overhaul**](#about-rpam-maps-overhaul)   
 
-&nbsp;&nbsp;&nbsp;&nbsp;**4.1** [**Main Changes rPAM Maps Overhaul**](#main-changes-rpam-maps-overhaul)    
+&nbsp;&nbsp;&nbsp;&nbsp;**4.1** [**Main Changes rPAM**](#main-changes-rpam)    
 &nbsp;&nbsp;&nbsp;&nbsp;**4.8** [**Server Cvars rPAM Maps Overhaul**](#server-cvar-overview-rpam-maps-overhaul)  
 &nbsp;&nbsp;&nbsp;&nbsp;**4.2** [**Actual Changelog**](#actual-changelog-rpam-maps-overhaul)    
 &nbsp;&nbsp;&nbsp;&nbsp;**4.3** [**Main rPAM Maps**](#main-rpam-maps)    
