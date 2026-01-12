@@ -1,3 +1,5 @@
+# Call of Duty (2003) Multiplayer in 2026
+
 <a href="images_readme/banner1.png">
   <img src="images_readme/banner1.png" width="1000"/>
 </a>   
@@ -23,7 +25,7 @@ The original Project Ares Mod (PAM) for Call of Duty (v1.5), created by Garetjax
 CAL, and TWL from the 2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability,
 it quickly became the standard for high-level competitive play.    
 
-> **rPAM Goals:**
+> **Overall Goals Here:**
 * Ensure that the game remains closely aligned with the legacy established between 2004 and 2011
 * Provide server operators and players with a stable, easy-to-manage experience
 * Fix bugs, retain and expand features introduced in CoDBASE-PAM (2024)
@@ -34,7 +36,7 @@ it quickly became the standard for high-level competitive play.
 <!-- [1. END] -->
 <!-- [1. END] -->
 
-> [go up again](#introduction) <|> [go next](#actual-news-and-updates)
+> [go up again](#-call-of-duty-(2003)-multiplayer-in-2026) <|> [go next](#actual-news-and-updates)
 ---------------------------------------------------------------------------------------------
 
 <!-- [2.] -->
