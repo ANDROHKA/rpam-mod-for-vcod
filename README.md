@@ -183,7 +183,9 @@ For my time already invested, you are welcome to leave a donation.
 
 - Textures: Improved window glass transparency and frame details in `mp_neuville`
 - Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
+  
   <a href="readme_images/t_neuville_windows26.jpg"><img src="readme_images/t_neuville_windows26.jpg" width="220"/></a><a href="readme_images/t_carentan_fence26.jpg"><img src="readme_images/t_carentan_fence26.jpg" width="220"/></a>
+
 - rPAM: Addes set rpam_msg & set rpam_debug 1 Message Center
 - rPAM: Fixed compatibility issues with `.arena` files  
 - Textures: Refreshed all levelshots `\levelshots`
@@ -214,33 +216,12 @@ href="readme_images/e_mp_railyard_x_axis_roof2.jpg"><img src="readme_images/e_mp
 
 - Maps: Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
 
-<a href="mod_images/maps_levelshots_aim/mp_aim.png"><img src="mod_images/maps_levelshots_aim/mp_aim.png" width="220"/></a><a href="mod_images/mp_blaoaim.png"><img src="mod_images/maps_levelshots_aim/mp_blaoaim.png" width="220"/></a><a                          
-href="mod_images/maps_levelshots_aim/mp_pgaim.png"><img src="mod_images/maps_levelshots_aim/mp_pgaim.png" width="220"/></a><a href="mod_images/maps_levelshots_aim/mp_wawa.png"><img src="mod_images/maps_levelshots_aim/mp_wawa.png" width="220"/></a>
+<a href="mod_images/maps_levelshots_aim/mp_aim.png"><img src="mod_images/maps_levelshots_aim/mp_aim.png" width="230"/></a><a href="mod_images/mp_blaoaim.png"><img src="mod_images/maps_levelshots_aim/mp_blaoaim.png" width="230"/></a><a                          
+href="mod_images/maps_levelshots_aim/mp_pgaim.png"><img src="mod_images/maps_levelshots_aim/mp_pgaim.png" width="230"/></a><a href="mod_images/maps_levelshots_aim/mp_wawa.png"><img src="mod_images/maps_levelshots_aim/mp_wawa.png" width="230"/></a>
 
 <table>
   <tr>
-    <td>
-      <ul>
-        <li>Maps: Added rPAM Overhaul Script For <code>mp_railyard</code> <code>2024/25 by reissue</code> <code>**| AUTO OFF |**</code>
-          <ul>
-            <li>The same locations like used in mp_railyard_x are edited by a script which does load invisible objects and also visible objects with bullet-collision.</li>
-            <li>The game does quickly overload by a huge amount of placed objects loaded by the script.</li>
-            <li>I added commands to tinker around with different settings of the <a href="#rpam-overhaul-for-mp_railyard">"rPAM overhaul script for mp_railyard"</a></li>
-          </ul>
-        </li>
-      </ul>
-    </td>
-    <td valign="top">
-      <a href="readme_images/e_mp_railyard_overhaul_script.jpg">
-        <img src="readme_images/e_mp_railyard_overhaul_script.jpg" width="400" align="right"/>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td valign="top"> <!-- Hier hinzugefügt -->
+    <td valign="top"> <!-- top -->
       <ul>
         <li>Maps: Added rPAM Overhaul Script For <code>mp_railyard</code> <code>2024/25 by reissue</code> <code>**| AUTO OFF |**</code>
           <ul>
