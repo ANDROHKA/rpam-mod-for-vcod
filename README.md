@@ -107,7 +107,6 @@ For my time already invested, you are welcome to leave a donation.
 
 > [go up again](#actual-news-and-updates) <|> [go next (Document Navigation)](#document-navigation)
 ---------------------------------------------------------------------------------------------
-<br><br>
 
 <!-- [Nav.] -->
 <!-- [Nav.] -->
@@ -116,10 +115,8 @@ For my time already invested, you are welcome to leave a donation.
 # rPAM Document Navigation
 
 **1.** [**About this Project**](#introduction)  
-**3.** [**Actual News And Updates**](#actual-news-and-updates)
+**3.** [**Actual News And Updates**](#actual-news-and-updates)                    
 **2.** [**How To Support This Project And Previous Work**](#previous-work-and-how-to-support-this-project)  
-
-  
 
 **4.** [**About rPAM Maps Overhaul**](#about-rpam-maps-overhaul)   
 
@@ -164,19 +161,6 @@ For my time already invested, you are welcome to leave a donation.
 <!-- [4.] -->
 <!-- [4.] -->
 <!-- [4.] -->
-
-# About rPAM Maps Overhaul
-
-> Goals:
-
-- Adaptations of all maps to rPAM and competitive play
-- Revise and enhance ambient sounds, fog, and smoke effects on both classic and custom maps
-- **Ensure compatibility with other mods, even without the rPAM-S&D for the server**
-- Improve gameplay across all gametypes, minimize bugs and exploits
-
-> **Supported Game Versions:**   
-`Call of Duty Multiplayer v1.5`   
-`Call of Duty Multiplayer v1.1 (Not tested yet)`
 
 > [**Download Actual Version**](#download) 
 
