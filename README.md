@@ -1,7 +1,7 @@
 # Call of Duty (2003) Multiplayer in 2026
 
-<a href="images_readme/banner1.png">
-  <img src="images_readme/banner1.png" width="1000"/>
+<a href="readme_images/g_callofduty1.jpg">
+  <img src="readme_images/g_callofduty1.jpg" width="1000"/>
 </a>   
 
 <!-- [E 1.] -->
@@ -82,8 +82,8 @@ it quickly became the standard for high-level competitive play.
 <!-- [E 3.] -->
 
 # Previous Work And How To Support This Project
-<a href="images_readme/ppa_png.png">
-  <img src="images_readme/ppa_png.png" width="1000"/>
+<a href="readme_images/g_promo.jpg">
+  <img src="readme_images/g_promo.jpg" width="1000"/>
 </a>  
 
 A little throwback, back in 2007 or 2008, I managed to add this shown fifth button to the main menu. That’s why it says ‘hi world‘.
@@ -106,19 +106,22 @@ For my time already invested, you are welcome to leave a donation.
 Full comparision between reissue-leanfix (2024), expert-leanfix (2023) & default game (2003).  
 Here Reissue fixed the diagonal lean issue. The screeners explain it. Further changes applied after.
 
-<a href="images_readme/reissue-rPAM-leanfix_full_p1.png">
-  <img src="images_readme/reissue-rPAM-leanfix_full_p1.png" width="1000"/>
+<a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_full_p1.jpg" width="1000"/>
 </a>   
 <br><br>
-<a href="images_readme/reissue-rPAM-leanfix_full_p2.png">
-  <img src="images_readme/reissue-rPAM-leanfix_full_p2.png" width="1000"/>
+<a href="readme_images/reissue-rPAM-leanfix_full_p2.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_full_p2.jpg" width="1000"/>
 </a>   
 <br><br>
-<a href="images_readme/reissue-rPAM-leanfix_v4_comp.jpg">
-  <img src="images_readme/reissue-rPAM-leanfix_v4_comp.jpg" width="1000"/>
+<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg" width="1000"/>
 </a>   
 <br><br>
-
+<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg" width="1000"/>
+</a>   
+<br><br>
 
 <!-- [E 3. END] -->
 <!-- [E 3. END] -->
@@ -200,11 +203,13 @@ Here Reissue fixed the diagonal lean issue. The screeners explain it. Further ch
 > **Relevant to:** ``rPAM v1.15 #4.6``
 
 - Textures: Improved window glass transparency and frame details in `mp_neuville`
-SS
+  <a href="readme_images/t_neuville_windows26.jpg">
+    <img src="readme_images/t_neuville_windows26.jpg" width="500"/>
+  </a>  
 - Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
-SS
-
-
+  <a href="readme_images/t_carentan_fence26.jpg">
+    <img src="readme_images/t_carentan_fence26.jpg" width="500"/>
+  </a>  
 - Textures: Refreshed all levelshots `\levelshots`
 - Textures: Updated HUD map layouts `\levelshots\layouts` of `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
 - Maps: Added `Cod1 maps patch` from curiousfox 2025
@@ -230,8 +235,8 @@ SS
   - The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision.
       - The game does quickly overload by a huge amount of placed objects loaded by the script.
       - I added commands to tinker around with different settings of the ["rPAM overhaul script for mp_railyard"](#rpam-overhaul-for-mp_railyard)
-      <a href="images_readme/railyard_overhaul_script.png">
-       <img src="images_readme/railyard_overhaul_script.png" width="500"/>
+      <a href="readme_images/e_mp_railyard_overhaul_script.jpg">
+       <img src="readme_images/e_mp_railyard_overhaul_script.jpg" width="500"/>
       </a>  
       <br><br>
 - Maps: Added `mp_germantown` from Steiner (former german_town), used ingame now as `mp_germantown` with ``/rcon map mp_germantown``
@@ -259,28 +264,28 @@ SS
 - Created this `README.md` in hopes it helps structuring the project  
 - Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
   - `mp_railyard_x` `ruins roof`: Filled a missing texture and a pixel-spot with bricks  
-  <a href="images_readme/railyard_axis_roof1.png">
-    <img src="images_readme/railyard_axis_roof1.png" width="500"/>
+  <a href="readme_images/e_mp_railyard_x_axis_roof1.jpg">
+    <img src="readme_images/e_mp_railyard_x_axis_roof1.jpg" width="500"/>
   </a>  
 
   - `mp_railyard_x` `ruins roof`: Added `woodgib_medium` to the lower roof section, and one to the top  
-  <a href="images_readme/railyard_axis_roof3.png">
-    <img src="images_readme/railyard_axis_roof3.png" width="500"/>
+  <a href="readme_images/e_mp_railyard_x_axis_roof3.jpg">
+    <img src="readme_images/e_mp_railyard_x_axis_roof3.jpg" width="500"/>
   </a>  
 
 #### `v2.1`
 - `mp_railyard_x` `ruins roof`: Moved object `bigwoodgib` at position `ruins roof` to blend into the surrounding structure  
-  <a href="images_readme/railyard_axis_roof3.png">
-    <img src="images_readme/railyard_axis_roof2.png" width="500"/>
+  <a href="readme_images/e_mp_railyard_x_axis_roof2.jpg">
+    <img src="readme_images/e_mp_railyard_x_axis_roof2.jpg" width="500"/>
   </a>  
 - Adjusted rock and ruins stairs – patch by *curiousfox*  
-  <a href="images_readme/railyard_axis_roof3.png">
-    <img src="images_readme/railyard_ruins.png" width="500"/>
+  <a href="readme_images/e_mp_railyard_x_axis_ruins.jpg">
+    <img src="readme_images/e_mp_railyard_x_axis_ruins.jpg" width="500"/>
   </a>  
 
 - Adjusted tank positions – patch by *curiousfox*  
-  <a href="images_readme/railyard_axis_roof3.png">
-    <img src="images_readme/railyard_tanks.png" width="500"/>
+  <a href="readme_images/e_mp_railyard_x_axis_tanks.jpg">
+    <img src="readme_images/e_mp_railyard_x_axis_tanks.jpg" width="500"/>
   </a>  
 
 #### `v2.0`
@@ -289,8 +294,8 @@ SS
   - Now DXT5
   - Used in `mp_carentan`, for example  
   - Applies to all maps in the game  
-  <a href="images_readme/carentan_fence_23.png">
-    <img src="images_readme/carentan_fence_23.png" width="500"/>
+  <a href="readme_images/carentan_fence_23.png">
+    <img src="readme_images/carentan_fence_23.png" width="500"/>
   </a>  
 
 - Edited `\textures\normandy\windows\neuvilleglass.dds` – DXT3  
@@ -299,8 +304,8 @@ SS
   - Adjusted glass transparency (alpha channel)  
   - Minor color corrections to the window frame  
   - Applies to all maps in the game  
-  <a href="images_readme/neuville_windows.png">
-    <img src="images_readme/neuville_windows.png" width="500"/>
+  <a href="readme_images/neuville_windows.png">
+    <img src="readme_images/neuville_windows.png" width="500"/>
   </a>  
 
 #### `v1.9`
@@ -659,7 +664,7 @@ This is the in game map list for version 2.2 of rPAM Maps Overhaul:
 ### Recommendation:
 - Players: Check or copy your `config_mp.cfg` from your `main` folder into the `_rPAMv115*` folder. Normally, it transfers automatically when launching the mod for the first time.
 - Players: It is recommended you clear you `main` folder.
-   - <a href="images_readme/cleared_main.png"><img src="images_readme/cleared_main.png"/> </a>
+   - <a href="readme_images/cleared_main.png"><img src="readme_images/cleared_main.png"/> </a>
 - Server Hosts: New players can download most of the required files directly by connecting to the game server by adding the following commands to the server config
 `seta sv_allowDownload "1"`
 `seta sv_wwwBaseURL "http://167.235.243.217/fastdl/cod1"` // Credits: bandiii92`
