@@ -180,8 +180,9 @@ For my time already invested, you are welcome to leave a donation.
 
 ## Main Changes rPAM
 
-> **Relevant to:** ``rPAM v1.15 Maps Overhaul #4.6``
+> **Relevant to:** ``rPAM v1.15 Maps Overhaul v2.29`` ``#4.6``
 
+- rPAM: fox for the game prioritize filenaming loads v1 -v9 after v10 or v11
 - Textures: Improved window glass transparency and frame details in `mp_neuville`
 - Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
   
