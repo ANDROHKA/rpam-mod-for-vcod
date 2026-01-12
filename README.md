@@ -104,6 +104,7 @@ For my time already invested, you are welcome to leave a donation.
 # REISSUE LEANFIX
 
 Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & default game (2003).  
+In the default game the body rolls inwards while diagonal movement. Expert made an attempt and added an weird anim.
 Here Reissue fixed the diagonal lean issue completely. The screeners explain it. Further changes applied.
 
 <a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
