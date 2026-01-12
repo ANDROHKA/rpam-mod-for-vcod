@@ -4,9 +4,9 @@
   <img src="images_readme/banner1.png" width="1000"/>
 </a>   
 
-<!-- [1.] -->
-<!-- [1.] -->
-<!-- [1.] -->
+<!-- [E 1.] -->
+<!-- [E 1.] -->
+<!-- [E 1.] -->
 
 # Introduction
 
@@ -32,9 +32,9 @@ it quickly became the standard for high-level competitive play.
 * Fully supported and integrated custom maps
 * Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
 
-<!-- [1. END] -->
-<!-- [1. END] -->
-<!-- [1. END] -->
+<!-- [E 1. END] -->
+<!-- [E 1. END] -->
+<!-- [E 1. END] -->
 
 > [go up again](#-call-of-duty-(2003)-multiplayer-in-2026) <|> [go next](#actual-news-and-updates)
 ---------------------------------------------------------------------------------------------
@@ -70,16 +70,16 @@ it quickly became the standard for high-level competitive play.
 - **2025-10-20 Update #2**: Reissue added a possible fix for download crash issue (sv_wwwDlDisconnected "1", thanks to Prawy)
 - **2025-10-19 Update #1**: Kikiii fixed visible weapon while planting the bomb, improved ready-up, fast-shoot, training and performance
 
-<!-- [2. END] -->
-<!-- [2. END] -->
-<!-- [2. END] -->
+<!-- [E 2. END] -->
+<!-- [E 2. END] -->
+<!-- [E 2. END] -->
 
 > [go up again](#actual-news-and-updates) <|> [go next](#previous-work-and-how-to-support-this-project)
 ---------------------------------------------------------------------------------------------
 
-<!-- [3.] -->
-<!-- [3.] -->
-<!-- [3.] -->
+<!-- [E 3.] -->
+<!-- [E 3.] -->
+<!-- [E 3.] -->
 
 # Previous Work And How To Support This Project
 <a href="images_readme/ppa_png.png">
@@ -89,11 +89,11 @@ it quickly became the standard for high-level competitive play.
 A little throwback, back in 2007 or 2008, I managed to add this shown fifth button to the main menu. That’s why it says ‘hi world‘.
 That was an personal achievement that I accomplished through trial and error over many hours of time without internet and knowledge to code. 
 The images next to it are from 2010 to 2024 added to showcase a picture here. The following links do provide my work on single- and multiplayer.
-- From 08/06/2014 Showcasing a modded singleplayer map [Call of Duty Origin of Honor - GETAWAY 1080p](https://www.youtube.com/watch?v=ziqqI1rqj-o)                 
-- From 04/12/2015 Showcasing the first playable tests [Call of Duty (Origin of Honor) P.A.M. V1.11 ALPHA TESTING](https://www.youtube.com/watch?v=H-4lJH0HDgU)             
-- From 04/06/2015 Showcasing a modded singleplayermenu [Call of Duty Origin of Honor - Menu](https://www.youtube.com/watch?v=ICAWwLr7_OU)            
-- From 05/01/2015 Showcasing requested features in rPAM [CALL OF DUTY PAM V1.11 TEST3](https://www.youtube.com/watch?v=PU8UjrvVZE0)             
-- From 06/01/2015 Showcasing the final release of rPAM v1.11 [CALL OF DUTY PAM V1.11 Release](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111), [CALL OF DUTY PAM V1.11 Article](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)            
+- From 08/06/2014 showcasing an edited singleplayer map [Call of Duty Origin of Honor - GETAWAY 1080p](https://www.youtube.com/watch?v=ziqqI1rqj-o)                 
+- From 04/12/2015 showcasing the first playable rPAM tests [Call of Duty (Origin of Honor) P.A.M. V1.11 ALPHA TESTING](https://www.youtube.com/watch?v=H-4lJH0HDgU)             
+- From 04/06/2015 showcasing a modded singleplayer menu [Call of Duty Origin of Honor - Menu](https://www.youtube.com/watch?v=ICAWwLr7_OU)            
+- From 05/01/2015 showcasing requested features in PAM really well implemented [CALL OF DUTY PAM V1.11 TEST3](https://www.youtube.com/watch?v=PU8UjrvVZE0)             
+- From 06/01/2015 showcasing the final release of rPAM v1.11 [CALL OF DUTY PAM V1.11 Release](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111) & [CALL OF DUTY PAM V1.11 Article](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)            
 
 Get in touch if you wan't to help with rPAM & Multiplayer! There are always tasks or tests to be found.    
 For my time already invested, you are welcome to leave a donation.    
@@ -101,9 +101,9 @@ For my time already invested, you are welcome to leave a donation.
 > **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
 > `Optional Donation` `(€)` `Billing Address Required`   
 
-<!-- [3. END] -->
-<!-- [3. END] -->
-<!-- [3. END] -->
+<!-- [E 3. END] -->
+<!-- [E 3. END] -->
+<!-- [E 3. END] -->
 
 > [go up again](#actual-news-and-updates) <|> [go next (Document Navigation)](#document-navigation)
 ---------------------------------------------------------------------------------------------
@@ -113,7 +113,7 @@ For my time already invested, you are welcome to leave a donation.
 <!-- [Nav.] -->
 <!-- [Nav.] -->
 
-# Document Navigation
+# rPAM Document Navigation
 
 **1.** [**About this Project**](#introduction)  
 **3.** [**Actual News And Updates**](#actual-news-and-updates)
@@ -153,8 +153,10 @@ For my time already invested, you are welcome to leave a donation.
 **3.** [**Downloads**](#download)  
 **4.** [**Installation**](#installation) 
 
+<!-- [Nav. End] -->
+<!-- [Nav. End] -->
+<!-- [Nav. End] -->
 
-<br><br>
 > [go up again](#document-navigation) <|> > [go next](#support-this-project)
 ---------------------------------------------------------------------------------------------
 <br><br>
