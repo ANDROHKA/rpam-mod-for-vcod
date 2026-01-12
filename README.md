@@ -21,7 +21,7 @@ The goal of this project is to develop features requested by the player base whi
 
 > **Background of PAM:**
 
-The original Project Ares Mod (PAM) for Call of Duty (v1.5), created by Garetjax and finalized with version 1.08. He laid the groundwork for competitive play in the game’s early days. Widely adopted in leagues such as ESL, ClanBase,
+Project Ares Mod (PAM) for Call of Duty (v1.5) was created by Garetjax and finalized with version 1.08. He laid the groundwork for competitive play in the game’s early days. Widely adopted in leagues such as ESL, ClanBase,
 CAL, and TWL from the 2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability,
 it quickly became the standard for high-level competitive play.    
 
