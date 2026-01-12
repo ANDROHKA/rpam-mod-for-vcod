@@ -1,4 +1,4 @@
-# Call of Duty (2003/2004) Multiplayer in 2026 with rPAM Competition
+# Call of Duty (2003/2004) Multiplayer in 2026 with rPAM
 
 <a href="readme_images/g_callofduty1.jpg">
   <img src="readme_images/g_callofduty1.jpg" width="1000"/>
