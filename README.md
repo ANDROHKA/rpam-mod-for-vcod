@@ -101,29 +101,6 @@ For my time already invested, you are welcome to leave a donation.
 > **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
 > `Optional Donation` `(€)` `Billing Address Required`   
 
-### REISSUE LEANFIX
-
-Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & default game (2004).  
-In the default game the body rolls inwards while using diagonal movement. Expertiz made an attempt and added a weird animation.
-Here Reissue fixed the diagonal lean issue completely. The screeners explain it. Further changes applied.
-
-<a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_full_p1.jpg" width="1000"/>
-</a>   
-<br><br>
-<a href="readme_images/reissue-rPAM-leanfix_full_p2.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_full_p2.jpg" width="1000"/>
-</a>   
-<br><br>
-<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg" width="1000"/>
-</a>   
-<br><br>
-<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg" width="1000"/>
-</a>   
-<br><br>
-
 <!-- [E 3. END] -->
 <!-- [E 3. END] -->
 <!-- [E 3. END] -->
@@ -201,16 +178,15 @@ Here Reissue fixed the diagonal lean issue completely. The screeners explain it.
 
 ## Main Changes rPAM
 
-> **Relevant to:** ``rPAM v1.15 #4.6``
+> **Relevant to:** ``rPAM v1.15 Maps Overhaul #4.6``
 
 - Textures: Improved window glass transparency and frame details in `mp_neuville`
-  <a href="readme_images/t_neuville_windows26.jpg">
-    <img src="readme_images/t_neuville_windows26.jpg" width="500"/>
-  </a>  
 - Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
-  <a href="readme_images/t_carentan_fence26.jpg">
-    <img src="readme_images/t_carentan_fence26.jpg" width="500"/>
-  </a>  
+
+<a href="readme_images/t_neuville_windows26.jpg"><img src="readme_images/t_neuville_windows26.jpg" width="220"/></a><a href="readme_images/t_carentan_fence26.jpg"><img src="readme_images/t_carentan_fence26.jpg" width="220"/></a>
+
+- rPAM: Addes set rpam_msg & set rpam_debug 1 Message Center
+- rPAM: Fixed compatibility issues with `.arena` files  
 - Textures: Refreshed all levelshots `\levelshots`
 - Textures: Updated HUD map layouts `\levelshots\layouts` of `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
 - Maps: Added `Cod1 maps patch` from curiousfox 2025
@@ -220,30 +196,78 @@ Here Reissue fixed the diagonal lean issue completely. The screeners explain it.
       - Graveyard bush wall is no longer see-through
       - Bombsite tanks remodeled for accurate hitboxes (fix should apply to all tanks in the game)
   - Adds a updated ``mp_railyard``, used ingame as  `mp_railyard_x` now with ``/rcon map mp_railyard_x``
-    - Added loading screen and information in `rpam_msg`
       - Axis spawn wooden panels are now solid
       - ~~Raised the sky to prevent grenade disappearance~~ Nades still do disappear like before
       - S&D Tiger tanks remodeled to fix gaps (fix should apply to all tanks in the game)
       - Ruins faulty rock patched
       - Ruins stairs now use `+moveup` function when prone
-      - Upper Axis ruins roof no longer see-through
-        - Credits to Expertiz's earlier fix with the big woodgib
-        - `v2` now does blend in the added object from curiousfox
-        - `v3` now adds more objects for broken roof and broken wall textures
-        - `v4` now adds more objects for broken roof
+      - Upper Axis ruins roof no longer see-through, `v4` now adds more objects for broken roof and broken wall textures
+        - Credits to Expertiz's for his earlier fix with the big woodgib
+      - Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
+        - `mp_railyard_x` `ruins roof`: Filled a missing texture and a pixel-spot with bricks  
+        - `mp_railyard_x` `ruins roof`: Added `woodgib_medium` to the lower roof section, and one to the top  
+        - `mp_railyard_x` `ruins roof`: Moved object `bigwoodgib` at position `ruins roof` to blend into the surrounding structure  
+        - Adjusted rock and ruins stairs – patch by *curiousfox*  
+        - Adjusted tank positions – patch by *curiousfox*
+
+<a href="readme_images/e_mp_railyard_x_axis_roof1.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof1.jpg" width="250"/></a><a href="readme_images/e_mp_railyard_x_axis_roof3.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof3.jpg" width="250"/></a><a                          
+href="readme_images/e_mp_railyard_x_axis_roof2.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof2.jpg" width="250"/></a><a href="readme_images/e_mp_railyard_x_axis_ruins.jpg"><img src="readme_images/e_mp_railyard_x_axis_ruins.jpg" width="250"/></a>
+
 - Maps: Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
-- Maps: Added rPAM Overhaul Script For `mp_railyard` `2024/25 by reissue` `**| AUTO OFF |**`     
-  - The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision.
-      - The game does quickly overload by a huge amount of placed objects loaded by the script.
-      - I added commands to tinker around with different settings of the ["rPAM overhaul script for mp_railyard"](#rpam-overhaul-for-mp_railyard)
+
+<a href="mod_images/maps_levelshots_aim/mp_aim.png"><img src="mod_images/maps_levelshots_aim/mp_aim.png" width="220"/></a><a href="mod_images/mp_blaoaim.png"><img src="mod_images/maps_levelshots_aim/mp_blaoaim.png" width="220"/></a><a                          
+href="mod_images/maps_levelshots_aim/mp_pgaim.png"><img src="mod_images/maps_levelshots_aim/mp_pgaim.png" width="220"/></a><a href="mod_images/maps_levelshots_aim/mp_wawa.png"><img src="mod_images/maps_levelshots_aim/mp_wawa.png" width="220"/></a>
+
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>Maps: Added rPAM Overhaul Script For <code>mp_railyard</code> <code>2024/25 by reissue</code> <code>**| AUTO OFF |**</code>
+          <ul>
+            <li>The same locations like used in mp_railyard_x are edited by a script which does load invisible objects and also visible objects with bullet-collision.</li>
+            <li>The game does quickly overload by a huge amount of placed objects loaded by the script.</li>
+            <li>I added commands to tinker around with different settings of the <a href="#rpam-overhaul-for-mp_railyard">"rPAM overhaul script for mp_railyard"</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td valign="top">
       <a href="readme_images/e_mp_railyard_overhaul_script.jpg">
-       <img src="readme_images/e_mp_railyard_overhaul_script.jpg" width="500"/>
-      </a>  
-      <br><br>
+        <img src="readme_images/e_mp_railyard_overhaul_script.jpg" width="400" align="right"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="top"> <!-- Hier hinzugefügt -->
+      <ul>
+        <li>Maps: Added rPAM Overhaul Script For <code>mp_railyard</code> <code>2024/25 by reissue</code> <code>**| AUTO OFF |**</code>
+          <ul>
+            <li>The same locations like used in mp_railyard_x are edited by a script which does load invisible objects and also visible objects with bullet-collision.</li>
+            <li>The game does quickly overload by a huge amount of placed objects loaded by the script.</li>
+            <li>I added commands to tinker around with different settings of the <a href="#rpam-overhaul-for-mp_railyard">"rPAM overhaul script for mp_railyard"</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td valign="top">
+      <a href="readme_images/e_mp_railyard_overhaul_script.jpg">
+        <img src="readme_images/e_mp_railyard_overhaul_script.jpg" width="400" align="right"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+- Corrected HUD map layouts: `mp_harbor` (Switched A and B to match actual layout/Adjusted midboxes)  
+- Corrected HUD map layouts: `mp_neuville`, `mp_stalingrad`, `mp_tigertown` (Slightly enlarged & applied minor corrections)
+- Corrected HUD map layouts: `mp_germantown` (Added callouts and highlighted doorways)
 - Maps: Added `mp_germantown` from Steiner (former german_town), used ingame now as `mp_germantown` with ``/rcon map mp_germantown``
 - Ambient: Normalized ambient sound effects for a more balanced audio volume in `\soundaliases` if used
 - Ambient: Added rPAM overhaul script to change ambient sounds, fog and smoke plumes for competitive play in `\maps\mp`
-
+- Created server mod files for compatibility with other mods  
+- Overhauled `.pk3` file name structure  
 
 <!-- [E 3. END] -->
 <!-- [E 3. END] -->
@@ -254,107 +278,28 @@ Here Reissue fixed the diagonal lean issue completely. The screeners explain it.
 ---------------------------------------------------------------------------------------------
 <br><br>
 
+# REISSUE LEANFIX
 
+Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & default game (2004).  
+In the default game the body rolls inwards while using diagonal movement. Expertiz made an attempt and added a weird animation.
+Here Reissue fixed the diagonal lean issue completely. The screeners explain it. Further changes applied.
 
-
-# Actual Changelog rPAM Maps Overhaul
-
-#### `v2.2` (Latest)
-- Created server mod files for compatibility with other mods  
-- Overhauled `.pk3` file name structure  
-- Created this `README.md` in hopes it helps structuring the project  
-- Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
-  - `mp_railyard_x` `ruins roof`: Filled a missing texture and a pixel-spot with bricks  
-  <a href="readme_images/e_mp_railyard_x_axis_roof1.jpg">
-    <img src="readme_images/e_mp_railyard_x_axis_roof1.jpg" width="500"/>
-  </a>  
-
-  - `mp_railyard_x` `ruins roof`: Added `woodgib_medium` to the lower roof section, and one to the top  
-  <a href="readme_images/e_mp_railyard_x_axis_roof3.jpg">
-    <img src="readme_images/e_mp_railyard_x_axis_roof3.jpg" width="500"/>
-  </a>  
-
-#### `v2.1`
-- `mp_railyard_x` `ruins roof`: Moved object `bigwoodgib` at position `ruins roof` to blend into the surrounding structure  
-  <a href="readme_images/e_mp_railyard_x_axis_roof2.jpg">
-    <img src="readme_images/e_mp_railyard_x_axis_roof2.jpg" width="500"/>
-  </a>  
-- Adjusted rock and ruins stairs – patch by *curiousfox*  
-  <a href="readme_images/e_mp_railyard_x_axis_ruins.jpg">
-    <img src="readme_images/e_mp_railyard_x_axis_ruins.jpg" width="500"/>
-  </a>  
-
-- Adjusted tank positions – patch by *curiousfox*  
-  <a href="readme_images/e_mp_railyard_x_axis_tanks.jpg">
-    <img src="readme_images/e_mp_railyard_x_axis_tanks.jpg" width="500"/>
-  </a>  
-
-#### `v2.0`
-- Edited `\textures\austria\transparents\metal_masked@ironfence1.dds` – DXT3
-- Edited `\textures\austria\transparents\metal_masked@ironfence1a.dds` – DXT3
-  - Now DXT5
-  - Used in `mp_carentan`, for example  
-  - Applies to all maps in the game  
-  <a href="readme_images/carentan_fence_23.png">
-    <img src="readme_images/carentan_fence_23.png" width="500"/>
-  </a>  
-
-- Edited `\textures\normandy\windows\neuvilleglass.dds` – DXT3  
-- Edited `\textures\normandy\windows\neuvilleframe.dds` – DXT5 (same as the DXT3 image)  
-  - Used in `mp_neuville` and `mp_bonneville`, for example  
-  - Adjusted glass transparency (alpha channel)  
-  - Minor color corrections to the window frame  
-  - Applies to all maps in the game  
-  <a href="readme_images/neuville_windows.png">
-    <img src="readme_images/neuville_windows.png" width="500"/>
-  </a>  
-
-#### `v1.9`
-- Completely overhauled ambient script (`soundaliases.csv`)  
-- Reworked message center  
-- Fixed compatibility issues with `.arena` files  
-- Added aim maps to the mod  
-
-#### `v1.8`
-- Modified `.arena` files to prevent original map duplication  
-- Normalized ambient audio (`\soundaliases\*.csv`)  
-- Updated levelshots and layout images  
-- Edited HUD map layouts:
-  - `mp_harbor`
-    - Switched A and B to match actual layout  
-    - Adjusted midboxes  
-  - `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
-    - Slightly enlarged & applied minor corrections  
-  - `mp_germantown`
-    - Added callouts and highlighted doorways  
-
-#### `v1.7`
-- Integrated all elements into working condition  
-- Started adding and adapting more custom maps using the evolving script layout  
-
-#### `v1.6`
-- Added `Cod1 maps patch` by *curiousfox* (2025)  
-
-#### `v1.5`
-- Added maps and files for version 1.1 of the game  
-- Included old aim maps with refreshed loading screens  
-  - HUD map layout: default/unknown added (`\levelshots\layouts`)  
-  - Changed texture for COD BASE on `wawa3Daim`  
-- Added `german_town` from *Steiner* to the classic maps overhaul package  
-
-#### `v1.4`
-- Updated several levelshots  
-- Created a mod package without the server mod included  
-
-#### `v1.3`
-- Experimented with fog effects and created related scripts  
-- Updated ambient sound mod  
-
-#### `v1.2`
-- Collected all previously modded files  
-- Established ambient sound mod based on rPAM v1.11  
-
-
+<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg" width="1000"/>
+</a>   
+<br><br>
+<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg" width="1000"/>
+</a>   
+<br><br>
+<a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_full_p1.jpg" width="1000"/>
+</a>   
+<br><br>
+<a href="readme_images/reissue-rPAM-leanfix_full_p2.jpg">
+  <img src="readme_images/reissue-rPAM-leanfix_full_p2.jpg" width="1000"/>
+</a>   
+<br><br>
 
 
 <br><br>
@@ -368,50 +313,6 @@ Here Reissue fixed the diagonal lean issue completely. The screeners explain it.
 # Main rPAM Maps
 
 > **Relevant to:** ``v2.2`` [**Download**](#download) <|> [**rPAM-Cvars**](#rpam-maps-cvar-overview)
-
-> **Supported Game Versions:**   
-`Call of Duty Multiplayer v1.5`   
-`Call of Duty Multiplayer v1.1 (Not testet yet)`
-
-This is the in game map list for version 2.2 of rPAM Maps Overhaul:
-
-
-| Map /rcon             | Creator                         | Gametypes                 | Side |
-|-----------------------|---------------------------------|---------------------------|------|
-| mp_brecourt           | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | A    |
-| mp_carentan           | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | A    |
-| mp_chateau            | Infinity Ward                   | dm, tdm,     re, bel, hq  | B    |
-| mp_dawnville          | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | A    |
-| mp_dawnville_x        | IW + curiousfox [03-2025]       | dm, tdm, sd, re, bel, hq  | A    |
-| mp_depot              | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | B    |
-| **mp_germantown**     | Steiner [03-2004]               | dm, tdm, sd,     bel      | A    |
-| mp_harbor             | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | R    |
-| mp_hurtgen            | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | A    |
-| mp_pavlov             | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | R    |
-| mp_powcamp            | Infinity Ward                   | dm, tdm, re, sd, bel, hq  | R    |
-| mp_railyard           | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | R    |
-| mp_railyard_x         | IW + curiousfox [03-2025]       | dm, tdm, sd, re, bel, hq  | R    |
-| mp_rocket             | Infinity Ward                   | dm, tdm, sd, re, bel, hq  | B    |
-| mp_ship               | Infinity Ward                   | dm, tdm,     re, bel, hq  | B    |
-|                       |                                 |                           |      |
-| mp_bocage             | added by offical patch 1.3      | dm, tdm, sd, re, bel, hq  | A    |
-| mp_neuville           | added by offical patch 1.3      | dm, tdm, sd, re, bel, hq  | A    |
-| mp_stalingrad         | added by offical patch 1.4      | dm, tdm, sd, re, bel, hq  | R    |
-| mp_tigertown          | added by offical patch 1.5      | dm, tdm, sd, re, bel, hq  | A    |
-|                       |                                 |                           |      |
-| ***rPAM Aim Maps***   |                                 |                           |      |
-| mp_aim_a              | Yannic [05-2004]                | dm, tdm                   | A    | 
-| mp_aim_b              | Yannic [05-2004]                | dm, tdm                   | B    |  
-| mp_aim_r              | Yannic [05-2004]                | dm, tdm                   | R    |  
-| mp_blaoaim_a          | RL.GENERAL Z [08-2004]          | dm, tdm                   | A    |   
-| mp_blaoaim_b          | RL.GENERAL Z [08-2004]          | dm, tdm                   | B    |   
-| mp_blaoaim_r          | RL.GENERAL Z [08-2004]          | dm, tdm                   | R    |   
-| mp_pgaim_a            | Unknown [04-2005]               | dm, tdm                   | A    |   
-| mp_pgaim_r            | Unknown [04-2005]               | dm, tdm                   | R    |   
-| mp_wawa_a             | wawa [07-2004]                  | dm                        | A    |  
-| mp_wawa_b             | wawa [07-2004]                  | dm                        | B    |   
-| mp_wawa_r             | wawa [07-2004]                  | dm                        | R    |  
-
 
 
 
