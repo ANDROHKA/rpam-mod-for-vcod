@@ -195,24 +195,19 @@ Here Reissue fixed the diagonal lean issue. The screeners explain it. Further ch
 
 
 
-## Main Changes rPAM Maps Overhaul
+## Main Changes rPAM
 
-> **Relevant to:** ``v2.2``
+> **Relevant to:** ``rPAM v1.15 #4.6``
 
-#### Ambient
-- Normalized ambient sound effects for a more balanced audio volume `\soundaliases`
-- Added rPAM Overhaul Script to change ambient sounds, fog and smoke plumes for competitive play `\maps\mp`
+- Textures: Improved window glass transparency and frame details in `mp_neuville`
+SS
+- Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
+SS
 
-#### Textures
-- Refreshed all levelshots `\levelshots`
-- Updated HUD map layouts `\levelshots\layouts` of `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
-- Improved window glass transparency and frame details in `mp_neuville`
-- Adjusted metal rail fences in `mp_carentan` for better visibility
 
-#### Maps Added
-- Added `mp_germantown` from Steiner (former german_town), used ingame now as `mp_germantown` with ``/rcon map mp_germantown``
-
-- Added `Cod1 maps patch` from curiousfox 2025
+- Textures: Refreshed all levelshots `\levelshots`
+- Textures: Updated HUD map layouts `\levelshots\layouts` of `default` (no layout available), `mp_harbor`, `mp_neuville`, `mp_stalingrad`, `mp_tigertown`
+- Maps: Added `Cod1 maps patch` from curiousfox 2025
   - Adds a updated ``mp_dawnville``, used ingame as `mp_dawnville_x` now with ``/rcon map mp_dawnville_x``
       - Axis spawn wall no longer affects player movement
       - Certain windows blocked to prevent prone-bug abuse
@@ -229,25 +224,24 @@ Here Reissue fixed the diagonal lean issue. The screeners explain it. Further ch
         - Credits to Expertiz's earlier fix with the big woodgib
         - `v2` now does blend in the added object from curiousfox
         - `v3` now adds more objects for broken roof and broken wall textures
+        - `v4` now adds more objects for broken roof
+- Maps: Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
+- Maps: Added rPAM Overhaul Script For `mp_railyard` `2024/25 by reissue` `**| AUTO OFF |**`     
+  - The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision.
+      - The game does quickly overload by a huge amount of placed objects loaded by the script.
+      - I added commands to tinker around with different settings of the ["rPAM overhaul script for mp_railyard"](#rpam-overhaul-for-mp_railyard)
+      <a href="images_readme/railyard_overhaul_script.png">
+       <img src="images_readme/railyard_overhaul_script.png" width="500"/>
+      </a>  
+      <br><br>
+- Maps: Added `mp_germantown` from Steiner (former german_town), used ingame now as `mp_germantown` with ``/rcon map mp_germantown``
+- Ambient: Normalized ambient sound effects for a more balanced audio volume in `\soundaliases` if used
+- Ambient: Added rPAM overhaul script to change ambient sounds, fog and smoke plumes for competitive play in `\maps\mp`
 
-- Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
 
-#### Added rPAM Overhaul Script For `mp_railyard`
-`2024/25 by reissue` `**| AUTO OFF |**`     
-The same locations like used in mp_railyard_x are edited by a script which does load insvisible objects and also visible objects with bullet-collision.
-- The game does quickly overload by a huge amount of placed objects loaded by the script.
-- I added commands to tinker around with different settings of the ["rPAM Overhaul Script For mp_railyard"](#rpam-overhaul-for-mp_railyard)
-  <a href="images_readme/railyard_overhaul_script.png">
-    <img src="images_readme/railyard_overhaul_script.png" width="500"/>
-  </a>  
-<br><br>
-
-
-> **Relevant to:** ``v2.3``
-
-- TBA
-- TBA
-
+<!-- [E 3. END] -->
+<!-- [E 3. END] -->
+<!-- [E 3. END] -->
 
 <br><br>
 > [go up again](#main-changes-rpam-maps-overhaul) <|> [go up again (Document Navigation)](#document-navigation) <|> [go next](#actual-changelog-rpam-maps-overhaul)
