@@ -183,9 +183,7 @@ For my time already invested, you are welcome to leave a donation.
 
 - Textures: Improved window glass transparency and frame details in `mp_neuville`
 - Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
-
-<a href="readme_images/t_neuville_windows26.jpg"><img src="readme_images/t_neuville_windows26.jpg" width="220"/></a><a href="readme_images/t_carentan_fence26.jpg"><img src="readme_images/t_carentan_fence26.jpg" width="220"/></a>
-
+  <a href="readme_images/t_neuville_windows26.jpg"><img src="readme_images/t_neuville_windows26.jpg" width="220"/></a><a href="readme_images/t_carentan_fence26.jpg"><img src="readme_images/t_carentan_fence26.jpg" width="220"/></a>
 - rPAM: Addes set rpam_msg & set rpam_debug 1 Message Center
 - rPAM: Fixed compatibility issues with `.arena` files  
 - Textures: Refreshed all levelshots `\levelshots`
