@@ -1,0 +1,290 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+{
+	menuDef
+	{
+		name			"ingame"
+		rect			0 0 640 480
+		focuscolor		GLOBAL_FOCUSED_COLOR
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		5.0
+		onOpen
+		{
+			close matchinfo;
+			close ingame_scoreboard_sd;
+
+			// Make sure cursor is enable (in case of spectator menu fails)
+			setDvar cl_bypassMouseInput "0" // enable cursor movement
+
+			uiScript openMenuOnDvar ui_matchinfo_show "1" matchinfo;
+			uiScript openMenuOnDvar ui_scoreboard_show "sd" ingame_scoreboard_sd;
+			open ingame_keys;
+
+			RCON_UPDATE_STATUS
+		}
+		onClose
+		{
+			CLOSE_SUBMENUS;
+			close matchinfo;
+		}
+		onEsc
+		{
+			close ingame;
+		}
+
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_BLUISH_BACKGROUND
+		DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header: Teams
+		ITEM_TEXT_HEADING("@MENU_OPTIONS")
+
+
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE1, "1. Change Weapon", 		"ui_allow_weaponchange", showDvar{"1"}, ;, scriptMenuResponse "changeweapon")
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE1, "1. Change Weapon", 		"ui_allow_weaponchange", hideDvar{"1"}, ;)
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE2, "2. Change Team", 		"ui_allow_changeteam", showDvar{"1"}, ;, scriptMenuResponse "changeteam")
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE2, "2. Change Team", 		"ui_allow_changeteam", hideDvar{"1"}, ;)
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE3, "3. Call Vote", 		"ui_allowvote", showDvar{"1"}, ;, scriptMenuResponse "callvote")
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE3, "3. Call Vote", 		"ui_allowvote", hideDvar{"1"}, ;)
+
+		ITEM_DVAR("ui_timeout_info", 158, 175, GLOBAL_TEXT_SIZE, ITEM_ALIGN_LEFT, GLOBAL_UNFOCUSED_COLOR)
+
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE4, "4. Call timeout",		"ui_allow_timeout", showDvar { "0" }, ;) // Disabled
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE4, "4. Call timeout",		"ui_allow_timeout", showDvar { "1" }, ;, scriptMenuResponse "timeout"; CLOSE_ALL;) // Enabled
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE4, "4. Call timeout",		"ui_allow_timeout", showDvar { "2" }, ;) // Disabled
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE4, "4. Timeout called",		"ui_allow_timeout", showDvar { "3" }, ;) // Already called
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE4, "4. Already in timeout",	"ui_allow_timeout", showDvar { "4" }, ;) // In timeout
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE4, "4. Cancel timeout",		"ui_allow_timeout", showDvar { "5" }, ;, scriptMenuResponse "timeout"; CLOSE_ALL;) // Cancel timeout
+		ITEM_BUTTON 			(ORIGIN_CHOICE5, "5. Leave Game", ;, CLOSE_ALL; open leavegame;)
+
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE7, "^1Debug", "debug", showDvar{"1"}, ;, scriptMenuResponse "debug")
+
+
+
+		#include "ui_mp/scriptmenus/submenus/rcon_buttons.menu"
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, CLOSE_ALL;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, CLOSE_ALL; open main;)
+		// Server info
+		ITEM_BAR_BOTTOM_BUTTON("^9[I]^7 Server Info",	280, 80, scriptMenuResponse "serverinfo"; /*exec "openscriptmenu ingame serverinfo";*/)
+	}
+
+	// Key choices has to be in different menu if we are using submenus
+	// This keys is opened as last and will be in focus - so keys from this submenu will be accepted
+	menuDef
+	{
+		name			"ingame_keys"
+		rect			0 0 1 1
+		focuscolor		GLOBAL_FOCUSED_COLOR
+		style			WINDOW_STYLE_EMPTY
+
+		execKey "1" { play "mouse_click"; exec "openscriptmenu ingame changeweapon" }
+		execKey "2" { play "mouse_click"; exec "openscriptmenu ingame changeteam" }
+		execKey "3" { play "mouse_click"; exec "openscriptmenu ingame callvote" }
+		execKey "4" { play "mouse_click"; exec "openscriptmenu ingame timeout"; CLOSE_ALL;}
+		execKey "5" { play "mouse_click"; CLOSE_ALL; open leavegame }
+
+		execKeyInt 32 { play "mouse_click"; CLOSE_ALL; open main; } // space
+		execKeyInt 105 { play "mouse_click"; exec "openscriptmenu ingame serverinfo";  } // i
+		execKeyInt 116 { play "mouse_click"; exec "openscriptmenu ingame timeout";  } // t
+	}
+
+	// Match info
+	// This menu is now global, because ingame.menu is defined in menus.txt - it means this menu name is global for all other menus
+	// This is why its defined only here and used also in other menus
+	menuDef
+	{
+		name				"matchinfo"
+		rect 				0 0 400 80 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+		focuscolor	GLOBAL_FOCUSED_COLOR
+		style				WINDOW_STYLE_EMPTY
+
+		onOpen
+		{
+			open matchinfo_2;
+		}
+		onClose
+		{
+			close matchinfo_2;
+		}
+
+		MATCHINFO("ui_matchinfo_team1_team", "ui_matchinfo_team2_team", "ui_matchinfo_show", 0.3 0.3 0.9 .9, 0.7 0 0 .8)
+	}
+
+	menuDef
+	{
+		name				"matchinfo_2"
+		rect 				0 0 640 50
+		focuscolor	GLOBAL_FOCUSED_COLOR
+		style				WINDOW_STYLE_EMPTY
+
+
+		itemDef
+		{
+			visible			1
+			rect				-100 0 200 24 0 0
+			origin			320 30
+			forecolor		GLOBAL_UNFOCUSED_COLOR
+			type				ITEM_TYPE_BUTTON
+			text				"Show in game"
+			textfont		UI_FONT_NORMAL
+			textscale		.25
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textaligny	20
+			textalignx	100
+			textalign		ITEM_ALIGN_CENTER
+			dvartest		"ui_matchinfo_ingame_show"
+			hideDvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				exec "openscriptmenu quicksettings matchinfo";
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+
+
+		itemDef
+		{
+			visible			1
+			rect				-100 0 200 24 0 0
+			origin			320 30
+			forecolor		GLOBAL_UNFOCUSED_COLOR
+			type				ITEM_TYPE_BUTTON
+			text				"Hide in game"
+			textfont		UI_FONT_NORMAL
+			textscale		.25
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textaligny	20
+			textalignx	100
+			textalign		ITEM_ALIGN_CENTER
+			dvartest		"ui_matchinfo_ingame_show"
+			showDvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				exec "openscriptmenu quicksettings matchinfo";
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+	}
+
+
+
+	// Scoreboard
+	// This menu is now global
+	menuDef
+	{
+		name			"ingame_scoreboard_sd"
+		rect			220 84 400 400
+		focuscolor		GLOBAL_FOCUSED_COLOR
+		style			WINDOW_STYLE_EMPTY
+
+		onOpen
+		{
+			exec "openscriptmenu ingame scoreboard_refresh";	// this will update info
+		}
+
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 400 330 0 0
+			backcolor		.0 .0 .0 .5
+			visible			1
+			decoration
+		}
+
+		// WINDOW LINES 400x430
+		itemDef // TOP
+		{
+			visible			1
+			rect			3 3 394 2
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // RIGHT
+		{
+			visible			1
+			rect			395 5 2 320
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // BOTTOM
+		{
+			visible			1
+			rect			3 325 394 2
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // LEFT
+		{
+			visible			1
+			rect			3 5 2 320
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		ITEM_TEXT("Score:     Kill +1   |   Teamkill -1   |   Assist plant defuse +0.5",  9, 311, .20, ITEM_ALIGN_LEFT, 1 1 1 .25)
+		ITEM_TEXT("Hits:        Scope/Rifle +1   |   Semi/Automatic/Shotgun +0.5",  9, 322, .20, ITEM_ALIGN_LEFT, 1 1 1 .25)
+
+		ITEM_SCOREBOARD(0, 0)
+	}
+
+
+
+	// Rcon menus
+	#include "ui_mp/scriptmenus/submenus/rcon_menus.menu"
+
+
+	// Menu to leave game
+	menuDef
+	{
+		name			"leavegame"
+		rect			0 0 640 480
+		focuscolor		GLOBAL_FOCUSED_COLOR
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		5.0
+		onEsc
+		{
+			play "mouse_click";
+			close leavegame;
+			open ingame;
+		}
+
+		// MENU CHOICES
+		execKey "1" { play "mouse_click"; close leavegame; exec "disconnect" }
+		execKey "2" { play "mouse_click"; close leavegame; open ingame; }
+
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_BLUISH_BACKGROUND
+		DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+
+		ITEM_TEXT_HEADING("@MPUI_LEAVE_GAME1")
+
+		ITEM_BUTTON 				(ORIGIN_CHOICE1, "@MPUI_1_YES", ;, exec "disconnect";)
+		ITEM_BUTTON 				(ORIGIN_CHOICE2, "@MPUI_2_NO", ;, close leavegame; open ingame;)
+
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Back",	40, 120, close leavegame; open ingame;)
+
+	}
+}

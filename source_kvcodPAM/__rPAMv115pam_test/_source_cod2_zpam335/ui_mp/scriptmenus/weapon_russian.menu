@@ -1,0 +1,81 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+#define HIDE_ALL hide weapon_pps42; hide weapon_nagant; hide weapon_svt40; hide weapon_nagantscoped; hide weapon_shotgun; hide weapon_ppsh_stick30;
+
+{
+	menuDef
+	{
+		name			"weapon_russian"
+		rect			0 0 640 480
+		focuscolor		GLOBAL_FOCUSED_COLOR
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		5.0
+		onOpen
+		{
+			uiScript openMenuOnDvar ui_matchinfo_show "1" matchinfo;
+			open weapon_russian_keys;
+		}
+		onClose
+		{
+			HIDE_ALL
+			close matchinfo;
+			close weapon_russian_keys;
+		}
+		onEsc
+		{
+			close weapon_russian;
+		}
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_BLUISH_BACKGROUND
+		DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header
+		ITEM_TEXT_HEADING("@MPUI_RUSSIAN_WEAPONS")
+
+
+		// MENU CHOICES
+		ITEM_WEAPON(ORIGIN_CHOICE1, "button_pps42", 		"PPS42_mp", 			"@MPUI_1_PPS42", 		"ui_allow_pps42", 		"weapon_pps42", 		show weapon_pps42;, 		scriptMenuResponse "PPS42_mp";, 		"russian_grenade_C",	"smg")
+		ITEM_WEAPON(ORIGIN_CHOICE2, "button_nagant", 		"mosin_nagant_mp", 		"@MPUI_2_MOSINNAGANT", 		"ui_allow_nagant", 		"weapon_nagant", 		show weapon_nagant;, 		scriptMenuResponse "mosin_nagant_mp";, 		"russian_grenade_C",	"boltaction")
+		ITEM_WEAPON(ORIGIN_CHOICE3, "button_svt40", 		"SVT40_mp", 			"@MPUI_3_TOKAREV_SVT40", 	"ui_allow_svt40", 		"weapon_svt40", 		show weapon_svt40;,		scriptMenuResponse "SVT40_mp";, 		"russian_grenade_C",	"semiautomatic")
+		ITEM_WEAPON(ORIGIN_CHOICE4, "button_nagantsniper", 	"mosin_nagant_sniper_mp", 	"@MPUI_4_SCOPED_MOSINNAGANT",	"ui_allow_nagantsniper", 	"weapon_nagantscoped", 		show weapon_nagantscoped;, 	scriptMenuResponse "mosin_nagant_sniper_mp";, 	"russian_grenade_C",	"sniper")
+		ITEM_WEAPON_SMOKE(ORIGIN_CHOICE5, "button_shotgun", 	"shotgun_mp", 			"@MPUI_5_SHOTGUN", 		"ui_allow_shotgun", 		"weapon_shotgun", 		show weapon_shotgun;, 		scriptMenuResponse "shotgun_mp";, 		"russian_grenade_C",	"shotgun")
+		ITEM_WEAPON(ORIGIN_CHOICE6, "button_ppsh_stick30", 		"ppsh_stick30_mp", 			"6. PPSh-41 (Stick)", 			"ui_allow_ppsh", 		"weapon_ppsh_stick30", 		show weapon_ppsh_stick30;, 		scriptMenuResponse "ppsh_stick30_mp";, 		"russian_grenade_C",	"smg")
+		// PPSH_CHANGE
+
+		ITEM_BUTTON_ONDVAR		(ORIGIN_CHOICE9, "9. Replace secondary with pistol", 		"ui_allow_pistol", showDvar{"1"}, ;, scriptMenuResponse "pistol")
+		ITEM_BUTTON_ONDVAR_DISABLED	(ORIGIN_CHOICE9, "9. Replace secondary with pistol", 		"ui_allow_pistol", showDvar{"2"}, ;)
+
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, close weapon_russian;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, close weapon_russian; open main;)
+	}
+
+
+	// Key choices has to be in different menu if we are using submenus
+	// This keys is opened as last and will be in focus - so keys from this submenu will be accepted
+	menuDef
+	{
+		name			"weapon_russian_keys"
+		rect			0 0 1 1
+		focuscolor		GLOBAL_FOCUSED_COLOR
+		style			WINDOW_STYLE_EMPTY
+
+		execKey "1" { play "mouse_click"; exec "openscriptmenu weapon_russian PPS42_mp"; }
+		execKey "2" { play "mouse_click"; exec "openscriptmenu weapon_russian mosin_nagant_mp"; }
+		execKey "3" { play "mouse_click"; exec "openscriptmenu weapon_russian SVT40_mp"; }
+		execKey "4" { play "mouse_click"; exec "openscriptmenu weapon_russian mosin_nagant_sniper_mp"; }
+		execKey "5" { play "mouse_click"; exec "openscriptmenu weapon_russian shotgun_mp"; }
+		execKey "6" { play "mouse_click"; exec "openscriptmenu weapon_russian ppsh_stick30_mp"; } // PPSH_CHANGE
+
+
+		execKey "9" { play "mouse_click"; exec "openscriptmenu weapon_russian pistol"; }
+
+		execKeyInt 32 { play "mouse_click"; close weapon_german; open main; } // space
+	}
+}

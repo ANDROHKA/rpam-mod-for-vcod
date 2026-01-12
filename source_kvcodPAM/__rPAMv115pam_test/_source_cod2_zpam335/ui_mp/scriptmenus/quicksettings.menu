@@ -1,0 +1,141 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+#define ORIGIN_QUICKMESSAGETAB			32 224
+#define ORIGIN_QUICKMESSAGEWINDOW		32 256
+
+{
+	menuDef
+	{
+		name			"quicksettings"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		disablecolor	0 0 0 0
+ 		style			WINDOW_STYLE_EMPTY
+
+		onOpen
+		{
+			setDvar cl_bypassMouseInput "1"
+		}
+		onClose
+		{
+			setDvar cl_bypassMouseInput "0"
+		}
+
+// WINDOW BACKGROUND
+		itemDef
+		{
+			name			"window_background"
+			visible			1
+			rect			0 0 224 192
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+	 		style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			decoration
+		}
+
+// WINDOW LINES
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 0 2 187
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			219 0 2 187
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 0 214 2
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 187 218 2
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// TITLE
+		itemDef
+		{
+			name			"title"
+			visible			1
+			rect			0 0 224 32
+			origin			ORIGIN_QUICKMESSAGETAB
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_TEXT
+			text			"Quick settings"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		112
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+		itemDef
+		{
+			name			"title_quickmessage_gray"
+			visible			1
+			rect			3 3 218 29
+			origin			ORIGIN_QUICKMESSAGETAB
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		QUICKMESSAGE_LINE_TEXT_DVAR(20, "1. Auto recording: ^5On", 1 1 1 1, "ui_quicksettings_autorecording", showDvar { "1" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(20, "1. Auto recording: ^5Off", 1 1 1 1, "ui_quicksettings_autorecording", showDvar { "0" })
+		execKey "1" { exec "openscriptmenu quicksettings autorecording" }
+
+		QUICKMESSAGE_LINE_TEXT_DVAR(35, "2. Show match info in game: ^5Yes", 1 1 1 1, "ui_quicksettings_matchinfo", showDvar { "1" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(35, "2. Show match info in game: ^5No", 1 1 1 1, "ui_quicksettings_matchinfo", showDvar { "0" })
+		execKey "2" { exec "openscriptmenu quicksettings matchinfo" }
+
+		QUICKMESSAGE_LINE_TEXT_DVAR(50, "3. Show score: ^5Yes", 1 1 1 1, "ui_quicksettings_score", showDvar { "1" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(50, "3. Show score: ^5No", 1 1 1 1, "ui_quicksettings_score", showDvar { "0" })
+		execKey "3" { exec "openscriptmenu quicksettings score" }
+
+		QUICKMESSAGE_LINE_TEXT_DVAR(65, "4. Show enemy list: ^5Yes", 1 1 1 1, "ui_quicksettings_playersleft", showDvar { "1" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(65, "4. Show enemy list: ^5No", 1 1 1 1, "ui_quicksettings_playersleft", showDvar { "0" })
+		execKey "4" { exec "openscriptmenu quicksettings playersleft" }
+
+
+		QUICKMESSAGE_LINE_TEXT_DVAR(80, "5. Packet duplication: ^50x", 1 1 1 1, "cl_packetdup", showDvar { "0" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(80, "5. Packet duplication: ^51x", 1 1 1 1, "cl_packetdup", showDvar { "1" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(80, "5. Packet duplication: ^52x", 1 1 1 1, "cl_packetdup", showDvar { "2" })
+		QUICKMESSAGE_LINE_TEXT_DVAR(80, "5. Packet duplication: ^53x", 1 1 1 1, "cl_packetdup", showDvar { "3" })
+		execKey "5" { exec "togglep cl_packetdup 0 1 2 3" }
+
+
+		QUICKMESSAGE_LINE_TEXT(110, "6. Mouse settings", 1 1 1 1)
+		execKey "6" { close quicksettings; open mousesettings }
+
+
+		QUICKMESSAGE_LINE_TEXT(167, "@QUICKMESSAGE_ESC_EXIT", 1 1 1 1)
+	}
+}

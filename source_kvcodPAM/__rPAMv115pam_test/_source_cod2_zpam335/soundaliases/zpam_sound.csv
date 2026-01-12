@@ -1,0 +1,44 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage
+
+hill400_assault_gr5_letsgoget,,Voiceovers/US/400Assault/hill400assault_gr5_sc03_01_t1.wav,0.5,0.5,,,,1000000,,auto,streamed
+US_0_order_move_generic_05,,Battlechatter/US/0/US_0_order_move_generic_05.wav,0.5,0.5,,,,1000000,,auto,streamed
+
+
+
+# Original sound aliases for weapon swap (canceled out)
+weap_raise,,null.wav,0,,,,,,,,,,,,,,,,
+
+# New name for weapon change sound to be manually played by script
+zpam_weap_raise,,misc/wpnarm_2.wav,0.45,0.5,wpnplyr,0.9,1.2,7,500,auto,,,,,,,weap_raise_layer,
+
+# Original sound aliases for weapon swap (these are here only for clarity, they are commented)
+# name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage
+# weap_raise,,misc/wpnarm_2.wav,0.45,0.5,wpnplyr,0.9,1.2,7,500,auto,,,,,,,,weap_raise_layer,
+# weap_raise_layer,1,misc/pu_weapon01.wav,0.25,0.3,wpnplyr,0.9,0.9,7,500,auto,,,,,,,,,
+# weap_raise_layer,2,misc/pu_weapon02.wav,0.18,0.23,wpnplyr,0.9,0.9,7,500,auto,,,,,,,,,
+# weap_raise_layer,3,misc/pu_weapon04.wav,0.25,0.3,wpnplyr,0.9,0.9,7,500,auto,,,,,,,,,
+
+
+# Weapon drop sound
+zpam_weap_drop,,misc/gun_drop01.wav,0.7,0.7,wpnplyr,0.9,0.9,7,700,auto,,,,,,,,,
+
+# FG42 Player
+#weap_fg42_fire_plr,,weapons/fg42/fg42_01_temp.wav,0.85,0.89,wpnplyr,0.95,1.05,500000,,local,,,0.85,,,,,,,,,0.2
+
+
+# Aim trainer missed shot
+aim_trainer_spawn,,misc/bomb_plant_notick01.wav,0.05,0.05,,1,1,,,auto,,,,,,,,,,
+aim_trainer_hit,,weapons/impact/Impact_Metal_A07.wav,0.7,0.7,,1,1,,,auto,,,,,,,,,,
+aim_trainer_missed_shot,,weapons/impact/bullet_water05.wav,1,1,,2,2,,,auto,,,,,,,,,,
+aim_trainer_piano_1,,piano/a1.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_2,,piano/a4.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_3,,piano/a5.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_4,,piano/b4.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_5,,piano/c1.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_6,,piano/c5.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_7,,piano/d5.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_8,,piano/e5.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_9,,piano/f2.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_piano_10,,piano/f4.wav,0.4,0.4,,1,1,,,auto,streamed,,,,,,,,,
+aim_trainer_horn,,vehicles/horn_beep.wav,0.9,0.9,,1,1,,,auto,,,,,,,,,,
+aim_trainer_horse,,amb_elements/elm_horse10.wav,1,1,,1,1,,,auto,,,,,,,,,,
