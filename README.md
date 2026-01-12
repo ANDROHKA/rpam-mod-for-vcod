@@ -6,48 +6,29 @@
 <!-- [1.] -->
 <!-- [1.] -->
 
-# Introduction [STILL WORK IN PROGRESS!]
+# Introduction
 
-rPAM is the updated competition mod for Call of Duty 1.5, building on previous PAM releases.
+The goal of this project is to develop features requested by the player base while preserving the core gameplay at the highest competitive standard established in recent years. rPAM is the updated competition mod for Call of Duty 1.5 established by me in 2015, building on previous PAM releases that were used in eSports leagues such as ESL, ClanBase, CyberGamer. You can find visuals by scrolling down.
 
-> **Supported Game Version:** `Call of Duty (2003) Multiplayer` `v1.5`  
-> **Actual rPAM Version:** `TBA`  
-> **Actual rPAM Maps Version:** `v2.2`
-
-> **Join the CoDBASE Call of Duty 1 Community**:       
-`Call of Duty (2003) Multiplayer` `v1.5`     
-`European playerbase` [***Discord Invite Link***](https://discord.gg/Zh8DP7c)      
-> **Adapted to the latest CoDBASE PAM version:**      
-`Coming soon` `v1.5` `rPAM` `kikiii's pam port`  
- 
-
-The goal of this project is to develop features requested by the playerbase while preserving core gameplay at the highest competitive standard established in recent years.
-
-rPAM was initiated by me in 2015, after CyberGamer's edited PAM failed to fix bugs and instead introduced new ones. This led me to create a version that preserves the original while correcting its flaws.
-
-In 2024, I joined the CoDBASE Discord — a dedicated community still playing competitive 5v5 Search and Destroy, just like back in the day. Bugs persist to this day. I aim to fix that now.
+> **Supported Game Version:** `Call of Duty (2003) Multiplayer` `Patch v1.5 (2004)`  
+> **Actual rPAM Version:** `#4.5` [Download and Readme](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)               
+> **Actual rPAM Maps Version:** `v2.29` [Readme | Commands | Screenshots (placeholder link)](https://github.com/ANDROHKA/rpam-mod-for-vcod/)                  
+> **Adapted to the latest CoDBASE PAM version:** `kikiii's ezay-pam port` `v2.11` [kikiii's eyza\_pam\_port\_to\_vcod (Active) on github](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)         
+> `CoD2 ezya zPAM` `v4.04` [CoD2 ezya zPAM (Active CoD2) on github](https://github.com/eyza-cod2/zpam3) `CoD1 rPAM v1.11` [rPAM v1.11 (2015) on modDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)  
+> **Join the CoDBASE Call of Duty 1 Community**: `Active and skilled European playerbase` [***Discord Invite Link***](https://discord.gg/Zh8DP7c)      
 
 > **Background of PAM:**
 
-The original Project Ares Mod (PAM) for Call of Duty v1.5, created by Garetjax and finalized with version 1.08, laid the groundwork for competitive play in the game’s early days. Widely adopted in leagues such as ESL, ClanBase, CAL, and TWL from the 2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability, it quickly became the standard for high-level competitive play.    
-The main goal was to constantly improve the game for the betterment of everyone.
+The original Project Ares Mod (PAM) for Call of Duty (v1.5), created by Garetjax and finalized with version 1.08. He laid the groundwork for competitive play in the game’s early days. Widely adopted in leagues such as ESL, ClanBase,
+CAL, and TWL from the 2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability,
+it quickly became the standard for high-level competitive play.    
 
 > **rPAM Goals:**
-
 * Ensure that the game remains closely aligned with the legacy established between 2004 and 2011
 * Provide server operators and players with a stable, easy-to-manage experience
-* Fix bugs in the current CoDBASE-PAM, based on my [rPAM v1.11](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111) (2015)
-* Retain and expand features introduced in CoDBASE-PAM (2024)
-* Integrate elements from [kikiii's eyza\_pam\_port\_to\_vcod (2025)](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)
-* Integrate elements from [CoD2 ezya zPAM](https://github.com/eyza-cod2/zpam3), including Punkbuster settings
-* Integrate elements from Anghlz PAM Mod
-* Fully support and integrate custom maps
-* Improve the authenticity of custom maps and align them with PAM gameplay
+* Fix bugs, retain and expand features introduced in CoDBASE-PAM (2024)
+* Fully supported and integrated custom maps
 * Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
-* Automate competitive play to reduce the need for manual intervention
-
-
-
 
 <br><br>
 > [go up again](#introduction) <|> [go next](#news-and-updates)
