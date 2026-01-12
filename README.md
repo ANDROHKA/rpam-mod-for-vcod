@@ -45,7 +45,7 @@ it quickly became the standard for high-level competitive play.
 
 # Actual News And Updates
 
-[**Latest release can be found here: #4.5 FULL + #4.6 UPDATE**](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)
+[**Latest release can be found here: #4.5 FULL + further patches**](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)
 - **2026-01-12 _Update_ #4.6 (Latest PATCH)**:
     - potential fix for call timeout mid round can cause a server crash (_timeout::)
     - minor fixes bomb explosion script and brushes (_utility::)
