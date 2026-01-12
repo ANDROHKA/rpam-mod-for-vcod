@@ -101,6 +101,25 @@ For my time already invested, you are welcome to leave a donation.
 > **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
 > `Optional Donation` `(€)` `Billing Address Required`   
 
+# REISSUE LEANFIX v4 2024/25
+
+Full comparision between reissue-leanfix (2024), expert-leanfix (2023) & default game (2003).  
+_(C) It's remarkable how some people complain without really knowing what they're talking about. They take sides without knowing what's really going on._
+
+<a href="images_readme/reissue-rPAM-leanfix_full_p1.png">
+  <img src="images_readme/reissue-rPAM-leanfix_full_p1.png" width="1000"/>
+</a>   
+<br><br>
+<a href="images_readme/reissue-rPAM-leanfix_full_p2.png">
+  <img src="images_readme/reissue-rPAM-leanfix_full_p2.png" width="1000"/>
+</a>   
+<br><br>
+<a href="images_readme/reissue-rPAM-leanfix_v4_comp.jpg">
+  <img src="images_readme/reissue-rPAM-leanfix_v4_comp.jpg" width="1000"/>
+</a>   
+<br><br>
+
+
 <!-- [E 3. END] -->
 <!-- [E 3. END] -->
 <!-- [E 3. END] -->
@@ -468,26 +487,7 @@ This is the in game map list for version 2.2 of rPAM Maps Overhaul:
 <br><br>
 
 
-## REISSUE LEANFIX
 
-> **Relevant to:** ``v4``    
-[**Download**](#download)
-
-Full comparision between reissue-leanfix, expert-leanfix & default game.  
-It’s remarkable how some people complain without really knowing what they’re talking about.
-
-<a href="images_readme/reissue-rPAM-leanfix_v4_comp.jpg">
-  <img src="images_readme/reissue-rPAM-leanfix_v4_comp.jpg" width="1000"/>
-</a>   
-<br><br>
-<a href="images_readme/reissue-rPAM-leanfix_full_p1.png">
-  <img src="images_readme/reissue-rPAM-leanfix_full_p1.png" width="1000"/>
-</a>   
-<br><br>
-<a href="images_readme/reissue-rPAM-leanfix_full_p2.png">
-  <img src="images_readme/reissue-rPAM-leanfix_full_p2.png" width="1000"/>
-</a>   
-<br><br>
 
 <br><br>
 > [go up again](#svr-rpam-changes) <|> [go next](#svr-rpam-changelog)
