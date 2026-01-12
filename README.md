@@ -101,10 +101,10 @@ For my time already invested, you are welcome to leave a donation.
 > **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
 > `Optional Donation` `(€)` `Billing Address Required`   
 
-# REISSUE LEANFIX v4 2024/25
+# REISSUE LEANFIX
 
-Full comparision between reissue-leanfix (2024), expert-leanfix (2023) & default game (2003).  
-Here Reissue fixed the diagonal lean issue. The screeners explain it. Further changes applied after.
+Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & default game (2003).  
+Here Reissue fixed the diagonal lean issue completely. The screeners explain it. Further changes applied.
 
 <a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
   <img src="readme_images/reissue-rPAM-leanfix_full_p1.jpg" width="1000"/>
