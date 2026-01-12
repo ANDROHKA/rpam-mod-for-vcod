@@ -86,9 +86,9 @@ it quickly became the standard for high-level competitive play.
   <img src="images_readme/ppa_png.png" width="1000"/>
 </a>  
 
-A little throwback, vack in 2007 or 2008, I managed to add this shown fifth button to the main menu. That’s why it says ‘hi world.
-That was an personal achievement that I accomplished through trial and error over many hours of time. 
-The images next to it are from 2010 to 2024.
+A little throwback, back in 2007 or 2008, I managed to add this shown fifth button to the main menu. That’s why it says ‘hi world‘.
+That was an personal achievement that I accomplished through trial and error over many hours of time without internet and knowledge to code. 
+The images next to it are from 2010 to 2024 added to showcase a picture here. The following links do provide my work on single- and multiplayer.
 - From 08/06/2014 Showcasing a modded singleplayer map [Call of Duty Origin of Honor - GETAWAY 1080p](https://www.youtube.com/watch?v=ziqqI1rqj-o)                 
 - From 04/12/2015 Showcasing the first playable tests [Call of Duty (Origin of Honor) P.A.M. V1.11 ALPHA TESTING](https://www.youtube.com/watch?v=H-4lJH0HDgU)             
 - From 04/06/2015 Showcasing a modded singleplayermenu [Call of Duty Origin of Honor - Menu](https://www.youtube.com/watch?v=ICAWwLr7_OU)            
