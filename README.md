@@ -30,72 +30,80 @@ it quickly became the standard for high-level competitive play.
 * Fully supported and integrated custom maps
 * Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
 
-<br><br>
-> [go up again](#introduction) <|> [go next](#news-and-updates)
+<!-- [1. END] -->
+<!-- [1. END] -->
+<!-- [1. END] -->
+
+> [go up again](#introduction) <|> [go next](#actual-news-and-updates)
 ---------------------------------------------------------------------------------------------
-<br><br>
 
 <!-- [2.] -->
 <!-- [2.] -->
 <!-- [2.] -->
 
-# News And Updates
+# Actual News And Updates
 
-- TBA
-- TBA
-- TBA
+[**Latest release can be found here: #4.5 FULL + #4.6 UPDATE**](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)
+- **2026-01-12 _Update_ #4.6 (Latest PATCH)**:
+    - potential fix for call timeout mid round can cause a server crash (_timeout::)
+    - minor fixes bomb explosion script and brushes (_utility::)
+    - expanded debug capabilities (_sd::)
+- **2026-01-10 _Release_ #4.5 (Latest FULL)**:
+    - applied name fix for correct patching kvcodPAM to v2.11, updated all punkbuster related files to correct version
+    - updates **mp_dawnville_gg** to v6 with complete s&d script and models
+    - adds **mp_burgundy** by (Brutal & TheGoog) with complete s&d script and models
+    - update of textures
+       - mp_neuville windows texture (50% more glass)
+       - mp_carentan/mp_germantown fences (same distance and two lower beams cutted)
+- **2026-01-09 Update #4.4**:
+    - update of kvcodPAM to v2.11 (bomb exploder and timeout fix)
+    - updates mp_dawnville_gg to v5 (complete s&d script added with exploded models)
+- **2026-01-08 Update #4.3**: updates kvcodPAM to v2.10 (readyup lagfix + scoreboard)      
+- **2025-12-30 Update #4.2**: updates mp_dawnville_gg to *v4 by TheGoog!*       
+- **2025-12-20 Update #4.1**: added mp_toujane *by Expertiz* and minor fixes to the package     
+- **2025-12-19 _Obsolete Release_ #4 (Old FULL)**: Latest package with overhauled client/server/debugging/play demos and added tools/starters/readme/linuxhost/punkbuster/rinput/maps       
+- **2025-12-12 Update #3.5**: added mp_dawnville_gg v3
+- **2025-12-07 Update #3**: Latest playable version after Zagreb Overlord #3 Lan + added mp_dawnville_gg v2
+- **2025-11-26 Update #2.5 lan**: Minor fixes / Zagreb Overlord #3 Lan packages with autosetup / added cod2_mp_dawnville v1
+- **2025-10-20 Update #2**: Reissue added a possible fix for download crash issue (sv_wwwDlDisconnected "1", thanks to Prawy)
+- **2025-10-19 Update #1**: Kikiii fixed visible weapon while planting the bomb, improved ready-up, fast-shoot, training and performance
 
+<!-- [2. END] -->
+<!-- [2. END] -->
+<!-- [2. END] -->
 
-
-
-<br><br>
-> [go up again](#introduction) <|> [go next](#howto-support-this-project)
+> [go up again](#actual-news-and-updates) <|> [go next](#previous-work-and-how-to-support-this-project)
 ---------------------------------------------------------------------------------------------
-<br><br>
 
 <!-- [3.] -->
 <!-- [3.] -->
 <!-- [3.] -->
 
-# How To Support This Project
+# Previous Work And How To Support This Project
 <a href="images_readme/ppa_png.png">
   <img src="images_readme/ppa_png.png" width="1000"/>
 </a>  
 
-A little throwback: Back in 2007 or 2008, I managed to add a fifth button to the main menu – that’s why it says ‘hi world. That was an achievement that I accomplished through trial and error over time. 
+A little throwback, vack in 2007 or 2008, I managed to add this shown fifth button to the main menu. That’s why it says ‘hi world.
+That was an personal achievement that I accomplished through trial and error over many hours of time. 
 The images next to it are from 2010 to 2024.
+- From 08/06/2014 Showcasing a modded singleplayer map [Call of Duty Origin of Honor - GETAWAY 1080p](https://www.youtube.com/watch?v=ziqqI1rqj-o)                 
+- From 04/12/2015 Showcasing the first playable tests [Call of Duty (Origin of Honor) P.A.M. V1.11 ALPHA TESTING](https://www.youtube.com/watch?v=H-4lJH0HDgU)             
+- From 04/06/2015 Showcasing a modded singleplayermenu [Call of Duty Origin of Honor - Menu](https://www.youtube.com/watch?v=ICAWwLr7_OU)            
+- From 05/01/2015 Showcasing requested features in rPAM [CALL OF DUTY PAM V1.11 TEST3](https://www.youtube.com/watch?v=PU8UjrvVZE0)             
+- From 06/01/2015 Showcasing the final release of rPAM v1.11 [CALL OF DUTY PAM V1.11 Release](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111), [CALL OF DUTY PAM V1.11 Article](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)            
 
-
-### Origin of Honor Singleplayer & rPAM v1.11
-- From 08/06/2014 [Call of Duty Origin of Honor - GETAWAY 1080p](https://www.youtube.com/watch?v=ziqqI1rqj-o)
-   - Showcasing a modded singleplayermap
-- From 04/12/2015 [Call of Duty (Origin of Honor) P.A.M. V1.11 ALPHA TESTING](https://www.youtube.com/watch?v=H-4lJH0HDgU)
-- From 04/06/2015 [Call of Duty Origin of Honor - Menu](https://www.youtube.com/watch?v=ICAWwLr7_OU)
-- From 05/01/2015 [CALL OF DUTY PAM V1.11 TEST3](https://www.youtube.com/watch?v=PU8UjrvVZE0)
-   - Shows the further development of rPAM functions and bug fixes back in 2015.
-- From 06/01/2015 [CALL OF DUTY PAM V1.11 Release](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111), [CALL OF DUTY PAM V1.11 Article](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)
-   - Release of v1.11 final
-
-    
-### rPAM Development & CoD Multiplayer    
-
-Get in touch if you wan't to help with rPAM & Multiplayer!    
-There are always tasks or tests to be found.    
+Get in touch if you wan't to help with rPAM & Multiplayer! There are always tasks or tests to be found.    
 For my time already invested, you are welcome to leave a donation.    
 
+> **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
+> `Optional Donation` `(€)` `Billing Address Required`   
 
-> **Support this project via PayPal - Thank you!**    
-> `Optional Donation` `(€)` `Billing Address Required`    
-[***rPAM PayPal Donation Page***](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4) 
+<!-- [3. END] -->
+<!-- [3. END] -->
+<!-- [3. END] -->
 
-> **You can join CoDBASE-Discord to Play 5v5! See you there!**   
-> `Call of Duty (2003) Multiplayer` `v1.5` `European playerbase`  
-> [***Discord Invite Link***](https://discord.gg/Zh8DP7c)   
-
-
-
-<br><br>
-> [go up again](#news-and-updates) <|> [go next (Document Navigation)](#document-navigation)
+> [go up again](#actual-news-and-updates) <|> [go next (Document Navigation)](#document-navigation)
 ---------------------------------------------------------------------------------------------
 <br><br>
 
@@ -106,10 +114,8 @@ For my time already invested, you are welcome to leave a donation.
 # Document Navigation
 
 **1.** [**About this Project**](#introduction)  
-
-**3.** [**News And Updates**](#news-and-updates)
-
-**2.** [**How To Support This Project**](#support-this-project)  
+**3.** [**Actual News And Updates**](#actual-news-and-updates)
+**2.** [**How To Support This Project And Previous Work**](#previous-work-and-how-to-support-this-project)  
 
   
 
