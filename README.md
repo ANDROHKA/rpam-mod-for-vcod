@@ -101,10 +101,10 @@ For my time already invested, you are welcome to leave a donation.
 > **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
 > `Optional Donation` `(€)` `Billing Address Required`   
 
-# REISSUE LEANFIX
+### REISSUE LEANFIX
 
-Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & default game (2003).  
-In the default game the body rolls inwards while diagonal movement. Expert made an attempt and added an weird anim.
+Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & default game (2004).  
+In the default game the body rolls inwards while using diagonal movement. Expertiz made an attempt and added a weird animation.
 Here Reissue fixed the diagonal lean issue completely. The screeners explain it. Further changes applied.
 
 <a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
