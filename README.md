@@ -204,7 +204,7 @@ For my time already invested, you are welcome to leave a donation.
       - Ruins stairs now use `+moveup` function when prone
       - Upper Axis ruins roof no longer see-through, `v4` now adds more objects for broken roof and broken wall textures
         - Credits to Expertiz's for his earlier fix with the big woodgib
-      - Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v3`.
+      - Added more objects from the rPAM `mp_railyard_x` overhaul script – it's now at version `v4`.
         - `mp_railyard_x` `ruins roof`: Filled a missing texture and a pixel-spot with bricks  
         - `mp_railyard_x` `ruins roof`: Added `woodgib_medium` to the lower roof section, and one to the top  
         - `mp_railyard_x` `ruins roof`: Moved object `bigwoodgib` at position `ruins roof` to blend into the surrounding structure  
@@ -214,16 +214,25 @@ For my time already invested, you are welcome to leave a donation.
 <a href="readme_images/e_mp_railyard_x_axis_roof1.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof1.jpg" width="250"/></a><a href="readme_images/e_mp_railyard_x_axis_roof3.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof3.jpg" width="250"/></a><a                          
 href="readme_images/e_mp_railyard_x_axis_roof2.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof2.jpg" width="250"/></a><a href="readme_images/e_mp_railyard_x_axis_ruins.jpg"><img src="readme_images/e_mp_railyard_x_axis_ruins.jpg" width="250"/></a>
 
-- Maps: Added aim maps available to play on each side: `mp_aim`, `mp_pgaim`, `mp_blaoaim`, `mp_wawa`
-
-<a href="mod_images/maps_levelshots_aim/mp_aim.png"><img src="mod_images/maps_levelshots_aim/mp_aim.png" width="230"/></a><a href="mod_images/mp_blaoaim.png"><img src="mod_images/maps_levelshots_aim/mp_blaoaim.png" width="230"/></a><a                          
-href="mod_images/maps_levelshots_aim/mp_pgaim.png"><img src="mod_images/maps_levelshots_aim/mp_pgaim.png" width="230"/></a><a href="mod_images/maps_levelshots_aim/mp_wawa.png"><img src="mod_images/maps_levelshots_aim/mp_wawa.png" width="230"/></a>
+<table>
+  <tr>
+    <td valign="top">
+      <ul>
+        <li>Maps: Added aim maps available to play on each side: <code>mp_aim</code>, <code>mp_pgaim</code>, <code>mp_blaoaim</code>, <code>mp_wawa</code>
+          <br><br>
+          <a href="mod_images/maps_levelshots_aim/mp_aim.png"><img src="mod_images/maps_levelshots_aim/mp_aim.png" width="236"/></a><a href="mod_images/maps_levelshots_aim/mp_blaoaim.png"><img src="mod_images/maps_levelshots_aim/mp_blaoaim.png" width="236"/></a><a 
+          href="mod_images/maps_levelshots_aim/mp_pgaim.png"><img src="mod_images/maps_levelshots_aim/mp_pgaim.png" width="236"/></a><a href="mod_images/maps_levelshots_aim/mp_wawa.png"><img src="mod_images/maps_levelshots_aim/mp_wawa.png" width="236"/></a>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <table>
   <tr>
     <td valign="top"> <!-- top -->
       <ul>
-        <li>Maps: Added rPAM Overhaul Script For <code>mp_railyard</code> <code>2024/25 by reissue</code> <code>**| AUTO OFF |**</code>
+        <li> - Maps: Added rPAM Overhaul Script For <code>mp_railyard</code> <code>2024/25 by reissue</code> <code>**| AUTO OFF |**</code>
           <ul>
             <li>The same locations like used in mp_railyard_x are edited by a script which does load invisible objects and also visible objects with bullet-collision.</li>
             <li>The game does quickly overload by a huge amount of placed objects loaded by the script.</li>
