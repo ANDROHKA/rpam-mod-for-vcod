@@ -14,7 +14,7 @@
 > **We do play on FPSChallenge.eu:** `ESports CoD1/UO/2/4` [**https://fpschallenge.eu/**](https://fpschallenge.eu/)              
 > **Supported Game Version:** `Call of Duty (2003) Multiplayer` `Patch v1.5 (2004)` `Retail` `Steam Copy`
 
-> **Actual rPAM Version:** `> rPAM v1.15 b5 #4.5 + #4.6 (Latest Patch)` [Download and Readme](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)                           
+> **Actual rPAM Version:** **`rPAM v1.15 b5 #4.5 + #4.6 (Latest Patch)`** [Download and Readme](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)                           
 > > **Actual rPAM Maps Version:** `v2.29` [Readme | Commands | Screenshots](https://github.com/ANDROHKA/rpam-mod-for-vcod/)                           
 > > **Adapted to the latest CoDBASE PAM version:** `kikiii's ezay-pam port` `v2.11` [kikiii's eyza\_pam\_port\_to\_vcod (Active) on github](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)                              
 > > `CoD2 ezya zPAM` `v4.04` [CoD2 ezya zPAM (Active CoD2) on github](https://github.com/eyza-cod2/zpam3) `CoD1 rPAM v1.11` [rPAM v1.11 (2015) on modDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)                     
