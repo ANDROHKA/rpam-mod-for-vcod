@@ -1,47 +1,49 @@
-# Call of Duty (2003/2004) Multiplayer in 2026 with rPAM
+# Call of Duty (2003/2004) Multiplayer Competitive in 2026 with rPAM
 
-<a href="readme_images/g_callofduty1.jpg">
-  <img src="readme_images/g_callofduty1.jpg" width="1000"/>
+<a href="_readme_images/game_callofduty1.jpg">
+  <img src="_readme_images/game_callofduty1.jpg" width="1000"/>
 </a>   
 
-<!-- [E 1.] -->
-<!-- [E 1.] -->
-<!-- [E 1.] -->
+<!-- [Einleitung 1.] -->
+<!-- [Einleitung 1.] -->
+<!-- [Einleitung 1.] -->
 
 # Introduction
 
+> **Join the CoDBASE Call of Duty 1 Community on Discord to play**: `Active and skilled European playerbase` [**https://discord.gg/Zh8DP7c**](https://discord.gg/Zh8DP7c)                  
+> **We do play on FPSChallenge.eu**: `ESports CoD1/UO/2/4` [**https://fpschallenge.eu/**](https://fpschallenge.eu/)              
+> **Supported Game Version:** `Call of Duty (2003) Multiplayer` `Patch v1.5 (2004)` `Retail` `Steam Copy`
+
+> **Actual rPAM Version:** `> rPAM v1.15 b5 #4.5 + #4.6 (Latest Patch)` [Download and Readme](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)                           
+> > **Actual rPAM Maps Version:** `v2.29` [Readme | Commands | Screenshots (placeholder link)](https://github.com/ANDROHKA/rpam-mod-for-vcod/)                           
+> > **Adapted to the latest CoDBASE PAM version:** `kikiii's ezay-pam port` `v2.11` [kikiii's eyza\_pam\_port\_to\_vcod (Active) on github](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)                              
+> > `CoD2 ezya zPAM` `v4.04` [CoD2 ezya zPAM (Active CoD2) on github](https://github.com/eyza-cod2/zpam3) `CoD1 rPAM v1.11` [rPAM v1.11 (2015) on modDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)                     
+
 The goal of this project is to develop features requested by the player base while preserving the core gameplay at the highest competitive standard established in recent years. rPAM is the updated competition mod for Call of Duty 1.5 established by me in 2015, building on previous PAM releases that were used in eSports leagues such as ESL, ClanBase, CyberGamer. You can find visuals by scrolling down.
 
-> **Supported Game Version:** `Call of Duty (2003) Multiplayer` `Patch v1.5 (2004)`  
-> **Actual rPAM Version:** `#4.5` [Download and Readme](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)               
-> **Actual rPAM Maps Version:** `v2.29` [Readme | Commands | Screenshots (placeholder link)](https://github.com/ANDROHKA/rpam-mod-for-vcod/)                  
-> **Adapted to the latest CoDBASE PAM version:** `kikiii's ezay-pam port` `v2.11` [kikiii's eyza\_pam\_port\_to\_vcod (Active) on github](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)         
-> `CoD2 ezya zPAM` `v4.04` [CoD2 ezya zPAM (Active CoD2) on github](https://github.com/eyza-cod2/zpam3) `CoD1 rPAM v1.11` [rPAM v1.11 (2015) on modDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)  
-> **Join the CoDBASE Call of Duty 1 Community**: `Active and skilled European playerbase` [***Discord Invite Link***](https://discord.gg/Zh8DP7c)      
+> **Background of PAM for Call of Duty:**
 
-> **Background of PAM:**
-
-Project Ares Mod (PAM) for Call of Duty (v1.5) was created by Garetjax and finalized with version 1.08. He laid the groundwork for competitive play in the game’s early days. Widely adopted in leagues such as ESL, ClanBase,
+Project Ares Mod (PAM or P.A.M.) for Call of Duty (v1.5) was created by Garetjax and finalized with version 1.08. He laid the groundwork for competitive play in the game’s early days. Widely adopted in leagues such as ESL, ClanBase,
 CAL, and TWL from the 2000s through the early 2010s, PAM enabled teams to compete in structured, rule-based matches without relying on manual setup, in-game commands, or RCON intervention. Thanks to its automation and reliability,
 it quickly became the standard for high-level competitive play.    
 
-> **Overall Goals Here:**
+> **rPAM Mod for Call of Duty:**
 * Ensure that the game remains closely aligned with the legacy established between 2004 and 2011
 * Provide server operators and players with a stable, easy-to-manage experience
 * Fix bugs, retain and expand features introduced in CoDBASE-PAM (2024)
 * Fully supported and integrated custom maps
 * Revise textures, skins, and scripts to ensure fair and balanced competitive gameplay
 
-<!-- [E 1. END] -->
-<!-- [E 1. END] -->
-<!-- [E 1. END] -->
+<!-- [Einleitung  1. END] -->
+<!-- [Einleitung  1. END] -->
+<!-- [Einleitung  1. END] -->
 
-> [go up again](#-call-of-duty-(2003)-multiplayer-in-2026) <|> [go next](#actual-news-and-updates)
+> [go up again](#-call-of-duty-(2003/2004)-multiplayer-competitive-in-2026-with-rPAM) <|> [go next](#actual-news-and-updates)
 ---------------------------------------------------------------------------------------------
 
-<!-- [2.] -->
-<!-- [2.] -->
-<!-- [2.] -->
+<!-- [Einleitung 2.] -->
+<!-- [Einleitung 2.] -->
+<!-- [Einleitung 2.] -->
 
 # Actual News And Updates
 
@@ -95,7 +97,8 @@ The images next to it are from 2010 to 2024 added to showcase a picture here. Th
 - From 05/01/2015 showcasing requested features in PAM really well implemented [CALL OF DUTY PAM V1.11 TEST3](https://www.youtube.com/watch?v=PU8UjrvVZE0)             
 - From 06/01/2015 showcasing the final release of rPAM v1.11 [CALL OF DUTY PAM V1.11 Release](https://www.moddb.com/mods/call-of-duty-origin-of-honor/downloads/call-of-duty-rpam-v111) & [CALL OF DUTY PAM V1.11 Article](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)            
 
-Get in touch if you wan't to help with rPAM & Multiplayer! There are always tasks or tests to be found.    
+Get in touch if you wan't to help with rPAM & Multiplayer!
+There are always tasks or tests to be found.    
 For my time already invested, you are welcome to leave a donation.    
 
 > **Support this project via PayPal - Thank you!** [**rPAM & Origin of Honor PayPal Donation Page**](https://www.paypal.com/donate/?hosted_button_id=NB3GC298ZMJG4)  
