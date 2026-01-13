@@ -10,8 +10,8 @@
 
 # Introduction
 
-> **Join the CoDBASE Call of Duty 1 Community on Discord**: `Active and skilled European playerbase` [**https://discord.gg/Zh8DP7c**](https://discord.gg/Zh8DP7c)                  
-> **We do play on FPSChallenge.eu**: `ESports CoD1/UO/2/4` [**https://fpschallenge.eu/**](https://fpschallenge.eu/)              
+> **Join the CoDBASE Call of Duty 1 Community on Discord:** `Active and skilled European playerbase` [**https://discord.gg/Zh8DP7c**](https://discord.gg/Zh8DP7c)                  
+> **We do play on FPSChallenge.eu:** `ESports CoD1/UO/2/4` [**https://fpschallenge.eu/**](https://fpschallenge.eu/)              
 > **Supported Game Version:** `Call of Duty (2003) Multiplayer` `Patch v1.5 (2004)` `Retail` `Steam Copy`
 
 > **Actual rPAM Version:** `> rPAM v1.15 b5 #4.5 + #4.6 (Latest Patch)` [Download and Readme](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)                           
