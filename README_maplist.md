@@ -141,7 +141,6 @@
 |       | mp_dufresne_x                 | [HG] Baby Seal Clubber & Filbert [09-2005]         | dm, tdm, sd, re, bel, hq         | A    | *UO + further edits*            |
 | 48    | mp_hanoi_winter               | Expertiz & DigitalDials [12-2016]                  | dm, tdm, sd, re, bel             | A    | *Has no effects*                |
 | 49    | mp_harbor_gg                  | IW + TheGoog [06-2021]                             | dm, tdm, sd, re, bel, hq         | R    |                                 |
-| 50    | mp_miniharbor                 | IW + TheGoog & JtGz [05-2025]                      | dm, tdm, sd                      | R    | Small sized map                 |
 |       | mp_offensive                  | Old-Crow & Caskou [02-2004]                        | dm, tdm, sd, re, bel, hq         | A    |                                 |
 |       | mp_radar                      | Fangio [12-2003]                                   | dm, tdm, sd, re, bel,            | A    |                                 |
 | 51    | mp_univermag                  | Drecks & Innocent Bystander [02-2004]              | dm, tdm, sd,     bel, hq         | R    | Large sized map                 |
@@ -220,7 +219,6 @@
 |       | mp_westwall                   | sm0k3r [12-2003]                                   | dm, tdm, sd, re, bel, hq         | B    | *Is really dark*                |
 |       | mp_windmills                  | VegaObscura [05-2004]                              | dm, tdm, sd, re, bel             | A    | - *Large sized map*             |
 |       | **Blurred Remembrance MOHAA** |                                                    |                                  |      |                                 |
-|       | mp_brest                      | VikingWiedel [09-2004]                             | dm, tdm,         bel             | A    | *Small sized map*               |
 |       | mp_bridge                     | [tFp] CFH666 [09-2004]                             | dm, tdm, sd,          hq         | B    |                                 |
 |       | mp_bridge_a                   | VikingWiedel [08-2004]                             | dm, tdm, sd,     bel             | A    | *SD ver.*                       |
 |       | mp_bridge_beta                | VikingWiedel [06-2004]                             | dm, tdm,         bel             | A    | *Beta ver., Less rooms*         |
@@ -230,7 +228,6 @@
 |       | mp_rocket_facility            | -TFO- Kilroy [02-2004]                             | dm, tdm, sd, re, bel, hq         | A    | *Openable doors*                |
 |       | mp_rocket_facility            | -TFO- Kilroy [02-2004]                             | dm, tdm, sd, re, bel, hq         | A    | *Openable doors*                |
 |       | **Out**                       |                                                    |                                  |      |                                 |
-|       | mp_frozen                     | SIFFER [02-2004]                                   | dm, tdm,     re, bel             | B    | *Small sized dm map*            |
 |       | mp_subharbor_day              | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Large sized map*               |
 |       | mp_subharbor_night            | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Day allready present*          |
 |       | mp_valley_day                 | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Large sized map*               |
