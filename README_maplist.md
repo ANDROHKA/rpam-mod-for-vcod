@@ -18,6 +18,8 @@
 
 #### rPAM Maps         
 
+<small>
+
 **Classics**              
 /rcon g_gametype sd             
 /rcon map mp_brecourt           
@@ -74,7 +76,8 @@
 /rcon map mp_wawa_a           
 /rcon map mp_wawa_b            
 /rcon map mp_wawa_r             
-    
+
+</small>
 
 <!-- [RCON] -->
 <!-- [RCON] -->
@@ -95,6 +98,8 @@
 
 
 # Full rPAM Maplist
+
+<small>
 
 | Arena | Mapname                       | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
 |-------|-------------------------------|----------------------------------------------------|----------------------------------|------|---------------------------------|
@@ -164,6 +169,7 @@
 |       | mp_winterambush               | Unknown [03-2006]                                  | dm, tdm, sd                      | A    | *S&D not good to play*          |
 |       | mp_eisberg                    | Fangio [12-2003]                                   | dm, tdm, sd,     bel             | B    | *S&D not good to play*          |
 
+</small>
 
 <!-- [FULL END] -->
 <!-- [FULL END] -->
@@ -185,6 +191,8 @@
 
 
 # Maps Not Included Yet
+
+<small>
 
 | ARENA | `/rcon map`                   | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
 |-------|-------------------------------|----------------------------------------------------|----------------------------------|------|---------------------------------|
@@ -232,6 +240,8 @@
 |       | **Winter**                    |                                                    |                                  |      |                                 |
 |       | mp_logging_mill               | Dex [06-2007]                                      | dm, tdm, sd, re, bel             | R    | *S&D not good to play*          |
 |       | mp_maaloy                     | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *Clipping houses with no fog*   |
+
+</small>
 
 The rest of the known available custom maps are not able to play seriously in S&D gametype. UO maps a not easy to port and others are pretty, however also buggy.
 
