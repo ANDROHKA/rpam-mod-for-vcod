@@ -119,8 +119,9 @@
 | 12    | mp_neuville                   | Infinity Ward, added by patch 1.3                  | dm, tdm, sd, re, bel, hq         | A    |                                 |
 | 13    | mp_stalingrad                 | Infinity Ward, added by patch 1.4                  | dm, tdm, sd, re, bel, hq         | R    |                                 |
 | 14    | mp_tigertown                  | Infinity Ward, added by patch 1.5                  | dm, tdm, sd, re, bel, hq         | A    |                                 |
+|       |                               |                                                    |                                  |      |                                 |
+| 15    | **rPAM Custom**               |                                                    |                                  |      |                                 |
 |       | `/rcon map`                   | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
-| 15.   | **rPAM Custom**               |                                                    |                                  |      |                                 |
 | 16    | mp_germantown                 | Steiner [03-2004]                                  | dm, tdm, sd,     bel             | A    |                                 |
 | 17    | mp_hanoi                      | Expertiz & DigitalDials [12-2016]                  | dm, tdm, sd, re, bel             | A    | *Has commands for effects*      |
 | 18    | mp_beauville                  | IxQue [03-2004], edited by reissue [07-2025]       | dm, tdm, **sd**, bel, hq         | A    | *Full DM & S&D added!*          |
@@ -130,6 +131,7 @@
 | 22    | mp_burgundy                   | Infinity Ward, Brutal, TheGoog [12-2025]           | dm, tdm, sd,                     | A    | *internal v33 with S&D models*  |
 | 23    | mp_dawnville_gg               | Infinity Ward, ported by TheGoog [12-2025]         | dm, tdm, sd,                     | A    | *v6 with full S&D models*       |
 | 24    | mp_toujane                    | Infinity Ward, ported by Expertiz [02-2022]        | dm, tdm, sd,     bel             | B    |                                 |
+|       |                               |                                                    |                                  |      |                                 |
 | 41    | **rPAM Custom Winter**        |                                                    |                                  |      |                                 |
 |       | `/rcon map`                   | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
 | 42    | mp_bonneville                 | [CF] WillyWonka [07-2004]                          | dm, tdm, sd,     bel             | A    | *Out of bounds not fixed yet*   |
@@ -141,11 +143,13 @@
 |       | mp_dufresne_x                 | [HG] Baby Seal Clubber & Filbert [09-2005]         | dm, tdm, sd, re, bel, hq         | A    | *UO + further edits*            |
 | 48    | mp_hanoi_winter               | Expertiz & DigitalDials [12-2016]                  | dm, tdm, sd, re, bel             | A    | *Has no effects*                |
 | 49    | mp_harbor_gg                  | IW + TheGoog [06-2021]                             | dm, tdm, sd, re, bel, hq         | R    |                                 |
+| 50    | mp_miniharbor                 | IW + TheGoog & JtGz [05-2025]                      | dm, tdm, sd                      | R    |                                 |
 |       | mp_offensive                  | Old-Crow & Caskou [02-2004]                        | dm, tdm, sd, re, bel, hq         | A    |                                 |
 |       | mp_radar                      | Fangio [12-2003]                                   | dm, tdm, sd, re, bel,            | A    |                                 |
-| 51    | mp_univermag                  | Drecks & Innocent Bystander [02-2004]              | dm, tdm, sd,     bel, hq         | R    | Large sized map                 |
+| 51    | mp_univermag                  | Drecks & Innocent Bystander [02-2004]              | dm, tdm, sd,     bel, hq         | R    | *Large sized map*               |
 | 52    | mp_winterv2                   | Oraco   [03-2006]                                  | dm, tdm, sd                      | R    | *Like mp_rocket*                |
-| 53.   | ***>> rPAM Aim***             |                                                    |                                  |      |                                 |
+|       |                               |                                                    |                                  |      |                                 |
+| 53    | ***>> rPAM Aim***             |                                                    |                                  |      |                                 |
 |       | `/rcon g_gamtype dm`          |                                                    |                                  |      |                                 |
 |       | `/rcon map`                   | Creator                                            | Gametypes                        | Side | Notes                           |
 | 54    | mp_aim_a                      | Yannic [05-2004]                                   | dm, tdm                          | A    |                                 |
@@ -159,7 +163,8 @@
 | 62    | mp_wawa_a                     | wawa [07-2004]                                     | dm                               | A    |                                 |
 | 63    | mp_wawa_b                     | wawa [07-2004]                                     | dm                               | B    |                                 |
 | 64    | mp_wawa_r                     | wawa [07-2004]                                     | dm                               | R    |                                 |
-|       | ***Hidden Cassics***          |                                                    |                                  |      |                                 |
+|       |                               |                                                    |                                  |      |                                 |
+| 65    | ***Hidden Cassics***          |                                                    |                                  |      |                                 |
 |       | mp_chateau                    | Infinity Ward                                      | dm, tdm,     re, bel, hq         | B    |                                 |
 |       | mp_dawnville                  | Infinity Ward                                      | dm, tdm, sd, re, bel, hq         | A    | *Updated by mp_dawnville_x*     |
 |       | mp_railyard                   | Infinity Ward                                      | dm, tdm, sd, re, bel, hq         | R    | *Updated by mp_railyard_x*      |
@@ -167,6 +172,7 @@
 |       | mp_ship                       | Infinity Ward                                      | dm, tdm, sd, re,      hq         | B    |                                 |
 |       | mp_winterambush               | Unknown [03-2006]                                  | dm, tdm, sd                      | A    | *S&D not good to play*          |
 |       | mp_eisberg                    | Fangio [12-2003]                                   | dm, tdm, sd,     bel             | B    | *S&D not good to play*          |
+|       |                               |                                                    |                                  |      |                                 |
 
 </sub>
 
@@ -218,7 +224,14 @@
 |       | mp_varaville                  | IW + Slyk & Innocent Bystander [04-2004]           | dm, tdm,         bel             | A    | *Extra Large map*               |
 |       | mp_westwall                   | sm0k3r [12-2003]                                   | dm, tdm, sd, re, bel, hq         | B    | *Is really dark*                |
 |       | mp_windmills                  | VegaObscura [05-2004]                              | dm, tdm, sd, re, bel             | A    | - *Large sized map*             |
+|       | mp_subharbor_day              | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Large sized map*               |
+|       | mp_subharbor_night            | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Day allready present*          |
+|       | mp_valley_day                 | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Large sized map*               |
+|       | mp_valley_night               | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Day allready present*          |
+|       | mp_aquitaine                  | rasta [06-2005]                                    | dm, tdm, sd                      | B    | *Beta*                          |
+|       |                               |                                                    |                                  |      |                                 |
 |       | **Blurred Remembrance MOHAA** |                                                    |                                  |      |                                 |
+|       | mp_brest                      | VikingWiedel [09-2004]                             | dm, tdm,         bel             | A    | *Small sized map*               |
 |       | mp_bridge                     | [tFp] CFH666 [09-2004]                             | dm, tdm, sd,          hq         | B    |                                 |
 |       | mp_bridge_a                   | VikingWiedel [08-2004]                             | dm, tdm, sd,     bel             | A    | *SD ver.*                       |
 |       | mp_bridge_beta                | VikingWiedel [06-2004]                             | dm, tdm,         bel             | A    | *Beta ver., Less rooms*         |
@@ -227,16 +240,12 @@
 |       | mp_remagen                    | nash [08-2004]                                     | dm, tdm,     re, bel             | A    | *Breakable Windows*             |
 |       | mp_rocket_facility            | -TFO- Kilroy [02-2004]                             | dm, tdm, sd, re, bel, hq         | A    | *Openable doors*                |
 |       | mp_rocket_facility            | -TFO- Kilroy [02-2004]                             | dm, tdm, sd, re, bel, hq         | A    | *Openable doors*                |
+|       |                               |                                                    |                                  |      |                                 |
 |       | **Out**                       |                                                    |                                  |      |                                 |
-|       | mp_subharbor_day              | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Large sized map*               |
-|       | mp_subharbor_night            | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Day allready present*          |
-|       | mp_valley_day                 | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Large sized map*               |
-|       | mp_valley_night               | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Day allready present*          |
+|       | mp_frozen                     | SIFFER [02-2004]                                   | dm, tdm,     re, bel             | B    | *Small sized dm map*            |
 |       | mp_bellicourt_night_beta      | Magnus Sandström & Roger Abrahamsson [04-2004]     | dm, tdm, sd, re, bel, hq         | A    | *Version before fix*            |
-|       | mp_aquitaine                  | rasta [06-2005]                                    | dm, tdm, sd                      | B    | *Beta*                          |
-|       | **Winter**                    |                                                    |                                  |      |                                 |
 |       | mp_logging_mill               | Dex [06-2007]                                      | dm, tdm, sd, re, bel             | R    | *S&D not good to play*          |
-|       | mp_maaloy                     | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *Clipping houses with no fog*   |
+|:---   | mp_maaloy                     | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *Clipping houses with no fog*   |
 
 </sub>
 
