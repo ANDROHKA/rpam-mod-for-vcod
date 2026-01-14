@@ -253,21 +253,21 @@ The rest of the known available custom maps are not able to play seriously in S&
 > [Go up again **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
 > [Go back to **Full rPAM Maplist and Credits**](#full-rpam-maplist-and-credits)        
 
-# Server List
+##### Server List
 /cl_allowDownloads 1
-/connect 144.76.41.252:28901; password war; echo 1
-/connect 144.76.41.252:28902; password war; echo 2
-/connect 144.76.41.252:28903; password war; echo 3
-/connect 144.76.41.252:28904; password war; echo 4
-/connect 144.76.41.252:28905; password war; echo 5
-/connect 144.76.41.252:28906; password war; echo 6
-/connect 144.76.41.252:28907; password war; echo 7
-/connect 52.59.244.174:28908; password war; echo 8
-/connect 52.59.244.174:28909; password war; echo 9
-/connect 144.76.41.252:28900; password war; echo Public
-/connect 144.76.41.252:28911; password war; echo SoloQ1
-/connect 144.76.41.252:28912; password war; echo SoloQ2
-/connect 144.76.41.252:28913; password war; echo SoloQ3
+/connect 144.76.41.252:28901; password war; echo codbase1                   
+/connect 144.76.41.252:28902; password war; echo codbase2                   
+/connect 144.76.41.252:28903; password war; echo codbase3                   
+/connect 144.76.41.252:28904; password war; echo codbase4                   
+/connect 144.76.41.252:28905; password war; echo codbase5                   
+/connect 144.76.41.252:28906; password war; echo codbase6                   
+/connect 144.76.41.252:28907; password war; echo codbase7                   
+/connect 52.59.244.174:28908; password war; echo codbase8                   
+/connect 52.59.244.174:28909; password war; echo codbase9                   
+/connect 144.76.41.252:28900; password war; echo codbasepublic                   
+/connect 144.76.41.252:28911; password war; echo codbasesoloq1                   
+/connect 144.76.41.252:28912; password war; echo codbasesoloq2                   
+/connect 144.76.41.252:28913; password war; echo codbasesoloq3                   
 
 <!-- [NEXT END] -->
 <!-- [NEXT END] -->
