@@ -253,8 +253,8 @@ The rest of the known available custom maps are not able to play seriously in S&
 > [Go up again **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
 > [Go back to **Full rPAM Maplist and Credits**](#full-rpam-maplist-and-credits)        
 
-##### Server List
-/cl_allowDownloads 1
+##### Server List                   
+/cl_allowDownloads 1                   
 /connect 144.76.41.252:28901; password war; echo codbase1                   
 /connect 144.76.41.252:28902; password war; echo codbase2                   
 /connect 144.76.41.252:28903; password war; echo codbase3                   
