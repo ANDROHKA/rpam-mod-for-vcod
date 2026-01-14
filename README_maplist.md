@@ -93,7 +93,7 @@
 <!-- [FULL] -->
 
 
-# Full rPAM Maplist
+# Full rPAM Maplist And Credits
 
 <sub>
 
