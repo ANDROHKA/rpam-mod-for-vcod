@@ -133,7 +133,7 @@
 | 45    | mp_container                  | openf1re [06-2004]                                 |     tdm, sd                      | R    | *DM needs to be added*          |
 | 46    | mp_dawnville_winter           | Infinity Ward, ported by Expertiz [10-2017]        | dm, tdm, sd, re, bel, hq         | A    |                                 |
 | 47    | mp_dufresne_winter            | [HG] Baby Seal Clubber [08-2004]                   | dm, tdm, sd, re, bel, hq         | A    | *Updated by mp_dufresne_x*      |
-|       | mp_dufresne_x                 | [HG] Baby Seal Clubber & Filbert [09-2005]         | dm, tdm, sd, re, bel, hq         | A    | *UO + further edits***          |
+|       | mp_dufresne_x                 | [HG] Baby Seal Clubber & Filbert [09-2005]         | dm, tdm, sd, re, bel, hq         | A    | *UO + further edits*            |
 | 48    | mp_hanoi_winter               | Expertiz & DigitalDials [12-2016]                  | dm, tdm, sd, re, bel             | A    | *Has no effects*                |
 | 49    | mp_harbor_gg                  | IW + TheGoog [06-2021]                             | dm, tdm, sd, re, bel, hq         | R    |                                 |
 | 50    | mp_miniharbor                 | IW + TheGoog & JtGz [05-2025]                      | dm, tdm, sd                      | R    | Small sized map                 |
@@ -205,7 +205,7 @@
 |       | mp_priory                     | Filbert [08-2006]                                  | dm, tdm, sd,     bel, hq         | B    |                                 |
 |       | mp_redoktober                 | Drecks, Lex & Innocent Bystander [09-2004]         | dm, tdm, sd,     bel, hq         | R    | *Extra Large map*               |
 |       | mp_stanjel                    | Roger Abrahamsson [04-2006]                        | dm, tdm, sd, re, bel, hq         | R    |                                 |
-|       | mp_stcomedumont               | maverick & Lt.J.Snellius [02-2005]                 | dm, tdm, sd, re, bel, hq         | A    | - *Large sized map*             |
+|       | mp_stcomedumont               | maverick & Lt.J.Snellius [02-2005]                 | dm, tdm, sd, re, bel, hq         | A    | *Large sized map*               |
 |       | mp_steny                      | Spik3d [07-2007]                                   | dm, tdm, sd,     bel, hq         | A    |                                 |
 |       | mp_trenchville                | S.C. [07-2005]                                     | dm, tdm, sd,     bel             | A    |                                 |
 |       | mp_varaville                  | IW + Slyk & Innocent Bystander [04-2004]           | dm, tdm,         bel             | A    | *Extra Large map*               |
