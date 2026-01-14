@@ -1,0 +1,15 @@
+This CSV files does not load any sounds.
+
+Normally the game does load all available csv files.
+Inside a CSV the format must be used in this way.
+Especially with the commas, even its a #commentar.
+
+Tool to edit used: Editor.exe of Windows
+
+Cleared Template:
+z_rPAMv111none.csv
+
+Cleared CSV-files:
+z_rPAMv111.csv
+z_rPAMv111none.csv
+

@@ -1,0 +1,107 @@
+// v225: zzzzz_rPAM_x01_classics_v3\mp\_CoDmaps_rPAMv115_classics.arena
+{
+	map		"mp_brecourt"
+	longname	"mp_brecourt"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_carentan"
+	longname	"mp_carentan"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_chateau"
+	longname	"mp_chateau"
+	gametype	"dm tdm re bel hq hqt"
+}
+
+{
+	map		"mp_dawnville"
+	longname	"mp_dawnville"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_depot"
+	longname	"mp_depot"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_harbor"
+	longname	"mp_harbor"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_hurtgen"
+	longname	"mp_hurtgen"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_pavlov"
+	longname	"mp_pavlov"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_powcamp"
+	longname	"mp_powcamp"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_railyard"
+	longname	"mp_railyard"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_rocket"
+	longname	"mp_rocket"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_ship"
+	longname	"mp_ship"
+	gametype	"dm tdm re bel hq hqt"
+}
+
+{
+	map		"mp_bocage"
+	longname	"mp_bocage"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_neuville"
+	longname	"mp_neuville"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_stalingrad"
+	longname	"mp_stalingrad"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_tigertown"
+	longname	"mp_tigertown"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	longname	">> rPAM Custom Maps"
+	gametype	"dm tdm strat sd re bel hq"
+}
+
+{
+	map		"mp_germantown"
+	longname	"mp_germantown"
+	gametype	"dm tdm strat sd bel"
+}
