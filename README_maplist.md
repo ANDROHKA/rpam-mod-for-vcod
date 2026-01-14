@@ -146,7 +146,7 @@
 | 51    | mp_univermag                  | Drecks & Innocent Bystander [02-2004]              | dm, tdm, sd,     bel, hq         | R    | *Large sized map*               |
 | 52    | mp_winterv2                   | Oraco   [03-2006]                                  | dm, tdm, sd                      | R    | *Like mp_rocket*                |
 |       |                               |                                                    |                                  |      |                                 |
-| 53    | ***>> rPAM Aim***             |                                                    |                                  |      |                                 |
+| 53    | **rPAM Aim**                  |                                                    |                                  |      |                                 |
 |       | `/rcon g_gamtype dm`          |                                                    |                                  |      |                                 |
 |       | `/rcon map`                   | Creator                                            | Gametypes                        | Side | Notes                           |
 | 54    | mp_aim_a                      | Yannic [05-2004]                                   | dm, tdm                          | A    |                                 |
@@ -161,12 +161,12 @@
 | 63    | mp_wawa_b                     | wawa [07-2004]                                     | dm                               | B    |                                 |
 | 64    | mp_wawa_r                     | wawa [07-2004]                                     | dm                               | R    |                                 |
 |       |                               |                                                    |                                  |      |                                 |
-| 65    | ***Hidden Cassics***          |                                                    |                                  |      |                                 |
+| 65    | **Hidden Maps**               |                                                    |                                  |      |                                 |
 |       | mp_chateau                    | Infinity Ward                                      | dm, tdm,     re, bel, hq         | B    |                                 |
 |       | mp_dawnville                  | Infinity Ward                                      | dm, tdm, sd, re, bel, hq         | A    | *Updated by mp_dawnville_x*     |
 |       | mp_railyard                   | Infinity Ward                                      | dm, tdm, sd, re, bel, hq         | R    | *Updated by mp_railyard_x*      |
-|       | mp_chateau                    | Infinity Ward                                      | dm, tdm,     re, bel, hq         | B    |                                 |
-|       | mp_ship                       | Infinity Ward                                      | dm, tdm, sd, re,      hq         | B    |                                 |
+|       | mp_chateau                    | Infinity Ward                                      | dm, tdm,     re, bel, hq         | B    | *no S&D available*              |
+|       | mp_ship                       | Infinity Ward                                      | dm, tdm, sd, re,      hq         | B    | *no S&D available*              |
 |       | mp_winterambush               | Unknown [03-2006]                                  | dm, tdm, sd                      | A    | *S&D not good to play*          |
 |       | mp_eisberg                    | Fangio [12-2003]                                   | dm, tdm, sd,     bel             | B    | *S&D not good to play*          |
 |       |                               |                                                    |                                  |      |                                 |
