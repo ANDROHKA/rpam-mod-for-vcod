@@ -182,8 +182,8 @@
 <!-- [FULL END] -->
 
 > [Go back to **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
-> [Go back to **Full rPAM Maplist and Credits** (go up again)](#full-rapm-maplist)          
-> [Go next to **Maps not included** (go up again)](#maps-not-included)         
+> [Go back to **Full rPAM Maplist and Credits**](#full-rapm-maplist)          
+> [Go next to **Maps not included**](#maps-not-included)         
 
 <!-- [NEXT MAPS] -->
 <!-- [NEXT MAPS] -->
@@ -259,7 +259,8 @@ The rest of the known available custom maps are not able to play seriously in S&
 <!-- [NEXT END] -->
 <!-- [NEXT END] -->
 
-> [Go back to **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
-> [Go back to **Full rPAM Maplist and Credits** (go up again)](#full-rapm-maplist)          
-> [Go back to **Maps not included** (go up again)](#maps-not-included)   
-> [Go to the **Readme.md**](#call-of-duty-rpam-all-maps)
+> [Go up again **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
+> [Go back to **Full rPAM Maplist and Credits**](#full-rapm-maplist)          
+> [Go back **Maps not included**](#maps-not-included)        
+
+> [Go back to **Readme.md** file](README.md)                     
