@@ -4,7 +4,7 @@
 <!-- [HEAD] -->
 <!-- [HEAD] -->
 
-> [Go back to **Readme.md** file](README.md)               
+> [Go back to **README.md** file](README.md)               
 
 > [Go to **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
 > [Go to **Full rPAM Maplist and Credits**](#full-rpam-maplist-and-credits)   
@@ -258,7 +258,7 @@ The rest of the known available custom maps are not able to play seriously in S&
 <!-- [NEXT END] -->
 
 > [Go up again **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
-> [Go back to **Full rPAM Maplist and Credits**](#full-rapm-maplist)          
+> [Go back to **Full rPAM Maplist and Credits**](#full-rpam-maplist-and-credits)          
 > [Go back **Maps not included**](#maps-not-included)        
 
-> [Go back to **Readme.md** file](README.md)                     
+> [Go back to **README.md** file](README.md)                     
