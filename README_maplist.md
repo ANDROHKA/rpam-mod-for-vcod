@@ -7,7 +7,7 @@
 > [Go back to **Readme.md** file](README.md)               
 
 > [Go to **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
-> [Go to **Full rPAM Maplist and Credits**](#full-rapm-maplist)          
+> [Go to **Full rPAM Maplist and Credits**](#full-rpam-maplist-and-credits)   
 > [Go to **Maps not included**](#maps-not-included)              
 
 <!-- [RCON] -->
@@ -83,7 +83,7 @@
 <!-- [RCON] -->
 
 > [Go back to **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
-> [Go next to **Full rPAM Maplist and Credits**](#full-rapm-maplist)                
+> [Go next to **Full rPAM Maplist and Credits**](#full-rpam-maplist-and-credits)              
 
 <!-- [FULL] -->
 <!-- [FULL] -->
