@@ -193,7 +193,7 @@
 <!-- [NEXT MAPS] -->
 
 
-# Maps Not Included Yet
+# Maps Not Included
 
 <sub>
 
