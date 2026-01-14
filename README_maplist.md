@@ -4,11 +4,11 @@
 <!-- [HEAD] -->
 <!-- [HEAD] -->
 
-> [Go to **Readme.md** file](#call-of-duty-rpam-all-maps)               
+> [Go back to **Readme.md** file](README.md)               
 
 > [Go to **All Available Maps In The Game Menu**](#all-available-maps-in-the-game-menu)               
-> [Go to **Full rPAM Maplist and Credits** (go up again)](#full-rapm-maplist)          
-> [Go to **Maps not included** (go up again)](#maps-not-included)              
+> [Go to **Full rPAM Maplist and Credits**](#full-rapm-maplist)          
+> [Go to **Maps not included**](#maps-not-included)              
 
 <!-- [RCON] -->
 <!-- [RCON] -->
@@ -17,8 +17,6 @@
 # All Available Maps In The Game Menu               
 
 #### rPAM Maps         
-
-<sub>
 
 **Classics**              
 /rcon g_gametype sd             
@@ -77,8 +75,6 @@
 /rcon map mp_wawa_b            
 /rcon map mp_wawa_r             
 
-</sub>
-
 <!-- [RCON] -->
 <!-- [RCON] -->
 <!-- [RCON] -->
@@ -101,8 +97,10 @@
 
 <sub>
 
+|:---   |:---                           |:---                                                |:---                              |:---  |:---                             |
 | Arena | Mapname                       | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
 |-------|-------------------------------|----------------------------------------------------|----------------------------------|------|---------------------------------|
+|       |                               |                                                    |                                  |      |                                 |
 |       | **Classic Maps**              |                                                    |                                  |      |                                 |
 |       | `/rcon map`                   | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
 | 01    | mp_brecourt                   | Infinity Ward                                      | dm, tdm, sd, re, bel, hq         | A    |                                 |
@@ -199,8 +197,10 @@
 
 <sub>
 
+|:---   |:---                           |:---                                                |:---                              |:---  |:---                             |
 | ARENA | `/rcon map`                   | Creator                                            | Gametypes                        | Side | rPAM Notes                      |
 |-------|-------------------------------|----------------------------------------------------|----------------------------------|------|---------------------------------|
+|       |                               |                                                    |                                  |      |                                 |
 |       | **Non Winter**                |                                                    |                                  |      |                                 |
 |       | mp_abbey                      | FORCE316 [10-2004]                                 | dm, tdm, sd, re, bel, hq         | A    |                                 |
 |       | mp_amfreville                 | Steppenwolf & THE DUKE [04-2005]                   | dm, tdm, sd, re, hq              | A    | *Large sized map*               |
@@ -245,7 +245,8 @@
 |       | mp_frozen                     | SIFFER [02-2004]                                   | dm, tdm,     re, bel             | B    | *Small sized dm map*            |
 |       | mp_bellicourt_night_beta      | Magnus Sandström & Roger Abrahamsson [04-2004]     | dm, tdm, sd, re, bel, hq         | A    | *Version before fix*            |
 |       | mp_logging_mill               | Dex [06-2007]                                      | dm, tdm, sd, re, bel             | R    | *S&D not good to play*          |
-|:---   | mp_maaloy                     | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *Clipping houses with no fog*   |
+|       | mp_maaloy                     | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *Clipping houses with no fog*   |
+|       |                               |                                                    |                                  |      |                                 |
 
 </sub>
 
