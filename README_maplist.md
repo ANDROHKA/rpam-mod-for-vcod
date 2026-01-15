@@ -200,33 +200,34 @@
 |-------|-------------------------------|----------------------------------------------------|----------------------------------|------|---------------------------------|
 |       |                               |                                                    |                                  |      |                                 |
 |       | **Non Winter**                |                                                    |                                  |      |                                 |
-|       | mp_abbey                      | FORCE316 [10-2004]                                 | dm, tdm, sd, re, bel, hq         | A    |                                 |
-|       | mp_amfreville                 | Steppenwolf & THE DUKE [04-2005]                   | dm, tdm, sd, re, hq              | A    | *Large sized map*               |
+|       | mp_abbey                      | FORCE316 [10-2004]                                 | dm, tdm, sd, re, bel, hq         | A    | *A*                             |
+|       | mp_amfreville                 | Steppenwolf & THE DUKE [04-2005]                   | dm, tdm, sd, re, hq              | A    | *A* *Large*                     |
+|       | mp_aquitaine                  | rasta [06-2005]                                    | dm, tdm, sd                      | B    | *Beta*                          |
 |       | mp_bazolles                   | Magnus Sandström & Roger Abrahamsson [07-2004]     | dm, tdm, sd, re, bel, hq         | A    |                                 |
 |       | mp_bellicourt                 | Magnus Sandström & Roger Abrahamsson [03-2004]     | dm, tdm, sd, re, bel, hq         | A    | *Different to night ver.*       |
-|       | mp_bellicourt_night           | Magnus Sandström & Roger Abrahamsson [04-2004]     | dm, tdm, sd, re, bel, hq         | A    | *Fixed version used             |
-|       | mp_daybreak                   | Mj & Cypher [10-2005]                              | dm, tdm, sd, re, bel             | A    | *Large sized map* *v2.0 used*   |
+|       | mp_bellicourt_night           | Magnus Sandström & Roger Abrahamsson [04-2004]     | dm, tdm, sd, re, bel, hq         | A    | *Fixed version used*            |
+|       | mp_daybreak                   | Mj & Cypher [10-2005]                              | dm, tdm, sd, re, bel             | A    | *S* *Large* *v2.0 used*         |
 |       | mp_dday7                      | [AYM] Lt Jules [06-2004]                           | dm, tdm, sd,     bel, hq         | A    | *not good to play?              |
 |       | mp_falaisevilla               | colpe [01-2004] & shitman [10-2009]                | dm, tdm, sd, re, bel, hq         | A    |                                 |
-|       | mp_hurtgen_autumn             | IW + 3FJTACTICAL [12-2004]                         | dm, tdm, sd, re, bel, hq         | A    |                                 |
-|       | mp_junobeach                  | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *Morsers deactivated*           |
+|       | mp_hurtgen_autumn             | IW + 3FJTACTICAL [12-2004]                         | dm, tdm, sd, re, bel, hq         | A    | *A*                             |
+|       | mp_junobeach                  | [126th] Televinken [12-2004]                       | dm, tdm, sd, re, bel, hq         | B    | *A* *Morsers deactivated*       |
 |       | mp_merderet_river             | Steppenwolf [04-2005]                              | dm, tdm, sd, re, bel, hq         | A    | *Edit textures & models needed* |
-|       | mp_merville_battery           | [HOLY] Moses [07-2004]                             |     tdm, sd,          hq         | B    | *DM may be added*               |
+|       | mp_merville_battery           | [HOLY] Moses [07-2004]                             |     tdm, sd,          hq         | B    | *A* *DM may be added*           |
 |       | mp_nuenen                     | [AYM] Lt Jules                                     | dm, tdm, sd,     bel, hq         | A    | *Broken windows*                |
-|       | mp_priory                     | Filbert [08-2006]                                  | dm, tdm, sd,     bel, hq         | B    |                                 |
-|       | mp_redoktober                 | Drecks, Lex & Innocent Bystander [09-2004]         | dm, tdm, sd,     bel, hq         | R    | *Extra Large map*               |
-|       | mp_stanjel                    | Roger Abrahamsson [04-2006]                        | dm, tdm, sd, re, bel, hq         | R    |                                 |
-|       | mp_stcomedumont               | maverick & Lt.J.Snellius [02-2005]                 | dm, tdm, sd, re, bel, hq         | A    | *Large sized map*               |
-|       | mp_steny                      | Spik3d [07-2007]                                   | dm, tdm, sd,     bel, hq         | A    |                                 |
-|       | mp_trenchville                | S.C. [07-2005]                                     | dm, tdm, sd,     bel             | A    |                                 |
-|       | mp_varaville                  | IW + Slyk & Innocent Bystander [04-2004]           | dm, tdm,         bel             | A    | *Extra Large map*               |
-|       | mp_westwall                   | sm0k3r [12-2003]                                   | dm, tdm, sd, re, bel, hq         | B    | *Is really dark*                |
-|       | mp_windmills                  | VegaObscura [05-2004]                              | dm, tdm, sd, re, bel             | A    | - *Large sized map*             |
-|       | mp_subharbor_day              | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Large sized map*               |
+|       | mp_priory                     | Filbert [08-2006]                                  | dm, tdm, sd,     bel, hq         | B    | *A*                             |
+|       | mp_redoktober                 | Drecks, Lex & Innocent Bystander [09-2004]         | dm, tdm, sd,     bel, hq         | R    | *A* *Extra Large*               |
+|       | mp_stanjel                    | Roger Abrahamsson [04-2006]                        | dm, tdm, sd, re, bel, hq         | R    | *A*                             |
+|       | mp_stcomedumont               | maverick & Lt.J.Snellius [02-2005]                 | dm, tdm, sd, re, bel, hq         | A    | *A* *Large*                     |
+|       | mp_steny                      | Spik3d [07-2007]                                   | dm, tdm, sd,     bel, hq         | A    | *A* *Similar to mp_carentan*    |
+|       | mp_trenchville                | S.C. [07-2005]                                     | dm, tdm, sd,     bel             | A    | *A*                             |
+|       | mp_varaville                  | IW + Slyk & Innocent Bystander [04-2004]           | dm, tdm,         bel             | A    | *A* *Extra Large* *#S&D*        |
+|       | mp_westwall                   | sm0k3r [12-2003]                                   | dm, tdm, sd, re, bel, hq         | B    | *Is too dark*                   |
+|       | mp_windmills                  | VegaObscura [05-2004]                              | dm, tdm, sd, re, bel             | A    | *Extra Large*                   |
+|       | mp_subharbor_day              | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Large*                         |
 |       | mp_subharbor_night            | VegaObscura [03-2004]                              | dm, tdm, sd,     bel, hq         | B    | *Day allready present*          |
-|       | mp_valley_day                 | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Large sized map*               |
+|       | mp_valley_day                 | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Extra Large*                   |
 |       | mp_valley_night               | VegaObscura [03-2004]                              | dm, tdm, sd,     bel             | A    | *Day allready present*          |
-|       | mp_aquitaine                  | rasta [06-2005]                                    | dm, tdm, sd                      | B    | *Beta*                          |
+
 |       |                               |                                                    |                                  |      |                                 |
 |       | **Blurred Remembrance MOHAA** |                                                    |                                  |      |                                 |
 |       | mp_brest                      | VikingWiedel [09-2004]                             | dm, tdm,         bel             | A    | *Small sized map*               |
