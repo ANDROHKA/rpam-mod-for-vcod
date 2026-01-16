@@ -16,8 +16,7 @@
 
 > **Actual rPAM Version:** **`rPAM v1.15 b5 #4.5 + #4.6 (Latest Patch)`** [**Download and Readme**](https://github.com/ANDROHKA/rpam-mod-for-vcod/releases/tag/rPAMv115b5_DEC25)                           
 > > **Actual rPAM Maps Version:** `v2.29` [Readme | Commands | Screenshots](https://github.com/ANDROHKA/rpam-mod-for-vcod/)                           
-> > **Adapted to the latest CoDBASE PAM version:** `kikiii's ezay-pam port` `v2.11` [kikiii's eyza\_pam\_port\_to\_vcod (Active) on github](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main)                              
-> > `CoD2 ezya zPAM` `v4.04` [CoD2 ezya zPAM (Active CoD2) on github](https://github.com/eyza-cod2/zpam3) `CoD1 rPAM v1.11` [rPAM v1.11 (2015) on modDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)                     
+> > **Adapted to the latest CoDBASE PAM version:** `kikiii's ezay-pam port` `v2.11` [kikiii's eyza\_pam\_port\_to\_vcod (Active) on github](https://github.com/tmowojtek/eyza_pam_port_to_vcod/tree/main) `CoD2 ezya zPAM` `v4.04` [CoD2 ezya zPAM (Active CoD2) on github](https://github.com/eyza-cod2/zpam3) `CoD1 rPAM v1.11` [rPAM v1.11 (2015) on modDB](https://www.moddb.com/mods/call-of-duty-origin-of-honor/features/call-of-duty-rpam-v111)                     
 
 The goal of this project is to develop features requested by the player base while preserving the core gameplay at the highest competitive standard established in recent years. rPAM is the updated competition mod for Call of Duty 1.5 established by me in 2015, building on previous PAM releases that were used in eSports leagues such as ESL, ClanBase, CyberGamer. You can find visuals by scrolling down.
 
