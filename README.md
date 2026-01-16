@@ -84,8 +84,8 @@ it quickly became the standard for high-level competitive play.
 <!-- [E 3.] -->
 
 # Previous Work And How To Support This Project
-<a href="readme_images/g_promo.jpg">
-  <img src="readme_images/g_promo.jpg" width="1000"/>
+<a href="_readme_images/game_promo.jpg">
+  <img src="_readme_images/game_promo.jpg" width="1000"/>
 </a>  
 
 A little throwback, back in 2007 or 2008, I managed to add this shown fifth button to the main menu. That’s why it says ‘hi world‘.
@@ -189,7 +189,7 @@ For my time already invested, you are welcome to leave a donation.
 - Textures: Improved window glass transparency and frame details in `mp_neuville`
 - Textures: Adjusted metal rail fences in `mp_carentan` for better visibility
   
-  <a href="readme_images/t_neuville_windows26.jpg"><img src="readme_images/t_neuville_windows26.jpg" width="220"/></a><a href="readme_images/t_carentan_fence26.jpg"><img src="readme_images/t_carentan_fence26.jpg" width="220"/></a>
+  <a href="_readme_images/t_neuville_windows26.jpg"><img src="_readme_images/t_neuville_windows26.jpg" width="220"/></a><a href="_readme_images/t_carentan_fence26.jpg"><img src="_readme_images/t_carentan_fence26.jpg" width="220"/></a>
 
 - rPAM: Addes set rpam_msg & set rpam_debug 1 Message Center
 - rPAM: Fixed compatibility issues with `.arena` files  
@@ -216,8 +216,8 @@ For my time already invested, you are welcome to leave a donation.
         - Adjusted rock and ruins stairs – patch by *curiousfox*  
         - Adjusted tank positions – patch by *curiousfox*
 
-<a href="readme_images/e_mp_railyard_x_axis_roof1.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof1.jpg" width="250"/></a><a href="readme_images/e_mp_railyard_x_axis_roof3.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof3.jpg" width="250"/></a><a                          
-href="readme_images/e_mp_railyard_x_axis_roof2.jpg"><img src="readme_images/e_mp_railyard_x_axis_roof2.jpg" width="250"/></a><a href="readme_images/e_mp_railyard_x_axis_ruins.jpg"><img src="readme_images/e_mp_railyard_x_axis_ruins.jpg" width="250"/></a>
+<a href="_readme_images/e_mp_railyard_x_axis_roof1.jpg"><img src="_readme_images/e_mp_railyard_x_axis_roof1.jpg" width="250"/></a><a href="_readme_images/e_mp_railyard_x_axis_roof3.jpg"><img src="_readme_images/e_mp_railyard_x_axis_roof3.jpg" width="250"/></a><a                          
+href="_readme_images/e_mp_railyard_x_axis_roof2.jpg"><img src="_readme_images/e_mp_railyard_x_axis_roof2.jpg" width="250"/></a><a href="_readme_images/e_mp_railyard_x_axis_ruins.jpg"><img src="_readme_images/e_mp_railyard_x_axis_ruins.jpg" width="250"/></a>
 
 <table>
   <tr>
@@ -247,8 +247,8 @@ href="readme_images/e_mp_railyard_x_axis_roof2.jpg"><img src="readme_images/e_mp
       </ul>
     </td>
     <td valign="top">
-      <a href="readme_images/e_mp_railyard_overhaul_script.jpg">
-        <img src="readme_images/e_mp_railyard_overhaul_script.jpg" width="400" align="right"/>
+      <a href="_readme_images/e_mp_railyard_overhaul_script.jpg">
+        <img src="_readme_images/e_mp_railyard_overhaul_script.jpg" width="400" align="right"/>
       </a>
     </td>
   </tr>
@@ -278,20 +278,20 @@ Full comparision between reissue-leanfix (2024/2025), expert-leanfix (2023) & de
 In the default game the body rolls inwards while using diagonal movement. Expertiz made an attempt and added a weird animation.
 Here Reissue fixed the diagonal lean issue completely. The screeners explain it. Further changes applied.
 
-<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg" width="1000"/>
+<a href="_readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg">
+  <img src="_readme_images/reissue-rPAM-leanfix_v4_comp_p1.jpg" width="1000"/>
 </a>   
 <br><br>
-<a href="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg" width="1000"/>
+<a href="_readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg">
+  <img src="_readme_images/reissue-rPAM-leanfix_v4_comp_p2.jpg" width="1000"/>
 </a>   
 <br><br>
-<a href="readme_images/reissue-rPAM-leanfix_full_p1.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_full_p1.jpg" width="1000"/>
+<a href="_readme_images/reissue-rPAM-leanfix_full_p1.jpg">
+  <img src="_readme_images/reissue-rPAM-leanfix_full_p1.jpg" width="1000"/>
 </a>   
 <br><br>
-<a href="readme_images/reissue-rPAM-leanfix_full_p2.jpg">
-  <img src="readme_images/reissue-rPAM-leanfix_full_p2.jpg" width="1000"/>
+<a href="_readme_images/reissue-rPAM-leanfix_full_p2.jpg">
+  <img src="_readme_images/reissue-rPAM-leanfix_full_p2.jpg" width="1000"/>
 </a>   
 <br><br>
 
@@ -560,7 +560,7 @@ Here Reissue fixed the diagonal lean issue completely. The screeners explain it.
 ### Recommendation:
 - Players: Check or copy your `config_mp.cfg` from your `main` folder into the `_rPAMv115*` folder. Normally, it transfers automatically when launching the mod for the first time.
 - Players: It is recommended you clear you `main` folder.
-   - <a href="readme_images/cleared_main.png"><img src="readme_images/cleared_main.png"/> </a>
+   - <a href="_readme_images/cleared_main.png"><img src="_readme_images/cleared_main.png"/> </a>
 - Server Hosts: New players can download most of the required files directly by connecting to the game server by adding the following commands to the server config
 `seta sv_allowDownload "1"`
 `seta sv_wwwBaseURL "http://167.235.243.217/fastdl/cod1"` // Credits: bandiii92`
