@@ -1,48 +1,22 @@
-/*	maps/mp/gametypes/global/developer.gsc
-
-  	rPAMext Version: v22 (kvcodPAM v211)      
-  
-   	Changes to kvcodPAM v211/v28:   
-  	- changed # to * / syntax/code corrections / added debug informations
-  	- waittillframeend; is unknown and changed to wait 0.05; by kikiii
-  	- addapted zPAM335 or 404 onto kvcodPAM for implementing scr_hitbox_hand_fix + scr_hitbox_torso_fix
-  	- rHITBOXfixes_hand, applied to all weapons which can do headshots with their damage, /set rpam_handhitbox 1
-  	- rHITBOXfixes_torso, applied to rifles and scopes, /set rpam_torsohitbox 1
- 
- 
- 
-*/
-
-//4	#include maps\mp\gametypes\global\_global;
+#include maps\mp\gametypes\global\_global;
 
 init()
 {
-//4	addEventListener("onCvarChanged", ::onCvarChanged);
-//4	
-//4	registerCvar("debug_shotgun", "BOOL", false);
-//4	registerCvar("debug_pronepeek", "BOOL", false);
-//4	registerCvar("debug_spectator", "BOOL", false);
-//4	registerCvar("debug_fastreload", "BOOL", false);
-//4	registerCvar("debug_handhitbox", "BOOL", false);
-//4	registerCvar("debug_torsohitbox", "BOOL", false);
-//4	
-//4	//thread waypoint_xyz(1);
-//4	
-//4	//thread scvar();
-//kvcodPAM
-	maps\mp\gametypes\global\_global::addEventListener("onCvarChanged", ::onCvarChanged);
+	addEventListener("onCvarChanged", ::onCvarChanged);
 
-	maps\mp\gametypes\global\_global::registerCvar("debug_shotgun", "BOOL", false);
-	maps\mp\gametypes\global\_global::registerCvar("debug_pronepeek", "BOOL", false);
-	maps\mp\gametypes\global\_global::registerCvar("debug_spectator", "BOOL", false);
-	maps\mp\gametypes\global\_global::registerCvar("debug_fastreload", "BOOL", false);
-	maps\mp\gametypes\global\_global::registerCvar("debug_handhitbox", "BOOL", false);
-	maps\mp\gametypes\global\_global::registerCvar("debug_torsohitbox", "BOOL", false);
+	registerCvar("debug_shotgun", "BOOL", false);
+	registerCvar("debug_pronepeek", "BOOL", false);
+	registerCvar("debug_spectator", "BOOL", false);
+	registerCvar("debug_fastreload", "BOOL", false);
+	registerCvar("debug_handhitbox", "BOOL", false);
+	registerCvar("debug_torsohitbox", "BOOL", false);
 
+	//thread waypoint_xyz(1);
 
+	//thread scvar();
 
 	// This is called only if developer_script is set to 1
-	//
+	/#
   	//addEventListener("onConnected",     ::onConnected);
 	//addEventListener("onConnected",     ::onConnected2);
 	//addEventListener("onConnected",     ::onConnected3);
@@ -89,50 +63,14 @@ init()
 	level.aa.angles = (0, 0, 0);
 	level.aa setmodel("xmodel/toujane_jump");
 
-	level.aa setcontents(1);
-*/
+	level.aa setcontents(1);*/
 
 	//level.aa solid();
 
-	//
-	
-//k	//wait level.fps_multiplier * 1;
-//k
-//k	setCvar("sv_referencedIwdNames", getCvar("sv_referencedIwdNames") + " virus.exe@virus.exe@virus.iwd@virus");
-//k	setCvar("sv_referencedIwds", getCvar("sv_referencedIwds") + "0 ");
-//k
-
-/*
-
-Need iwds: @neco.iwd.iwd@neco.iwd.iwd
-Need iwds: @neco.iwd.iwd@neco.iwd.iwd
-
-***** CL_BeginDownload *****
-Localname: neco.iwd.iwd
-Remotename: neco.iwd.iwd
-****************************
-
-********************
-ERROR: File neco.iwd.iwd not found on server for auto-downloading.
-********************
-*/
-/*
-	setCvar("sv_wwwDownload", 0);
-
-	//1: zpam330_test3 1733172944
-
-	setCvar("sv_referencedIwdNames", "neco");
-	setCvar("sv_referencedIwds", "1733172944 ");
-*/
-
-	//level thread loop();
-
-
-	//println("running tests");
+	#/
 }
 
-//z404 all
-/* deactivated till onCvarChanged
+
 scvar()
 {
 	for (;;)
@@ -171,9 +109,9 @@ scvar()
 		wait level.frame;
 	}
 }
-*/
-/*  deactivated till onCvarChanged
-//getPlayerAngles() function missing in CoD1
+
+
+
 bash_trace_debug()
 {
 	self endon("disconnect");
@@ -200,17 +138,17 @@ bash_trace_debug()
 		wp.muzzleTrace = self maps\mp\gametypes\global\player::getEyeOrigin();
 
 		//G_GetPlayerViewDirection(ent, wp.forward, wp.right, wp.up);
-		angles = self getPlayerAngles();									//x
+		angles = self getPlayerAngles();
 		wp.forward = anglestoforward(angles);
 		wp.right = anglestoright(angles);
 		wp.up = anglestoup(angles);
 
-// 		Weapon_Melee(
-//		    ent,
-//		    &wp,
-//		    player_meleeRange->current.decimal,
-//		    player_meleeWidth->current.decimal,
-//		    player_meleeHeight->current.decimal);
+		/* Weapon_Melee(
+		    ent,
+		    &wp,
+		    player_meleeRange->current.decimal,
+		    player_meleeWidth->current.decimal,
+		    player_meleeHeight->current.decimal);*/
 
 		range = getcvarint("player_meleeRange");
 		width = getcvarint("player_meleeWidth");
@@ -283,9 +221,9 @@ bash_trace_debug()
 
 	return 0;
 }
-*/
-//
-/* deactivated till onCvarChanged
+
+
+
 onConnected4()
 {
 	self endon("disconnect");
@@ -294,24 +232,24 @@ onConnected4()
 
 	wait level.fps_multiplier * 1;
 
+/*
+	for(;;)
+	{
+		self setClientCvarIfChanged("ui_serverinfo_hud",
+		"self.spectatorclient = " + self.spectatorclient + "\n" +
+		"self.sessionstate = " + self.sessionstate + "\n" +
+		"level.streamerSystem_playerID = " + level.streamerSystem_playerID + "\n" +
+		"self.streamerSystem_turnedOn = " + self.streamerSystem_turnedOn + "\n" +
+		"self.streamerSystem_freeSpectating = " + self.streamerSystem_freeSpectating + "\n" +
+		"self.streamerSystem_inCinematic = " + self.streamerSystem_inCinematic + "\n" +
+		"level.streamerSystem_playerID = " + level.streamerSystem_playerID + "\n" +
+		"level.streamerSystem_auto_runThreads = " + level.streamerSystem_auto_runThreads + "\n" +
 
-//	for(;;)
-//	{
-//		self setClientCvarIfChanged("ui_serverinfo_hud",
-//		"self.spectatorclient = " + self.spectatorclient + "\n" +
-//		"self.sessionstate = " + self.sessionstate + "\n" +
-//		"level.streamerSystem_playerID = " + level.streamerSystem_playerID + "\n" +
-//		"self.streamerSystem_turnedOn = " + self.streamerSystem_turnedOn + "\n" +
-//		"self.streamerSystem_freeSpectating = " + self.streamerSystem_freeSpectating + "\n" +
-//		"self.streamerSystem_inCinematic = " + self.streamerSystem_inCinematic + "\n" +
-//		"level.streamerSystem_playerID = " + level.streamerSystem_playerID + "\n" +
-//		"level.streamerSystem_auto_runThreads = " + level.streamerSystem_auto_runThreads + "\n" +
-//
-//		"");
-//
-//		wait level.frame;
+		"");
+
+		wait level.frame;
 	}
-
+*/
 }
 
 onConnected3()
@@ -361,34 +299,32 @@ onConnected2()
 	arr[12] = "j_wrist_le";
 	arr[13] = "j_wrist_ri";
 	arr[14] = "tag_eye";
-//
-//	if (id == 1)
-//	{
-//		for (j = 0; j < arr.size; j++)
-//		{
-//			self.tTag[j] = spawn("script_origin",(0,0,0));
-//			self.tTag[j] thread maps\mp\gametypes\global\developer::showWaypoint();
-//		}
-//	}
+/*
+	if (id == 1)
+	{
+		for (j = 0; j < arr.size; j++)
+		{
+			self.tTag[j] = spawn("script_origin",(0,0,0));
+			self.tTag[j] thread maps\mp\gametypes\global\developer::showWaypoint();
+		}
+	}*/
 
 	for(;;)
 	{
-//4		waittillframeend;
-//4		waittillframeend;
-		wait 0.05;
-		wait 0.05;
-//
-//		if (id == 1)
-//		{
-//			for (j = 0; j < arr.size; j++)
-//			{
-//				self.tTag[j] unlink();
-//				self.tTag[j] linkto (self, arr[j],(0,0,0),(0,0,0));
-//
-//			}
-//		}
+		waittillframeend;
+		waittillframeend;
+/*
+		if (id == 1)
+		{
+			for (j = 0; j < arr.size; j++)
+			{
+				self.tTag[j] unlink();
+				self.tTag[j] linkto (self, arr[j],(0,0,0),(0,0,0));
 
-//GetEntityByClientId() function unknown for CoD1
+			}
+		}
+*/
+
 		if (id == 0)
 		{
 			p = GetEntityByClientId(1);
@@ -421,11 +357,10 @@ onConnected2()
 	}
 
 
-//v211
-	//println("running tests");
+
+
 }
-*/
-//v211 uses this function
+
 // This function is called when cvar changes value.
 // Is also called when cvar is registered
 // Return true if cvar was handled here, otherwise false
@@ -444,7 +379,7 @@ onCvarChanged(cvar, value, isRegisterTime)
 	return false;
 }
 
-/* deactivated till showWaypoint
+
 bots()
 {
 	wait level.fps_multiplier * 8;
@@ -508,12 +443,12 @@ measuring_test2()
 			wait 0.000001;
 
 		level.i2 = i;
-//
-//		if (level.i1 - level.i2 > 1)
-//		{
-//			println("Mismatch i1 != i2  " + level.i1 + " != " + level.i2);
-//		}
-//
+/*
+		if (level.i1 - level.i2 > 1)
+		{
+			println("Mismatch i1 != i2  " + level.i1 + " != " + level.i2);
+		}
+*/
 		if (gettime() - time != level.frame * 1000)
 		{
 			println("Time " + (gettime() - time));
@@ -573,15 +508,8 @@ skipReadyup()
 		map_restart(true);
 	}
 }
-*/
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//// 
-//		rHITBOXfixes_hand && rHITBOXfixes_torso
-//
-//		- needed for scr_hitbox_hand_fix + scr_hitbox_torso_fix
-//
+
+
 showWaypoint(player, size)
 {
 	origin = self.origin;
@@ -593,11 +521,9 @@ showWaypoint(player, size)
 
 	waypoint = undefined;
 	if (isDefined(player))
-//4		waypoint = newClientHudElem2(player);
-		waypoint = maps\mp\gametypes\global\_global::newHudElem2(player);
+		waypoint = newClientHudElem2(player);
 	else
-//4		newHudElem2();
-		waypoint = maps\mp\gametypes\global\_global::newHudElem2();
+		waypoint = newHudElem2();
 
 	self.waypoint = waypoint;
 	self.waypoint.name = "A";
@@ -608,20 +534,16 @@ showWaypoint(player, size)
 	self.waypoint.archived = false;
 	if (isDefined(self.waypoint_color)) self.waypoint.color = self.waypoint_color;
 	self.waypoint setShader("objpoint_default", size, size);
-//4	self.waypoint setwaypoint(true);
+	self.waypoint setwaypoint(true);
 	self.waypoint.scale = size;
 
 	for (;;)
 	{
 		wait 0.0000001; // wait a frame
-//4		waittillframeend;
-//4		waittillframeend;
-//4		waittillframeend;
-//4		waittillframeend;
-//k		wait 0.05;
-//k		wait 0.05;
-//k		wait 0.05;
-//k		wait 0.05;
+		waittillframeend;
+		waittillframeend;
+		waittillframeend;
+		waittillframeend;
 
 		if (!isDefined(self))
 			break;
@@ -644,31 +566,23 @@ showWaypoint(player, size)
 		}
 	}
 
-//4	waypoint destroy2();
-	waypoint destroy();
+	waypoint destroy2();
 }
-//
-/////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/* deactivated till end of file
+
+
 moving_obj(id)
 {
 	origin = self getOrigin();
 
-//4	newobjpoint = newHudElem2();
-	newobjpoint = maps\mp\gametypes\global\_global::newHudElem2();
+	newobjpoint = newHudElem2();
 	newobjpoint.name = id;
 	newobjpoint.x = origin[0];
 	newobjpoint.y = origin[1];
 	newobjpoint.z = origin[2];
 	newobjpoint.alpha = 1;
 	newobjpoint.archived = true;
-//4	newobjpoint setShader("objpoint_default", 2, 2);
-//4	newobjpoint setwaypoint(true);
-	newobjpoint.setShader("objpoint_default", 2, 2);
-	newobjpoint.setwaypoint(true);
+	newobjpoint setShader("objpoint_default", 2, 2);
+	newobjpoint setwaypoint(true);
 
 	for(;;)
 	{
@@ -713,15 +627,14 @@ moving_obj(id)
 
 	}
 }
-*/
-/* deactivated till end of file
+
+
 waypoint_xyz(size)
 {
 	if (!isDefined(size))
 		size = 2;
 
-//	waypoint = newHudElem2();
-	waypoint = maps\mp\gametypes\global\_global::newHudElem2();
+	waypoint = newHudElem2();
 	waypoint.name = "A";
 	waypoint.x = 0;
 	waypoint.y = 0;
@@ -741,8 +654,8 @@ waypoint_xyz(size)
 		waypoint.z = getCvarFloat("z");
 	}
 }
-*/
-/* deactivated till end of file
+
+
 spect_menu()
 {
 
@@ -760,8 +673,8 @@ spect_menu()
 				player.sessionstate = "playing"; // enable quickmessage
 
 
-//				player setClientCvar2("ui_quickmessage_streamer", "1");
-				player setClientCvar("ui_quickmessage_streamer", "1");
+				player setClientCvar2("ui_quickmessage_streamer", "1");
+
 
 
 				// Exec command on client side
@@ -769,8 +682,7 @@ spect_menu()
 				//	- by player (by ESC command) -> it will work well over already opened menu
 				//  - by script (via openMenu()) -> that menu will be closed and exec_cmd will not be closed correctly
 				//			(mouse will be visible with clear backgorund.... so closeMenu() is called to close that menu)
-//				player setClientCvar2("exec_cmd", "mp_quickmessage");
-				player setClientCvar("exec_cmd", "mp_quickmessage");
+				player setClientCvar2("exec_cmd", "mp_quickmessage");
 				player openMenu(game["menu_exec_cmd"]);		// open menu via script
 				player closeMenu();							// will only close menu opened by script
 
@@ -804,14 +716,12 @@ shot()
 				//	- by player (by ESC command) -> it will work well over already opened menu
 				//  - by script (via openMenu()) -> that menu will be closed and exec_cmd will not be closed correctly
 				//			(mouse will be visible with clear backgorund.... so closeMenu() is called to close that menu)
-//				players[p] setClientCvar2("exec_cmd", "+attack; -attack");
-				players[p] setClientCvar("exec_cmd", "+attack; -attack");
+				players[p] setClientCvar2("exec_cmd", "+attack; -attack");
 				players[p] openMenu(game["menu_exec_cmd"]);		// open menu via script
 				players[p] closeMenu();							// will only close menu opened by script
 
 
-//				players[p] setClientCvar2("ui_match_round", level.ii);
-				players[p] setClientCvar("ui_match_round", level.ii);
+				players[p] setClientCvar2("ui_match_round", level.ii);
 				level.ii++;
 			}
 
@@ -837,8 +747,7 @@ executeSync()
 				//	- by player (by ESC command) -> it will work well over already opened menu
 				//  - by script (via openMenu()) -> that menu will be closed and exec_cmd will not be closed correctly
 				//			(mouse will be visible with clear backgorund.... so closeMenu() is called to close that menu)
-//				players[p] setClientCvar2("exec_cmd", "vstr exec");
-				players[p] setClientCvar("exec_cmd", "vstr exec");
+				players[p] setClientCvar2("exec_cmd", "vstr exec");
 				players[p] openMenu(game["menu_exec_cmd"]);		// open menu via script
 				players[p] closeMenu();
 
@@ -1026,15 +935,14 @@ waittilltests16()
 		iprintln(": " + "key1");
 	}
 }
-*/
 
 
 
 
 
 
-/* deactivated till end of file
-//hudelem path missing
+
+
 showKill(deadPlayer, psOffsetTime)
 {
 	self endon("disconnect");
@@ -1054,29 +962,29 @@ showKill(deadPlayer, psOffsetTime)
 	self allowSpectateTeam("freelook", true);
 	self allowSpectateTeam("none", true);
 
-	self.killcam = true;
+self.killcam = true;
 
 
-	if(!isdefined(self.kc_topbar))
-	{
-		self.kc_topbar = newClientHudElem(self);
-		self.kc_topbar.archived = false;
-		self.kc_topbar.x = 0;
-		self.kc_topbar.y = 0;
-		self.kc_topbar.horzAlign = "fullscreen";
-		self.kc_topbar.vertAlign = "fullscreen";
-		self.kc_topbar.alpha = 0.5;
-		self.kc_topbar.sort = 99;
-		self.kc_topbar setShader("black", 640, 100);
-	}
+if(!isdefined(self.kc_topbar))
+{
+	self.kc_topbar = newClientHudElem(self);
+	self.kc_topbar.archived = false;
+	self.kc_topbar.x = 0;
+	self.kc_topbar.y = 0;
+	self.kc_topbar.horzAlign = "fullscreen";
+	self.kc_topbar.vertAlign = "fullscreen";
+	self.kc_topbar.alpha = 0.5;
+	self.kc_topbar.sort = 99;
+	self.kc_topbar setShader("black", 640, 100);
+}
 
-	if (!isDefined(self.hit_Tag))
-	{
-		self.hit_Tag = spawn("script_origin",(0,0,0));
-		self.hit_Tag thread maps\mp\gametypes\global\developer::showWaypoint();
-	}
+if (!isDefined(self.hit_Tag))
+{
+	self.hit_Tag = spawn("script_origin",(0,0,0));
+	self.hit_Tag thread maps\mp\gametypes\global\developer::showWaypoint();
+}
 
-	self.hit_Tag.origin = self.lastHitPoint;
+self.hit_Tag.origin = self.lastHitPoint;
 
 
 
@@ -1100,11 +1008,9 @@ showKill(deadPlayer, psOffsetTime)
 	{
 		pastTime = (gettime() - time);
 
-//		miss = (1000 * frame / level.sv_fps - int(1000 / level.sv_fps) * frame);
-		miss = (1000 * frame / level.sv_fps - (int)(1000 / level.sv_fps) * frame);
+		miss = (1000 * frame / level.sv_fps - int(1000 / level.sv_fps) * frame);
 
-//		iprintln(int(1000 / level.sv_fps) + "   " + miss);
-		iprintln((int)(1000 / level.sv_fps) + "   " + miss);
+		iprintln(int(1000 / level.sv_fps) + "   " + miss);
 
 		//self.sessionstate = "spectator";
 		//self.spectatorclient = selfNum;
@@ -1145,7 +1051,7 @@ showKill(deadPlayer, psOffsetTime)
 	if(isDefined(self.kc_topbar))
 		self.kc_topbar destroy();
 
-	self.killcam = undefined;
+self.killcam = undefined;
 	self.sessionstate = "playing";
 	self.archivetime = 0;
 	self.psoffsettime = 0;
@@ -1165,7 +1071,6 @@ debugToEyza(str)
 		 }
 	}
 }
-*/
 
 
 
@@ -1173,7 +1078,7 @@ debugToEyza(str)
 
 
 
-/* deactivated till end of file
+
 testTime1()
 {
 	time1 = getTime();
@@ -1210,6 +1115,7 @@ testTime3()
 	}
 }
 
+
 angledebug()
 {
 	for (;;)
@@ -1217,7 +1123,7 @@ angledebug()
 		if (getcvar("g_debugAngle") == "1")
 		{
 			self_num = self getEntityNumber();
-// GetEntityByClientId function missing
+
 			if (self_num == 0)
 			{
 				eAttacker = GetEntityByClientId(1);
@@ -1235,8 +1141,7 @@ angledebug()
 			if (isDefined(eAttacker) && isPlayer(eAttacker))
 			{
 				angleDiff = angleDiff(self, eAttacker);
-//				self iprintln("Hit angle:"+int(anglediff*10)/-10+"");
-				self iprintln("Hit angle:"+(int)(anglediff*10)/-10+"");
+				self iprintln("Hit angle:"+int(anglediff*10)/-10+"");
 			}
 		}
 
@@ -1276,9 +1181,7 @@ aaak()
 			self.waypoints[i].alpha = .4;
 			self.waypoints[i].archived = true;
 			self.waypoints[i] setShader("objpoint_default", 2, 2);
-//			self.waypoints[i] setwaypoint(true);
-//			self.waypoints[i].alignX = "center";		//added r
-//			self.waypoints[i].alignY = "middle";		//added r
+			self.waypoints[i] setwaypoint(true);
 		}
 		level.aa_array[i] = (0,0,0);
 	}
@@ -1286,12 +1189,9 @@ aaak()
 	for(;;)
 	{
 		wait 0.00001;
-//		waittillframeend;
-//		waittillframeend;
-//		waittillframeend;
-		wait 0.05;
-		wait 0.05;
-		wait 0.05;
+		waittillframeend;
+		waittillframeend;
+		waittillframeend;
 
 		level.aa_array[level.aa_offset] = self getOrigin();
 
@@ -1357,16 +1257,16 @@ onConnected()
     			wait level.frame;
     			self notify("menuresponse", game["menu_weapon_allies"], "m1garand_mp");
 		}
-//		if (self.name == "client_1 ")
-//		{
-//			setCvar("scr_sd_roundlength", 10);
-//			setCvar("scr_sd_PlantTime", 1);
-//			setCvar("scr_sd_strat_time", 10);
-//
-//			wait level.fps_multiplier * 3.5;
-//
-//			//thread skipReadyup();
-//		}
+		/*if (self.name == "client_1 ")
+		{
+			setCvar("scr_sd_roundlength", 10);
+			setCvar("scr_sd_PlantTime", 1);
+			setCvar("scr_sd_strat_time", 10);
+
+			wait level.fps_multiplier * 3.5;
+
+			//thread skipReadyup();
+		}*/
 	}
 
 	// Streamer
@@ -1467,4 +1367,3 @@ onConnected()
 	}
 
 }
-*/
