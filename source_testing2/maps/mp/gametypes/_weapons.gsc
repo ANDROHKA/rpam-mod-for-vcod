@@ -1,5 +1,14 @@
+/*
+  rPAMext Version: v22 (kvcodPAM v2.11)     
 
+  Changes:        
 
+  - v24 changes marked
+  - rPISTOLAMMO-log: added log info
+  - v25 and v210 are identical
+  - checking hand_fix commands here
+*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 init()
 {
 	logprint("_weapons::init\n");
@@ -86,7 +95,7 @@ registerCvars()
 
 	[[var]]("scr_allow_pistols", "BOOL", 1); 	// level.allow_pistols // NOTE: in sd next round
 	[[var]]("scr_allow_turrets", "BOOL", 1); 	// level.allow_turrets // NOTE: after map/round reset
-
+//v25 added
 	[[var]]("scr_allow_panzerfaust", "BOOL", 1); // level.allow_panzerfaust
 	[[var]]("scr_allow_fg42", "BOOL", 1); // level.allow_fg42
 
@@ -96,8 +105,8 @@ registerCvars()
 	[[var]]("scr_balance_ppsh_distance", "BOOL", 0); 	//level.balance_ppsh //ppsh -> tommy balance
 
 
-	[[var]]("scr_shotgun_consistent", "BOOL", 0);	// level.scr_shotgun_consistent
-	[[var]]("scr_hitbox_hand_fix", "BOOL", 0);	// level.scr_hitbox_hand_fix
+	[[var]]("scr_shotgun_consistent", "BOOL", 0);		// level.scr_shotgun_consistent
+	[[var]]("scr_hitbox_hand_fix", "BOOL", 0);		// level.scr_hitbox_hand_fix // correct as in z404
 	[[var]]("scr_hitbox_torso_fix", "BOOL", 0);		// level.scr_hitbox_torso_fix
 }
 
@@ -198,7 +207,7 @@ onCvarChanged(cvar, value, isRegisterTime)
 
 		case "scr_allow_pistols": 		level.allow_pistols = value; return true;
 		case "scr_allow_turrets": 		level.allow_turrets = value; return true;
-
+//v25 added
 		case "scr_allow_panzerfaust":	level.allow_panzerfaust = value; return true;
 		case "scr_allow_fg42":			level.allow_fg42 = value; return true;
 
@@ -249,10 +258,11 @@ onStartGameType()
 	// Disable MG
 	if (!level.allow_turrets)
 	{
+//v25 disabled line below
 		//deletePlacedEntity("misc_turret");
 		deletePlacedEntity("misc_mg42");
 	}
-
+//v25 added both weps
 	if (!level.allow_panzerfaust)
 	{
 		deletePlacedEntity("mpweapon_panzerfaust");
@@ -452,7 +462,7 @@ defineWeaponsRifle()
 
 }
 
-
+//v25 ohhhw
 defineWeapons()
 {
 	// List of all weapons that can be enabled or disabled by server cvars
@@ -512,7 +522,7 @@ defineWeapons()
 	//addClass("shotgun", 		"scr_shotgun_limit",		"scr_shotgun_nades", 		"scr_shotgun_smokes",		"scr_shotgun_allow_drop");
 
 }
-
+//v25--
 
 
 addWeapon(weaponName, className, teamName, serverCvar, clientCvar)
@@ -588,10 +598,12 @@ deletePlacedEntity(entity)
 }
 
 
+//rPISTOLAMMO: fixes get pistol ammo in start gametype, switch weapon [weapon_givePistol]
 
 // Adds pistol to pistol slot only if empty
 givePistol()
 {
+//rPISTOLAMMOfix
 	weap_pistol = self getweaponslotweapon("pistol");
 	if(weap_pistol == "none")
 	{
@@ -608,11 +620,14 @@ givePistol()
 				pistoltype = "colt_mp";
 				break;
 
+// rPISTOLAMMOaxis, added axis
 			case "russian":
+//			case "axis":
 				//assert(game["allies"] == "russian");
 				//pistoltype = "TT30_mp";
 				pistoltype = "luger_mp";
 				break;
+
 			default:
 				pistoltype = "none";
 				break;
@@ -624,9 +639,12 @@ givePistol()
 			switch(game["axis"])
 			{
 			case "german":
+// rPISTOLAMMOaxis, added axis
+//			case "axis":
 				//assert(game["axis"] == "german");
 				pistoltype = "luger_mp";
 				break;
+				
 			default:
 				pistoltype = "none";
 				break;
@@ -653,9 +671,18 @@ givePistol()
 		self setWeaponSlotAmmo("pistol", maps\mp\gametypes\_weapons::GetPistolAmmo(pistoltype));
 		self setWeaponSlotClipAmmo("pistol", 999);
 		//self giveMaxAmmo(pistoltype);
-	} else {
+		
+//rPISTOLAMMOlog
+		logprint("_weapons::givePistol_given\n");
+	}
+	else
+	{
+//rPISTOLAMMOlog_else
+		logprint("_weapons::givePistol_given_else\n");
+
 		//logprint("_weapons::givePistol restoring ammo only for player=" + self.name + " \n");
 		// self setWeaponSlotAmmo("pistol", 999);
+//rPISTOLAMMO, changed to what is setup in the beginning
 		self setWeaponSlotAmmo("pistol", maps\mp\gametypes\_weapons::GetPistolAmmo(weap_pistol));
 		self setWeaponSlotClipAmmo("pistol", 999);
 	}
@@ -696,7 +723,7 @@ GetGrenadeTypeName()
 			break;
 		}			
 	}
-
+//v25 added
 	if (grenadetype == "none")
 	{
 		logprint("_weapons::GetGrenadeTypeName() - Unknown grenadetype.\n");
@@ -733,7 +760,7 @@ giveGrenadesFor(weapon, count)
 
 	grenadetype = self GetGrenadeTypeName();
 	fraggrenadecount = getWeaponBasedGrenadeCount(weapon);
-
+//v25 added
 	if (grenadetype == "none")
 	{
 		logprint("_weapons::giveGrenadesFor - Uknown grenadetype\n");
@@ -744,9 +771,10 @@ giveGrenadesFor(weapon, count)
 	{
 		if (isDefined(count)) // replace count with own number
 			fraggrenadecount = count;
-
+//v25 corrected
 		if (fraggrenadecount > 0)
 		{
+//first line disables nades
 			//self giveWeapon(grenadetype);
 			//self setWeaponClipAmmo(grenadetype, fraggrenadecount);
 			//self switchtooffhand(grenadetype);
