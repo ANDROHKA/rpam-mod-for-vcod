@@ -1,0 +1,21 @@
+// ingame menu defs
+// 
+{	
+ 	//loadMenu { "ui_mp/ingame.menu" }
+	//loadMenu { "ui_mp/ingame_controls.menu" }
+	//loadMenu { "ui_mp/ingame_options.menu" }		// loadMenu { "ui_mp/ingame_options.menu" }
+	//loadMenu { "ui_mp/ingame_system.menu" }		// loadMenu { "ui_mp/ingame_system.menu" }
+	//loadMenu { "ui_mp/ingame_leave.menu" }
+	//loadMenu { "ui_mp/ingame_callvote.menu" }
+	loadMenu { "ui_mp/wm_quickmessage.menu" }
+
+	//loadMenu { "ui_mp/scriptmenus/moddownload.menu" }
+	//loadMenu { "ui_mp/scriptmenus/serverinfo_sd.menu" }
+	//loadMenu { "ui_mp/scriptmenus/exec_cmd.menu" }
+	//loadMenu { "ui_mp/scriptmenus/startrecording_sd.menu" }
+	//loadMenu { "ui_mp/scriptmenus/stoprecording_sd.menu" }
+	//loadMenu { "ui_mp/scriptmenus/team_russiangerman.menu" }
+	//loadMenu { "ui_mp/scriptmenus/weapon_german.emnu" }
+	//loadMenu { "ui_mp/scriptmenus/weapon_russian.emnu" }
+	loadMenu { "ui_mp/scriptmenus/scoreboard_sd.menu" }
+}

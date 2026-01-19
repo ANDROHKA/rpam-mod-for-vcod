@@ -1,0 +1,76 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+#define HIDE_ALL hide kar98; hide mp40; hide mp44; hide kar98scoped;
+
+{
+	menuDef
+	{
+		name			"weapon_german"
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		5.0
+		onOpen
+		{
+			//CLOSE_SUBMENUS;
+			exec "set cg_drawstatus 0";
+
+			// Make sure cursor is enable (in case of spectator menu fails)
+			setCvar cl_bypassMouseInput "0" // enable cursor movement
+
+		}
+		onClose
+		{
+			HIDE_ALL
+			//CLOSE_SUBMENUS;
+			close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+		onEsc
+		{
+			//HIDE_ALL
+			close weapon_german;
+			//close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+		
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_TRANSPARENT_BACKGROUND
+		DRAW_BLUISH_BACKGROUND
+		//DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header
+		ITEM_TEXT_HEADING("@MPMENU_WEAPON")
+
+
+		// MENU CHOICES
+		ITEM_WEAPON(ORIGIN_CHOICE1, "button_kar98k", "kar98k_mp", "@MPMENU_1_KAR98K", "ui_allow_kar98k", "kar98", show kar98;, scriptMenuResponse "kar98k_mp"; close weapon_german;, "steilhandgrenate", "boltaction")
+
+		ITEM_WEAPON(ORIGIN_CHOICE2, "button_mp40", "mp40_mp", "@MPMENU_2_MP40", "ui_allow_mp40", "mp40" , show mp40;, scriptMenuResponse "mp40_mp"; close weapon_german;, "steilhandgrenate", "smg")
+
+		ITEM_WEAPON(ORIGIN_CHOICE3, "button_mp44", "mp44_mp", "@MPMENU_3_MP44", "ui_allow_mp44", "mp44" , show mp44;, scriptMenuResponse "mp44_mp"; close weapon_german;, "steilhandgrenate", "mg")
+
+		ITEM_WEAPON(ORIGIN_CHOICE4, "button_kar98ksniper", "kar98k_sniper_mp", "@MPMENU_4_SCOPED_KAR98K", "ui_allow_kar98ksniper", "kar98scoped" , show kar98scoped;, scriptMenuResponse "kar98k_sniper_mp"; close weapon_german;, "steilhandgrenate", "sniper")
+
+
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, close weapon_german;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, close weapon_german; open main;)
+		// Ingame menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[T]^7 Ingame Menu",	280, 100, scriptMenuResponse "ingame"; close weapon_german;)
+
+		execKey "1" { play "mouse_click"; scriptMenuResponse "kar98k_mp"; close weapon_german }
+		execKey "2" { play "mouse_click"; scriptMenuResponse "mp40_mp"; close weapon_german }
+		execKey "3" { play "mouse_click"; scriptMenuResponse "mp44_mp"; close weapon_german }
+		execKey "4" { play "mouse_click"; scriptMenuResponse "kar98k_sniper_mp"; close weapon_german }
+
+		execKeyInt 32 { play "mouse_click"; close weapon_german; open main; } // space
+		execKeyInt 116 { play "mouse_click"; close weapon_german; open ingame; } // 'T'
+	}
+}

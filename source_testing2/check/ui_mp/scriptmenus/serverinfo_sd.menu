@@ -1,0 +1,74 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+{
+	menuDef
+	{
+		name			"serverinfo_sd"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		5.0
+		onOpen 
+		{
+			exec "set cg_drawstatus 0";
+			//scriptMenuResponse "open";
+			open serverinfo_sd_keys;
+
+			exec "vstr server16;" // server16 contains string with player's settings
+			//scriptMenuResponse "server16";
+		}
+		onClose
+		{
+			scriptMenuResponse "close";
+			exec "set cg_drawstatus 1";
+		}
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_BLUISH_BACKGROUND
+		DRAW_TRANSPARENT_BACKGROUND
+		//DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header: Teams
+		ITEM_TEXT_HEADING("@SD_SEARCH_AND_DESTROY")
+
+		// INSTRUCTIONS
+		SERVERINFO_DRAW_OBJECTIVE
+
+		// SERVER SETTINGS
+		SERVERINFO_DRAW_PARAMETERS
+
+		// MESSAGE OF THE DAY
+		SERVERINFO_DRAW_MOTD
+
+		// Clickable quit button all over the screen
+		SERVERINFO_DRAW_QUIT
+
+
+		// Close menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 90, scriptMenuResponse "close"/* close serverinfo_sd;*/)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu", 140, 120, close serverinfo_sd; open main;)
+	}
+
+	// Key choices has to be in different menu if we are using submenus
+	// This keys is opened as last and will be in focus - so keys from this submenu will be accepted
+	menuDef
+	{
+		name			"serverinfo_sd_keys"
+		rect			0 0 1 1
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		onEsc
+		{
+			//exec "openscriptmenu serverinfo_sd close";
+			//scriptMenuResponse "close";
+			//close serverinfo_sd;
+		}
+
+		execKeyInt 32 { play "mouse_click"; close ingame; open main; } // space
+	}
+}

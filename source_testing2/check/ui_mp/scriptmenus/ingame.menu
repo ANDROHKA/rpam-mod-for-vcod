@@ -1,0 +1,142 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+{
+	menuDef
+	{
+		name			"ingame"
+		rect			0 0 640 480
+		focuscolor 		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		5.0
+		onOpen
+		{
+			exec "set cg_drawstatus 0";
+			//close matchinfo;
+			//close ingame_scoreboard_sd;
+
+			// Make sure cursor is enable (in case of spectator menu fails)
+			setCvar cl_bypassMouseInput "0" // enable cursor movement
+
+			
+			//open matchinfo;
+			//open ingame_scoreboard_sd;
+
+			//open ingame_keys;
+
+			scriptMenuResponse "ingame_scoreboard_refresh";
+		}
+		onClose
+		{
+			CLOSE_SUBMENUS;
+			close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+		onEsc
+		{
+			close ingame;
+			exec "set cg_drawstatus 1";
+		}
+
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_TRANSPARENT_BACKGROUND
+		DRAW_BLUISH_BACKGROUND
+		//DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header: Teams
+		ITEM_TEXT_HEADING("@MENU_OPTIONS")
+
+
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE1, "1. Change Weapon", 		"ui_allow_weaponchange", showCvar{"1"}, ;, scriptMenuResponse "changeweapon" ; close ingame;)
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE1, "1. Change Weapon", 		"ui_allow_weaponchange", hideCvar{"1"}, ;)
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE2, "2. Change Team", 		"ui_allow_changeteam", showCvar{"1"}, ;, scriptMenuResponse "changeteam" ; close ingame;)
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE2, "2. Change Team", 		"ui_allow_changeteam", hideCvar{"1"}, ;)
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE3, "3. Call Vote", 		"ui_allowvote", showCvar{"1"}, ;, scriptMenuResponse "callvote" ; close ingame;)
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE3, "3. Call Vote", 		"ui_allowvote", hideCvar{"1"}, ;)
+		
+		ITEM_BUTTON (ORIGIN_CHOICE4, "4. View Map",;, scriptMenuResponse "viewmap"/*; close ingame;*/)
+
+		ITEM_CVAR("ui_timeout_info", 158, 200, 0.24, ITEM_ALIGN_LEFT, 1.0 1.0 1.0 1.0)
+
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE5, "5. Call timeout",		"ui_allow_timeout", showCvar { "0" }, ;) // Disabled
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE5, "5. Call timeout",		"ui_allow_timeout", showCvar { "1" }, ;, scriptMenuResponse "timeout"; CLOSE_ALL;) // Enabled
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE5, "5. Call timeout",		"ui_allow_timeout", showCvar { "2" }, ;) // Disabled
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE5, "5. Timeout called",		"ui_allow_timeout", showCvar { "3" }, ;) // Already called
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE5, "5. Already in timeout",	"ui_allow_timeout", showCvar { "4" }, ;) // In timeout
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE5, "5. Cancel timeout",		"ui_allow_timeout", showCvar { "5" }, ;, scriptMenuResponse "timeout"; CLOSE_ALL;) // Cancel timeout
+
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, CLOSE_ALL;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, CLOSE_ALL; open main;)
+		// Server info
+		ITEM_BAR_BOTTOM_BUTTON("^9[I]^7 Server Info",	280, 80, scriptMenuResponse "serverinfo"; close ingame;)
+
+
+		execKey "1" { play "mouse_click"; scriptMenuResponse "changeweapon"; close ingame; }
+		execKey "2" { play "mouse_click"; scriptMenuResponse "changeteam"; close ingame; }
+		execKey "3" { play "mouse_click"; scriptMenuResponse "callvote"; close ingame; }
+		execKey "4" { play "mouse_click"; scriptMenuResponse "viewmap"/*; close ingame;*/}
+		execKey "5" { play "mouse_click"; CLOSE_ALL; open leavegame }
+
+		execKeyInt 32 { play "mouse_click"; CLOSE_ALL; open main; } // space
+		execKeyInt 105 { play "mouse_click"; scriptMenuResponse "serverinfo"; close ingame; } // i
+		execKeyInt 116 { play "mouse_click"; scriptMenuResponse "timeout"; close ingame;  } // t
+
+
+
+		/////////////////////////
+		/////// ingame_scoreboard_sd
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			220 84 400 330
+			backcolor		.0 .0 .0 .5
+			visible			1
+			decoration
+		}
+
+		// WINDOW LINES 400x430
+		itemDef // TOP
+		{
+			visible			1
+			rect			223 87 394 2
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // RIGHT
+		{
+			visible			1
+			rect			615 89 2 320
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // BOTTOM
+		{
+			visible			1
+			rect			223 409 394 2
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // LEFT
+		{
+			visible			1
+			rect			223 89 2 320
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		ITEM_TEXT("Score:     Kill +1   |   Teamkill -1   |   Assist plant defuse +0.5",  229, 406, .20, ITEM_ALIGN_LEFT, 1 1 1 .25)
+		//ITEM_TEXT("Hits:        Scope/Rifle +1   |   Semi/Automatic +1",  229, 406, .20, ITEM_ALIGN_LEFT, 1 1 1 .25)
+
+		ITEM_SCOREBOARD(220, 84)
+	}
+}

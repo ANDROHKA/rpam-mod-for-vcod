@@ -1,0 +1,153 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+{
+	menuDef
+	{
+		name			"team_russiangerman"
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		5.0
+		onOpen
+		{
+			CLOSE_SUBMENUS;
+			exec "set cg_drawstatus 0";
+			open team_russiangerman_keys;
+
+			// Make sure cursor is enable (in case of spectator menu fails)
+			setCvar cl_bypassMouseInput "0" // enable cursor movement
+
+		}
+		onClose
+		{
+			CLOSE_SUBMENUS;
+			close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+		onEsc
+		{
+			close team_russiangerman;
+			exec "set cg_drawstatus 1";
+		}
+
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_TRANSPARENT_BACKGROUND
+		DRAW_BLUISH_BACKGROUND
+		//DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+
+		// Header: Teams
+		ITEM_TEXT_HEADING("@MPMENU_TEAM")
+
+
+		// Bottom: 1. Russian
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE1, "@MPMENU_1_RUSSIAN", "ui_allow_joinallies", showCvar{"1"}, ; show "allies_info", scriptMenuResponse "allies" ; close team_russiangerman;)
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE1, "@MPMENU_1_RUSSIAN", "ui_allow_joinallies", showCvar{"2"}, ;)
+
+		// Bottom: 2. German
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE2, "@MPMENU_2_GERMAN", "ui_allow_joinaxis", showCvar{"1"}, ; show "axis_info", scriptMenuResponse "axis" ; close team_russiangerman;)
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE2, "@MPMENU_2_GERMAN", "ui_allow_joinaxis", showCvar{"2"}, ;)
+
+        // Bottom: 3. Auto-Assign
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE3, "@MPMENU_3_AUTOASSIGN", "ui_allow_joinauto", showCvar{"1"}, ; show "autoassign_info", scriptMenuResponse "autoassign" ; close team_russiangerman;)
+		ITEM_BUTTON_ONCVAR_DISABLED	(ORIGIN_CHOICE3, "@MPMENU_3_AUTOASSIGN", "ui_allow_joinauto", showCvar{"2"}, ;)
+
+		// Bottom: 4. Spectate
+		ITEM_BUTTON			(ORIGIN_CHOICE4, "@MPMENU_4_SPECTATE", ;, scriptMenuResponse "spectator"; close team_russiangerman;)
+
+		// Bottom: 5. Streamer
+		ITEM_BUTTON_ONCVAR		(ORIGIN_CHOICE5, "5. Streamer", "ui_allow_joinstreamer", showCvar{"1"}, ; , scriptMenuResponse "streamer" ; close team_russiangerman;)
+		
+		// Viewmap: 6. View map
+		ITEM_BUTTON (ORIGIN_CHOICE6, "6. View Map",;, scriptMenuResponse "viewmap"/*; close ingame;*/)
+
+
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, close team_russiangerman;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, close team_russiangerman; open main;)
+		// Server info
+		ITEM_BAR_BOTTOM_BUTTON("^9[I]^7 Server Info",	280, 80, scriptMenuResponse "serverinfo"; close team_russiangerman;)
+		
+	
+	}
+
+	// Key choices has to be in different menu if we are using submenus
+	// This keys is opened as last and will be in focus - so keys from this submenu will be accepted
+	menuDef
+	{
+		name			"team_russiangerman_keys"
+		rect			0 0 1 1
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+
+		execKey "1" { play "mouse_click"; scriptMenuResponse "allies" ; close team_russiangerman; }
+		execKey "2" { play "mouse_click"; scriptMenuResponse "axis" ; close team_russiangerman; }
+        execKey "3" { play "mouse_click"; scriptMenuResponse "autoassign" ; close team_russiangerman; }
+		execKey "4" { play "mouse_click"; scriptMenuResponse "spectator" ; close team_russiangerman; }
+		execKey "5" { play "mouse_click"; scriptMenuResponse "streamer" ; close team_russiangerman; }
+		execKey "6" { play "mouse_click"; scriptMenuResponse "viewmap"/*; close ingame;*/}
+
+		execKeyInt 32 { play "mouse_click"; close team_russiangerman; open main; } // space
+		execKeyInt 105 { play "mouse_click"; scriptMenuResponse "serverinfo"; close team_russiangerman; } // i
+		
+
+
+
+		/////////////////////////
+		/////// ingame_scoreboard_sd
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			220 84 400 330
+			backcolor		.0 .0 .0 .5
+			visible			1
+			decoration
+		}
+
+		// WINDOW LINES 400x430
+		itemDef // TOP
+		{
+			visible			1
+			rect			223 87 394 2
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // RIGHT
+		{
+			visible			1
+			rect			615 89 2 320
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // BOTTOM
+		{
+			visible			1
+			rect			223 409 394 2
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef // LEFT
+		{
+			visible			1
+			rect			223 89 2 320
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		ITEM_TEXT("Score:     Kill +1   |   Teamkill -1   |   Assist plant defuse +0.5",  229, 406, .20, ITEM_ALIGN_LEFT, 1 1 1 .25)
+		//ITEM_TEXT("Hits:        Scope/Rifle +1   |   Semi/Automatic +1",  229, 406, .20, ITEM_ALIGN_LEFT, 1 1 1 .25)
+
+		ITEM_SCOREBOARD(220, 84)
+	}
+}
+

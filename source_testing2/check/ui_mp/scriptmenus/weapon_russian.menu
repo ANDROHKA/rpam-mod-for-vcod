@@ -1,0 +1,73 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+#define HIDE_ALL hide nagant; hide ppsh; hide nagantscoped;
+
+{
+	menuDef
+	{
+		name			"weapon_russian"
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		5.0
+		onOpen
+		{
+			//CLOSE_SUBMENUS;
+			exec "set cg_drawstatus 0";
+
+			// Make sure cursor is enable (in case of spectator menu fails)
+			setCvar cl_bypassMouseInput "0" // enable cursor movement
+			
+		}
+		onClose
+		{
+			HIDE_ALL
+			//CLOSE_SUBMENUS;
+			close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+		onEsc
+		{
+			//HIDE_ALL
+			close weapon_russian;
+			//close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_TRANSPARENT_BACKGROUND
+		DRAW_BLUISH_BACKGROUND
+		//DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header
+		ITEM_TEXT_HEADING("@MPMENU_WEAPON")
+
+
+		// MENU CHOICES
+		ITEM_WEAPON(ORIGIN_CHOICE1, "button_nagant", "mosin_nagant_mp", "@MPMENU_1_MOSINNAGANT", "ui_allow_nagant", "nagant", show nagant;, scriptMenuResponse "mosin_nagant_mp"; close weapon_russian;, "russian_grenade", "boltaction";)
+
+		ITEM_WEAPON(ORIGIN_CHOICE2, "button_ppsh", "ppsh_mp", "@MPMENU_2_PPSH", "ui_allow_ppsh", "ppsh" , show ppsh;, scriptMenuResponse "ppsh_mp"; close weapon_russian;, "russian_grenade", "mg")
+
+		ITEM_WEAPON(ORIGIN_CHOICE3, "button_nagantnsiper", "mosin_nagant_sniper_mp", "@MPMENU_3_SCOPED_MOSINNAGANT", "ui_allow_nagantsniper", "nagantscoped" , show nagantscoped;, scriptMenuResponse "mosin_nagant_sniper_mp"; close weapon_russian;, "russian_grenade", "sniper")
+
+
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, close weapon_russian;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, close weapon_russian; open main;)
+		// Ingame menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[T]^7 Ingame Menu",	280, 100, scriptMenuResponse "ingame"; close weapon_russian;)
+
+		execKey "1" { play "mouse_click"; scriptMenuResponse "mosin_nagant_mp"; close weapon_russian }
+		execKey "2" { play "mouse_click"; scriptMenuResponse "ppsh_mp"; close weapon_russian }
+		execKey "3" { play "mouse_click"; scriptMenuResponse "mosin_nagant_sniper_mp"; close weapon_russian }
+
+		execKeyInt 32 { play "mouse_click"; close weapon_russian; open main; } // space
+		execKeyInt 116 { play "mouse_click"; close weapon_russian; open ingame; } // 'T'
+	}
+}
