@@ -1,4 +1,4 @@
-// added from cod2 pam LAN 3.33
+// added from cod2 pam LAN 3.33 to kvcodPAM, newly added menu file
 
 #include "ui_mp/menudef.h"
 #include "ui_mp/macros.h"

@@ -1,0 +1,76 @@
+#include "ui_mp/menudef.h"
+#include "ui_mp/macros.h"
+
+#define HIDE_ALL hide enfield; hide sten; hide bren; hide springfield;
+
+{
+	menuDef
+	{
+		name			"weapon_british"
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		5.0
+		onOpen
+		{
+			//CLOSE_SUBMENUS;
+			exec "set cg_drawstatus 0";
+
+			// Make sure cursor is enable (in case of spectator menu fails)
+			setCvar cl_bypassMouseInput "0" // enable cursor movement
+
+		}
+		onClose
+		{
+			HIDE_ALL
+			//CLOSE_SUBMENUS;
+			close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+		onEsc
+		{
+			//HIDE_ALL
+			close weapon_british;
+			//close matchinfo;
+			exec "set cg_drawstatus 1";
+		}
+
+
+		// Background
+		DRAW_MAP_BACKGROUND_IF_BLACKOUT
+		DRAW_TRANSPARENT_BACKGROUND
+		DRAW_BLUISH_BACKGROUND
+		//DRAW_GRADIENT_LEFT_TO_RIGHT
+		DRAW_BARS
+
+		// Header
+		ITEM_TEXT_HEADING("@MPMENU_WEAPON")
+
+
+		// MENU CHOICES
+		ITEM_WEAPON(ORIGIN_CHOICE1, "button_enfield", "enfield_mp", "@MPMENU_1_LEEENFIELD", "ui_allow_enfield", "enfield", show enfield;, scriptMenuResponse "enfield_mp"; close weapon_british;, "british_grenade", "boltaction";)
+
+		ITEM_WEAPON(ORIGIN_CHOICE2, "button_sten", "sten_mp", "@MPMENU_2_STEN", "ui_allow_sten", "sten" , show sten;, scriptMenuResponse "sten_mp"; close weapon_british;, "british_grenade", "smg")
+
+		ITEM_WEAPON(ORIGIN_CHOICE3, "button_bren", "bren_mp", "@MPMENU_3_BREN_LMG", "ui_allow_bren", "bren" , show bren;, scriptMenuResponse "bren_mp"; close weapon_british;, "british_grenade", "mg")
+
+		ITEM_WEAPON(ORIGIN_CHOICE4, "button_springfield", "springfield_mp", "@MPMENU_4_SPRINGFIELD", "ui_allow_springfield", "springfield" , show springfield;, scriptMenuResponse "springfield_mp"; close weapon_british;, "british_grenade", "sniper")
+
+
+
+		// Close
+		ITEM_BAR_BOTTOM_BUTTON("^9[ESC]^7 Close",	40, 70, close weapon_british;)
+		// Main menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[SPACE]^7 Main Menu",	135, 120, close weapon_british; open main;)
+		// Ingame menu
+		ITEM_BAR_BOTTOM_BUTTON("^9[T]^7 Ingame Menu",	280, 100, scriptMenuResponse "ingame"; close weapon_british;)
+
+		execKey "1" { play "mouse_click"; scriptMenuResponse "enfield_mp"; close weapon_british }
+		execKey "2" { play "mouse_click"; scriptMenuResponse "sten_mp"; close weapon_british }
+		execKey "3" { play "mouse_click"; scriptMenuResponse "bren_mp"; close weapon_british }
+		execKey "4" { play "mouse_click"; scriptMenuResponse "springfield_mp"; close weapon_british }
+
+		execKeyInt 32 { play "mouse_click"; close weapon_british; open main; } // space
+		execKeyInt 116 { play "mouse_click"; close weapon_british; open ingame; } // 'T'
+	}
+}

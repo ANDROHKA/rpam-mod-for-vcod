@@ -1,5 +1,5 @@
 /*
-  rPAMext Version: v19 (kvcodPAM v2.10)     
+  rPAMext Version: v24 (kvcodPAM v2.14)     
 
   Changes:
 
@@ -7,7 +7,7 @@
   - v23 old: player UpdatePlayerCvars();
   - v24 new code
   - v210 added line: if (isDefined(game["readyup_first_run_ending_for_matchinfo"]) && game["readyup_first_run_ending_for_matchinfo"])
-
+  - v214 added logprint for streamer
 
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,12 +29,12 @@ init()
 	logprint("_matchinfo::init\n");
 
 // Register	
-	maps\mp\gametypes\global\_global::addEventListener("onCvarChanged", ::onCvarChanged);
+	maps\mp\gametypes\global\_global::addEventListener("onCvarChanged",       ::onCvarChanged);
 
 	maps\mp\gametypes\global\_global::registerCvar("scr_matchinfo", "INT", 0, 0, 2);					// level.scr_matchinfo
 	maps\mp\gametypes\global\_global::registerCvarEx("I", "scr_matchinfo_reset", "BOOL", 0);
 
-	maps\mp\gametypes\global\_global::addEventListener("onConnected",     ::onConnected);
+	maps\mp\gametypes\global\_global::addEventListener("onConnected",         ::onConnected);
 
 	// Save value of scr_matchinfo for entire map (if cvar scr_matchinfo is changed during match, it makes no effect until map change)
 //cod2
@@ -47,7 +47,7 @@ init()
 //	if (!isDefined(game["scr_matchinfo"]))
 //v26	game["scr_matchinfo"] = level.scr_matchinfo;
 
-// Matchinfo cannot working without readyup...
+	// Matchinfo cannot working without readyup...
 	if (!level.scr_readyup)
 		game["scr_matchinfo"] = 0;
 
@@ -77,30 +77,37 @@ init()
 //2	level.match_missingPlayers = 0;
 //2	level.match_mixedPlayers = 0;
 //2	level.match_unjoinedPlayers = 0;
+//4	level.match_badlyNamedPlayers = 0;
 
-// Matchinfo not possible, exit here
+	// Matchinfo not possible, exit here
 	if (game["scr_matchinfo"] == 0)
 		return;
 
-// Once match start, save teams
+	// Once match start, save teams
 	if (!level.in_readyup)
 	{
 		game["match_exists"] = true;
 		game["match_teams_set"] = true;
 	}
-//2	
-//2	addEventListener("onConnecting",   ::onConnecting);
-//2	addEventListener("onDisconnect",   ::onDisconnect);
-//2	addEventListener("onStopGameType", ::onStopGameType);
-//2	addEventListener("onJoinedTeam",   ::onJoinedTeam);
-//2	addEventListener("onSpawned",      ::onSpawned);
-//2	thread onReadyupOver();
-
-//2	level thread refresh(firstMapRestart);
-
+	
 //addEventListener cod1
+//1	maps\mp\gametypes\global\_global::addEventListener("onConnecting",        ::onConnecting);
+//1	maps\mp\gametypes\global\_global::addEventListener("onDisconnect",        ::onDisconnect);
+//1	maps\mp\gametypes\global\_global::addEventListener("onStopGameType",      ::onStopGameType);
 	maps\mp\gametypes\global\_global::addEventListener("onJoinedTeam",        ::onJoinedTeam);
+//1	maps\mp\gametypes\global\_global::addEventListener("onSpawned",           ::onSpawned);
+/* 
+//4	addEventListener("onConnecting",   ::onConnecting);
+	addEventListener("onDisconnect",   ::onDisconnect);
+	addEventListener("onStopGameType", ::onStopGameType);
+	addEventListener("onJoinedTeam",   ::onJoinedTeam);
+	addEventListener("onSpawned",      ::onSpawned);
+	thread onReadyupOver();
 
+	level thread refresh(firstMapRestart);
+*/
+
+//1
 	level thread refresh();
 }
 
@@ -108,7 +115,49 @@ init()
 /*
 prepareMap()
 {
-// Save data from previous map
+//4	// Check valid format
+	format = matchGetData("format");
+	if (format != "BO1" && format != "BO3" && format != "BO5") {
+		matchCancel("Invalid match format: '" + format + "'. Supported formats are: BO1, BO3, BO5.");
+		return;
+	}
+
+	// Check valid playersCount
+	playersCount = matchGetData("playersCount");
+	if (playersCount == "" || !isDigitalNumber(playersCount)) {
+		matchCancel("Invalid or missing playersCount: '" + playersCount + "'.");
+		return;
+	}
+	playersCount = int(playersCount);
+	if (playersCount < 0 || playersCount > 32) {
+		matchCancel("Invalid playersCount: " + playersCount + ". Supported range is: 0 to 32.");
+		return;
+	}
+
+	// Check number of players
+	players1_uuid_arr = matchGetData("team1_player_uuids");
+	if (players1_uuid_arr.size < playersCount) {
+		matchCancel("Team 1 has less players than required by playersCount");
+		return;
+	}
+	players2_uuid_arr = matchGetData("team2_player_uuids");
+	if (players2_uuid_arr.size < playersCount) {
+		matchCancel("Team 2 has less players than required by playersCount");
+		return;
+	}
+
+	maps = matchGetData("maps"); // might be empty
+	if (maps.size > 0) {
+		if ((format == "BO1" && maps.size != 1) ||
+			(format == "BO3" && maps.size != 3) ||
+			(format == "BO5" && maps.size != 5)) {
+			matchCancel("Invalid map count (" + maps.size + ") for format '" + format + "'");
+			return;
+		}
+	}
+//--4
+
+	// Save data from previous map
 	team1_winnedMaps = int(matchGetData("team1_winnedMaps")); // number of maps winned by team 1
 	team2_winnedMaps = int(matchGetData("team2_winnedMaps")); // number of maps winned by team 2
 	finishedMapsCount = int(matchGetData("finishedMapsCount")); // number of played maps
@@ -118,10 +167,10 @@ prepareMap()
 	finishedMap4 = matchGetData("finishedMap4");
 	finishedMap5 = matchGetData("finishedMap5");
 
-// Clear data from previous map
+	// Clear data from previous map
 	matchClearData();
 
-// Restore data from previous map
+	// Restore data from previous map
 	matchSetData("team1_winnedMaps", team1_winnedMaps);
 	matchSetData("team2_winnedMaps", team2_winnedMaps);
 	matchSetData("finishedMapsCount", finishedMapsCount);
@@ -131,8 +180,8 @@ prepareMap()
 	if (finishedMap4 != "") matchSetData("finishedMap4", finishedMap4);
 	if (finishedMap5 != "") matchSetData("finishedMap5", finishedMap5);
 
-// Dont upload data on new map until RUP
-//uploadMatchData(false, true);
+	// Dont upload data on new map until RUP
+	//uploadMatchData(false, true);
 }
 */
 //ADDED_ZPAM400T3_finishMap()
@@ -309,6 +358,7 @@ onStopGameType(fromScript, bComplete, shutdown, source) {
 /*
 uploadMatchData(debug, printSuccess, printError)
 {
+	//
 	if (!matchIsActivated()) {
 		return;
 	}
@@ -425,11 +475,13 @@ onCvarChanged(cvar, value, isRegisterTime)
 				logprint("_matchinfo::onCvarChanged after clear\n");
 				iprintln("Info about teams was cleared via rcon.");
 
+//4				changeCvarQuiet(cvar, 0);
 				maps\mp\gametypes\global\_global::changeCvarQuiet(cvar, 0);
 			}
+
 			return true;
 		}
-		//
+
 	}
 	return false;
 }
@@ -443,7 +495,6 @@ onConnecting(firstTime)
 	// Redownload match data when player is connecting to allow connect host that was added to team while match was already in progress
 	if (matchIsActivated() && firstTime)
 	{
-
 		// Make sure redownload is called only once in short period of time
 		level notify("matchinfo_data_redownload");
 		level endon("matchinfo_data_redownload");
@@ -478,7 +529,7 @@ onConnected()
 // Endon
 	self endon("disconnect");
 
-// Ingame match info bar
+	// Ingame match info bar
 	if (!isDefined(self.pers["matchinfo_ingame"]))
 	{
 		// By default show match info ingame
@@ -486,6 +537,7 @@ onConnected()
 		self.pers["matchinfo_ingame_visible"] = false;
 //2		self.pers["matchinfo_matchDataWarningShowed"] = false;
 //2		self.pers["matchinfo_nickWarningLastTime"] = 0;
+//4		self.pers["matchinfo_badNick"] = false;
 //2		self.pers["matchinfo_error"] = "";
 //2		self.pers["matchinfo_color"] = "";
 //2
@@ -508,6 +560,7 @@ onConnected()
 
 	if (game["scr_matchinfo"] > 0)
 	{
+//2		self setClientCvar2("ui_matchinfo_show", "1");
 		self maps\mp\gametypes\global\_global::setClientCvar2("ui_matchinfo_show", "1");
 
 		if (!isDefined(self.pers["timeConnected"]))
@@ -527,13 +580,33 @@ onConnected()
 	else
 	{
 		wait level.fps_multiplier * 0.2;
+//2		self setClientCvar2("ui_matchinfo_show", "0");
 		self maps\mp\gametypes\global\_global::setClientCvar2("ui_matchinfo_show", "0");
 	}
 // LOG
 	logprint("_matchinfo::onConnected end\n");
 }
 
-////////////end cod2 transfer
+/* //4
+onDisconnect() {
+	level thread generateMatchDescriptionDebounced();
+}
+
+
+generateMatchDescriptionDebounced()
+{
+	if (matchIsActivated()) {
+
+		// Prevent calling multiple times in one frame
+		level notify("generateMatchDescriptionDebounced");
+		level endon("generateMatchDescriptionDebounced");
+		waittillframeend;
+
+		level generateMatchDescription(); // regenerate match description
+	}
+}
+*/
+// ////////////end cod2 zPAM transfer
 onJoinedTeam(teamName)
 {
 	// Always hide ingame menu for streamer as they have own menu
@@ -889,7 +962,7 @@ ToUpper(char)
 
 GetMapName(mapname)
 {
-	/*
+/*
 	if (mapname == "mp_toujane" || mapname == "mp_toujane_fix")		return "Toujane";
 	if (mapname == "mp_burgundy" || mapname == "mp_burgundy_fix")		return "Burgundy";
 	if (mapname == "mp_dawnville" || mapname == "mp_dawnville_fix")		return "Dawnville";
@@ -897,7 +970,7 @@ GetMapName(mapname)
 	if (mapname == "mp_carentan" || mapname == "mp_carentan_fix")		return "Carentan";
 	if (mapname == "mp_breakout_tls")					return "Breakout TLS";
 	if (mapname == "mp_chelm_fix")						return "Chelm";
-	*/
+*/
 
 	if (mapname == "" || mapname.size < 3)
 		return mapname;
@@ -1068,7 +1141,7 @@ UpdateCvarsForPlayers()
 
 //v23 disabled
 //		player UpdatePlayerCvars();
-//v24 new added
+//v24 added/v214 added logprint
 		if (isDefined(player.pers["team"]) && player.pers["team"] == "streamer")
 		{
 			logprint("_matchinfo::UpdateCvarsForPlayers for streamer\n");
@@ -1133,7 +1206,7 @@ refresh()
 					determineTeamByHistoryCvars();
 				else
 					if (isDefined(game["readyup_first_run_ending_for_matchinfo"]) && game["readyup_first_run_ending_for_matchinfo"])
-					determineTeamByFirstConnected();
+						determineTeamByFirstConnected();
 
 				// for all players change team name in scoreboard
 				players = getentarray("player", "classname");

@@ -1,6 +1,6 @@
-/*  rPAMext Version: v21
-   
-    Changes onto kvcodPAM v211:
+/*	_utility.gsc
+
+  	rPAMext Version: v24 (for kvcodPAM v214)    
    
     rFIX applied syntax fixes
     rBOMBPRINTFIX fix of a logprint which occurs error after bomb explodes on A on mp_germantown
@@ -10,43 +10,74 @@
 
 */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//zPAM404 has this here at the top
+triggerOff()
+{
+	if (!isdefined (self.realOrigin))
+		self.realOrigin = self.origin;
 
-//as zPAM4
+	if (self.origin == self.realorigin)
+		self.origin += (0, 0, -10000);
+}
+
+triggerOn()
+{
+	if (isDefined (self.realOrigin) )
+		self.origin = self.realOrigin;
+}
+//error(msg) is different to lower in this script
+/*
+error(msg)
+{
+	println("^c*ERROR* ", msg);
+	wait level.fps_multiplier * .05;	// waitframe
+//
+//	if (getcvar("debug") != "1")
+//		assertmsg("This is a forced error - attach the log file");
+//
+}
+*/
+vectorScale(vec, scale)
+{
+	vec = (vec[0] * scale, vec[1] * scale, vec[2] * scale);
+	return vec;
+}
+//as zPAM404
 add_to_array(array, ent)
 {
 	if(!isdefined(ent))
 		return array;
-		
+
 	if(!isdefined(array))
 		array[0] = ent;
 	else
 		array[array.size] = ent;
-	
-	return array;	
+
+	return array;
 }
 
 //rEXPLODER
 exploder(num)
 {
-//rFIX num should be script_noteworthy or script_exploder or ?
-//	ents = level._script_expoders;
-//	num = int(num);						//undefined atm
-	ents = level._script_exploders;				//like zPAM404
+//rFIX ents should be .script_noteworthy or .script_exploder or ?
+	ents = level._script_expoders;		// wrongly written
+//	num = (int)(num);			// zPAM404 + (int)cod1
+//	ents = level._script_exploders;		// zPAM404, explosion model does work now?
 
-//added return if ents is not defined
-	if (!isdefined(ents))
+//added a print if ents is not defined
+	if(!isdefined(ents))
 	{
 		if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::exploder(num) ents is not defined"); }
 		logprint("_utility::exploder(num) ents is not defined\n");
-		return; 
 	}
 
 	for(i = 0; i < ents.size; i++)
 	{
-		if(!isdefined (ents[i]))
+//1		if(!isdefined (ents[i]))
+		if(!isdefined(ents[i]))
 			continue;
 //added from zPAM404
-//		if (ents[i].script_exploder != num)
+//4		if (ents[i].script_exploder != num)
 //			continue;
 //
 //		if (isdefined(ents[i].script_fxid))
@@ -56,7 +87,7 @@ exploder(num)
 //			ents[i] thread exploder_sound();	
 //from kvcodPAMv211
 //		println("ent origin ", ents[i].origin);
-/*		if ((isdefined(ents[i].script_exploder)) && (ents[i].script_exploder == num))
+		if ((isdefined(ents[i].script_exploder)) && (ents[i].script_exploder == num))
 		{
 			if((isdefined(ents[i].targetname)) && (ents[i].targetname == "exploder"))
 				ents[i] thread brush_show();
@@ -67,10 +98,20 @@ exploder(num)
 			if(!isdefined(ents[i].script_fxid))
 				ents[i] thread brush_delete();
 		}	
-*/
+
 //added from zPAM404
-		if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::ents targetname brushes"); }
+/*		if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::ents targetname brushes"); }
 		logprint("_utility::ents targetname brushes\n");
+
+		if (ents[i].script_exploder != num)
+			continue;
+
+		if (isdefined(ents[i].script_fxid))
+			level thread cannon_effect(ents[i]);
+
+		if (isdefined (ents[i].script_sound))
+			ents[i] thread exploder_sound();
+
 		if (isdefined(ents[i].targetname))
 		{
 			if(ents[i].targetname == "exploder")
@@ -87,22 +128,29 @@ exploder(num)
 			if (!isdefined(ents[i].script_fxid))
 				ents[i] thread brush_delete();
 		}
-
+*/
 		if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::exploder(num) ent origin " + ents[i].origin); }
    	 	logprint("_utility::exploder(num) ent origin " + ents[i].origin + " \n");
 	}
-
+//kvcodPAM uses this, zPAM404 ends here
 	models = getentarray("script_model", "classname");
 	for(i = 0; i < models.size; i++)
 	{
 		if((isdefined(models[i].script_exploder)) && (models[i].script_exploder == num))
-			if (getcvar("rpam_debug_p") == "1")	{ iprintln("_utility::exploder(num) opens cannon_effect"); }
+		{
+			if (getcvar("rpam_debug_p") == "1")
+			{
+				iprintln("_utility::exploder(num) opens cannon_effect");
+			}
 			logprint("_utility::exploder(num) opens cannon_effect\n");
 			models[i] thread cannon_effect();
+		}
 	}
 }
 
-//below is like zPAM404
+//zPAM404 adds exploder_sound() & cannon_effect(source) here
+//kvcodPAM's cannon_effect() can be found lower
+/*
 exploder_sound()
 {
 	if(isdefined(self.script_delay))
@@ -111,10 +159,27 @@ exploder_sound()
 	self playSound(level.scr_sound[self.script_sound]);
 }
 
+cannon_effect(source)
+{
+	if(!isdefined(source.script_delay))
+		source.script_delay = 0;
+
+	if((isdefined(source.script_delay_min)) && (isdefined(source.script_delay_max)))
+		source.script_delay = source.script_delay_min + randomfloat (source.script_delay_max - source.script_delay_min);
+
+	org = undefined;
+	if(isdefined(source.target))
+		org = (getent(source.target, "targetname")).origin;
+
+	level thread maps\mp\_fx::OneShotfx(source.script_fxid, source.origin, source.script_delay, org);
+}
+*/
+//kvcodPAM/zPAM404
 brush_delete()
 {
 	if(isdefined(self.script_delay))
 		wait(self.script_delay);
+//4		wait(level.fps_multiplier * self.script_delay);
 
 	self delete();
 }
@@ -123,9 +188,11 @@ brush_show()
 {
 	if(isdefined(self.script_delay))
 		wait(self.script_delay);
+//4		wait(level.fps_multiplier * self.script_delay);
 
 	self show();
-
+//4	self solid();
+//kvcodPAM uses this:
 	if(self.classname != "script_model")
 		self solid();
 }
@@ -134,7 +201,9 @@ brush_throw()
 {
 	if(isdefined(self.script_delay))
 		wait(self.script_delay);
+//4		wait(level.fps_multiplier * self.script_delay);
 
+//4	ent = undefined;
 	if(isdefined(self.target))
 		ent = getent(self.target, "targetname");
 
@@ -162,7 +231,8 @@ brush_throw()
 	self rotateVelocity((x,y,z), 12);
 	self moveGravity((x, y, z), 12);
 
-	wait(6);
+//k	wait(6);
+	wait(level.fps_multiplier * 6);
 	self delete();
 }
 
@@ -193,9 +263,10 @@ cannon_effect()
 	}
 
 	//logprint("_utility::cannon-effect() " + self.target + "\n");
-	//logprint("_utility::cannon-effect " + (getent(self.target, "targetname")).origin + "\n");
+	//logprint("_utility:cannon-effect " + (getent(self.target, "targetname")).origin + "\n");
 //rBOMBPRINTFIX above where faulty
 	if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::cannon_effect try to define target"); }
+
 	if(isdefined(self.target))
 	{
 		org = (getent(self.target, "targetname")).origin;
@@ -215,21 +286,6 @@ cannon_effect()
 	maps\mp\_fx::OneShotfx(self.script_fxid, self.origin, self.script_delay, org);
 //	self delete();
 }
-//zPAM404cannon_effect()
-//cannon_effect(source)
-//{
-//	if(!isdefined(source.script_delay))
-//		source.script_delay = 0;
-//
-//	if((isdefined(source.script_delay_min)) && (isdefined(source.script_delay_max)))
-//		source.script_delay = source.script_delay_min + randomfloat (source.script_delay_max - source.script_delay_min);
-//
-//	org = undefined;
-//	if(isdefined(source.target))
-//		org = (getent(source.target, "targetname")).origin;
-//
-//	level thread maps\mp\_fx::OneShotfx(source.script_fxid, source.origin, source.script_delay, org);
-//}
 
 error(msg)
 {
@@ -246,30 +302,28 @@ error(msg)
 	// GENERATES AN ERROR, DON'T FREAKIN TOUCH THIS FUNCTION PLEASE
 	// GENERATES AN ERROR, DON'T FREAKIN TOUCH THIS FUNCTION PLEASE
 }
-
-//below is like zPAM404
-triggerOff()
-{
-	if (!isdefined (self.realOrigin))
-		self.realOrigin = self.origin;
-
-//rFIX
-	if (self.origin == self.realOrigin)
-		self.origin += (0, 0, -10000);
-}
-
-triggerOn()
-{
-	if (isDefined (self.realOrigin) )
-		self.origin = self.realOrigin;
-}
+//deactivated triggerOff() & triggerOn() on this position, the top of the script has it
+//triggerOff()
+//{
+//	if (!isdefined (self.realOrigin))
+//		self.realOrigin = self.origin;
+//
+//	if (self.origin == self.realorigin)
+//		self.origin += (0, 0, -10000);
+//}
+//
+//triggerOn()
+//{
+//	if (isDefined (self.realOrigin) )
+//		self.origin = self.realOrigin;
+//}
 
 saveModel()
 {
 	info["model"] = self.model;
 	info["viewmodel"] = self getViewModel();
 	attachSize = self getAttachSize();
-//	info["attach"] = [];							//added by zPAM404
+//4	info["attach"] = [];							//added by zPAM404
 
 	for(i = 0; i < attachSize; i++)
 	{
@@ -277,7 +331,7 @@ saveModel()
 		info["attach"][i]["tag"] = self getAttachTagName(i);
 		info["attach"][i]["ignoreCollision"] = self getAttachIgnoreCollision(i);
 	}
-	
+
 	return info;
 }
 
@@ -286,19 +340,20 @@ loadModel(info)
 	self detachAll();
 	self setModel(info["model"]);
 	self setViewModel(info["viewmodel"]);
+
 	attachInfo = info["attach"];
 	attachSize = attachInfo.size;
-    
+
 	for(i = 0; i < attachSize; i++)
 		self attach(attachInfo[i]["model"], attachInfo[i]["tag"], attachInfo[i]["ignoreCollision"]);
 }
-
-vectorScale(vec, scale)
-{
-	vec = (vec[0] * scale, vec[1] * scale, vec[2] * scale);
-	return vec;
-}
-
+//deactivated vectorScale(vec, scale) on this position
+//vectorScale(vec, scale)
+//{
+//	vec = (vec[0] * scale, vec[1] * scale, vec[2] * scale);
+//	return vec;
+//}
+//
 //rGETPLANT
 getPlant()
 {
@@ -308,6 +363,7 @@ getPlant()
 
 	range = 11;
 	forward = anglesToForward(self.angles);
+//4	forward = vectorScale(forward, range);
 	forward = maps\mp\_utility::vectorScale(forward, range);
 
 	traceorigins[0] = start + forward;
@@ -345,8 +401,8 @@ getPlant()
 //rTRACE
 	if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::getPlant set besttracefraction = undefined"); logprint("_utility::getPlant set besttracefraction = undefined\n"); }
 	
-	besttracefraction = undefined;
-	besttraceposition = undefined;
+//4	besttracefraction = undefined;
+//4	besttraceposition = undefined;
 	for(i = 0; i < traceorigins.size; i++)
 	{
 		trace = bulletTrace(traceorigins[i], (traceorigins[i] + (0, 0, -1000)), false, undefined);
@@ -366,10 +422,10 @@ getPlant()
 			if (getcvar("rpam_debug_p") == "1") { iprintln("_utility::getPlant set besttracefraction = 0"); logprint("_utility::getPlant set besttracefraction = 0\n"); }
 		}
 	}
-	
+
 	if(besttracefraction == 1)
 		besttraceposition = self.origin;
-	
+
 	if (getcvar("rpam_debug_p") == "1")	{ iprintln("_utility::getPlant end"); logprint("_utility::getPlant end\n");	}
 	temp = spawnstruct();
 	temp.origin = besttraceposition;
@@ -384,12 +440,19 @@ orientToNormal(normal)
 
 	if(!hor_length)
 		return (0, 0, 0);
-	
+
 	hor_dir = vectornormalize(hor_normal);
 	neg_height = normal[2] * -1;
 	tangent = (hor_dir[0] * neg_height, hor_dir[1] * neg_height, hor_length);
 	plant_angle = vectortoangles(tangent);
 
+	//Print informations
+	//println("^6hor_normal is ", hor_normal);
+	//println("^6hor_length is ", hor_length);
+	//println("^6hor_dir is ", hor_dir);
+	//println("^6neg_height is ", neg_height);
+	//println("^6tangent is ", tangent);
+	//println("^6plant_angle is ", plant_angle);
     if (getcvar("rpam_debug_p") == "1")
     {
         	iprintln("_utility::orientToNormal hor_normal: " 
@@ -414,13 +477,63 @@ orientToNormal(normal)
         	logprint("_utility::orientToNormal plant_angle: " 
                  + plant_angle[0] + ", " + plant_angle[1] + ", " + plant_angle[2] + "\n");
 	}
-	//println("^6hor_normal is ", hor_normal);
-	//println("^6hor_length is ", hor_length);
-	//println("^6hor_dir is ", hor_dir);
-	//println("^6neg_height is ", neg_height);
-	//println("^6tangent is ", tangent);
-	//println("^6plant_angle is ", plant_angle);
 
 	return plant_angle;
 }
+//zPAM404 adds everythin below
+/*
+array_levelthread (ents, process, var, excluders)
+{
+	exclude = [];
+	for (i=0;i<ents.size;i++)
+		exclude[i] = false;
+
+	if (isdefined (excluders))
+	{
+		for (i=0;i<ents.size;i++)
+		for (p=0;p<excluders.size;p++)
+		if (ents[i] == excluders[p])
+			exclude[i] = true;
+	}
+
+	for (i=0;i<ents.size;i++)
+	{
+		if (!exclude[i])
+		{
+			if (isdefined (var))
+				level thread [[process]](ents[i], var);
+			else
+				level thread [[process]](ents[i]);
+		}
+	}
+}
+
+set_ambient (track)
+{
+	level.ambient = track;
+	if ((isdefined (level.ambient_track)) && (isdefined (level.ambient_track[track])))
+	{
+		ambientPlay (level.ambient_track[track], 2);
+		println ("playing ambient track ", track);
+	}
+}
+
+abs (num)
+{
+	if (num < 0)
+		num*= -1;
+
+	return num;
+}
+
+deletePlacedEntity(entity)
+{
+	entities = getentarray(entity, "classname");
+	for(i = 0; i < entities.size; i++)
+	{
+		//println("DELETED: ", entities[i].classname);
+		entities[i] delete();
+	}
+}
+*/
 // END OF FILE

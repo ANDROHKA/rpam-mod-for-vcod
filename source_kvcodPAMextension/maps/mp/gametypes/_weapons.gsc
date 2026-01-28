@@ -1,11 +1,12 @@
 /*
-  rPAMext Version: v19 (kvcodPAM v2.10)     
+  rPAMext Version: v22 (kvcodPAM v2.11)     
 
   Changes:        
 
   - v24 changes marked
   - rPISTOLAMMO-log: added log info
   - v25 and v210 are identical
+  - checking hand_fix commands here
 */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 init()
@@ -104,8 +105,8 @@ registerCvars()
 	[[var]]("scr_balance_ppsh_distance", "BOOL", 0); 	//level.balance_ppsh //ppsh -> tommy balance
 
 
-	[[var]]("scr_shotgun_consistent", "BOOL", 0);	// level.scr_shotgun_consistent
-	[[var]]("scr_hitbox_hand_fix", "BOOL", 0);	// level.scr_hitbox_hand_fix
+	[[var]]("scr_shotgun_consistent", "BOOL", 0);		// level.scr_shotgun_consistent
+	[[var]]("scr_hitbox_hand_fix", "BOOL", 0);		// level.scr_hitbox_hand_fix // correct as in z404
 	[[var]]("scr_hitbox_torso_fix", "BOOL", 0);		// level.scr_hitbox_torso_fix
 }
 
